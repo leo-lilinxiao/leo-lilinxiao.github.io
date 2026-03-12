@@ -1,0 +1,80 @@
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "About",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-gallery",
+          title: "Gallery",
+          description: "Photos from awards, conferences, and professional activities.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/gallery/";
+          },
+        },{id: "nav-publications",
+          title: "Publications",
+          description: "Publications in reversed chronological order.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-cv",
+          title: "CV",
+          description: "Education, experience, awards, skills, and patents.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "news-received-huawei-rising-star-明日之星-award-top-10",
+          title: 'Received Huawei “Rising Star” (明日之星) Award (Top 10%).',
+          description: "",
+          section: "News",},{id: "news-received-huawei-rising-star-明日之星-award-again-top-10",
+          title: 'Received Huawei “Rising Star” (明日之星) Award again (Top 10%).',
+          description: "",
+          section: "News",},{id: "news-awarded-golden-cloud-award-and-hcs-cloud-summit-star-by-huawei-cloud",
+          title: 'Awarded Golden Cloud Award and HCS Cloud Summit Star by Huawei Cloud.',
+          description: "",
+          section: "News",},{id: "news-ranked-14th-out-of-5200-in-the-huawei-ict-software-competition-top-3-in-huawei-cloud-1st-in-chengdu-research-institute",
+          title: 'Ranked 14th out of 5200+ in the Huawei ICT Software Competition (Top 3...',
+          description: "",
+          section: "News",},{id: "news-ascend-npu-user-space-virtualization-solution-announced-at-huawei-hdc-2025-50-min-mark-industry-leading-with-amp-lt-3-performance-overhead",
+          title: 'Ascend NPU User-Space Virtualization solution announced at Huawei HDC 2025 (~50 min mark)...',
+          description: "",
+          section: "News",},{id: "news-joined-aigcode-寇町科技-as-large-model-algorithm-ai-infra-tech-leader-leading-model-pretraining-optimization",
+          title: 'Joined AIGCode (寇町科技) as Large Model Algorithm AI Infra Tech Leader, leading model...',
+          description: "",
+          section: "News",},{id: "news-paper-ecothink-accepted-to-the-web-conference-2026-www-26-as-first-author-average-40-4-energy-savings-for-llm-agents",
+          title: 'Paper EcoThink accepted to The Web Conference 2026 (WWW’26) as first author! Average...',
+          description: "",
+          section: "News",},{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
