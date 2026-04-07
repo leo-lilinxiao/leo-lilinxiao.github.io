@@ -54,6 +54,9 @@ ninja.data = [{
           section: "News",},{id: "news-paper-ecothink-accepted-to-the-web-conference-2026-www-26-as-first-author-average-40-4-energy-savings-for-llm-agents",
           title: 'Paper EcoThink accepted to The Web Conference 2026 (WWW’26) as first author! Average...',
           description: "",
+          section: "News",},{id: "news-codex-autoresearch-my-open-source-project-a-self-directed-iterative-research-system-inspired-by-karpathy-s-autoresearch-concept-reached-1-000-github-stars",
+          title: 'Codex AutoResearch — my open-source project, a self-directed iterative research system inspired by...',
+          description: "",
           section: "News",},{
       id: 'light-theme',
       title: 'Change theme to light',
