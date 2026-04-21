@@ -1,0 +1,35 @@
+{% comment %}
+  Unified skills entry renderer for both formats
+{% endcomment %}
+
+<div class="card-text font-weight-light">
+  {% for entry in entries %}
+    <div class="skill-item">
+      {% if entry.icon %}
+        <i class="{{ entry.icon }} me-1"></i>
+      {% endif %}
+      <strong>{{ entry.name }}</strong>
+      <div class="skill-keywords mt-1">
+        {% for keyword in entry.keywords %}
+          <span class="badge font-weight-bold">{{ keyword }}</span>
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<style>
+  .skill-item {
+    padding: 0.5rem 0;
+  }
+  .skill-keywords .badge {
+    display: inline-block;
+    padding: 0.35em 0.65em;
+    margin: 0.15rem 0.1rem;
+    font-size: 0.85em;
+    font-weight: 500;
+    background-color: var(--global-theme-color);
+    color: #fff;
+    border-radius: 0.25rem;
+  }
+</style>

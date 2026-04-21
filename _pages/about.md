@@ -1,49 +1,44 @@
 ---
+layout: about
+title: About
 permalink: /
-title: ""
-excerpt: ""
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
+subtitle: AI Infrastructure & LLM Systems
+
+profile:
+  align: right
+  image: prof_pic.jpg
+  image_circular: false
+  more_info: >
+    <p>李麟霄</p>
+    <p>Shanghai, China</p>
+
+selected_papers: true
+social: true
+
+announcements:
+  enabled: true
+  scrollable: true
+  limit: 20
+
+latest_posts:
+  enabled: false
 ---
 
-<span class='anchor' id='about-me'></span>
+Welcome to my homepage!
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero, elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl, porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam. Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat.
+I am a researcher focusing on large-scale LLM systems and AI infrastructure. Currently I work as an **AI Infrastructure / Training Systems Researcher** at [AIGCode (蔻町科技)](https://www.autocoder.cc/).
 
-My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a>. 
+My work focuses on large-scale LLM training systems. I study system-level optimizations to improve efficiency and hardware utilization, including Model FLOPs Utilization (MFU) improvement, communication–computation overlap, operator/kernel fusion, and runtime-level scheduling and memory optimization. I work closely with distributed training stacks to improve scalability, throughput, and cost-efficiency of foundation model training.
 
+Previously, I was a **Senior Researcher** at [Huawei Cloud Architecture Innovation Lab](https://www.huaweicloud.com/lab/cloud/home.html) (Cloud Lab), working in [Huawei Cloud CTO Fellow Team](https://developer.huawei.com/consumer/cn/forum/topic/0202743458671690687) (Huawei Fellow- and Academician-led) on MoE inference, memory offloading, and cloud-scale AI infrastructure. I also collaborated with the [Guangming Laboratory](https://www.gml.ac.cn/kytd/189.html) (Intelligent Recommendation & Resource Scheduling Group).
 
-# 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+My long-term research goal is to design more efficient system architectures for large-scale AI models, improving scalability and resource efficiency of future AI infrastructure.
 
-# 📝 Publications 
+My research and engineering interests include:
+- Efficient training and inference systems for large language models
+- Model FLOPs Utilization (MFU) optimization and system efficiency
+- Communication–computation overlap and operator / kernel fusion
+- Distributed training systems and memory-efficient execution
+- Scalable inference systems for large models (LLMs, MoE)
 
-<div class='paper-box'><div class='paper-box-image'><img src='images/500x300.png' alt="sym" width="100%"></div>
-<div class='paper-box-text' markdown="1">
-
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf), **Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
-
-**CVPR, 2016** \| [**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-</div>
-</div>
-
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
-
-# 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-
-# 📖 Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-
-# 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
-
-# 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+Check out my [publications](/publications/), [CV](/cv/), and [gallery](/gallery/) for more details.

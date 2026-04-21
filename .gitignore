@@ -1,3 +1,25 @@
+# Jekyll
 _site/
-/push.sh
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+
+# Ruby
+Gemfile.lock
+
+# Node
+node_modules/
+
+# OS
 .DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Build
+.bundle/
