@@ -57,6 +57,9 @@ ninja.data = [{
           section: "News",},{id: "news-codex-autoresearch-my-open-source-project-a-self-directed-iterative-research-system-inspired-by-karpathy-s-autoresearch-concept-reached-1-000-github-stars",
           title: 'Codex AutoResearch — my open-source project, a self-directed iterative research system inspired by...',
           description: "",
+          section: "News",},{id: "news-paper-deterministic-component-mining-for-multi-framework-ui2code-generation-accepted-to-icml-2026-as-co-first-author-acceptance-rate-26-6",
+          title: 'Paper Deterministic Component Mining for Multi-framework UI2Code Generation accepted to ICML 2026 as...',
+          description: "",
           section: "News",},{
       id: 'light-theme',
       title: 'Change theme to light',
