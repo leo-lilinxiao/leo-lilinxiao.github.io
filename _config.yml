@@ -218,7 +218,7 @@ scholar:
 enable_publication_badges:
   altmetric: false
   dimensions: false
-  google_scholar: true
+  google_scholar: false
   inspirehep: false
 
 filtered_bibtex_keywords:

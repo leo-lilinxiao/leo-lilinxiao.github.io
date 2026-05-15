@@ -21,11 +21,17 @@ cv:
 
   sections:
     Publications:
+      - title: "Deterministic Component Mining for Multi-framework UI2Code Generation"
+        date: 2026
+        publisher: "ICML 2026"
+        url: https://icml.cc/virtual/2026/poster/64878
+        summary: "Zixiong Yang*, Linxiao Li*, Jiaye Lin, Binrui Wu, Xiaoyu Kang, Jiechao Gao†. Co-first author. (* Equal contribution, † Corresponding author)"
+
       - title: "EcoThink: A Green Adaptive Inference Framework for Sustainable and Accessible Agents"
         date: 2026
         publisher: "ACM Web Conference (WWW'26)"
-        url: /publications/
-        summary: "Linxiao Li, Zhixiang Lu. First author. Average 40.4% energy savings for LLM agents."
+        url: https://arxiv.org/abs/2603.25498
+        summary: "Linxiao Li*, Zhixiang Lu*. Co-first author. Average 40.4% energy savings for LLM agents. (* Equal contribution)"
 
     Selected Research Projects:
       - name: Ascend NPU User-Space Virtualization
@@ -50,7 +56,7 @@ cv:
         url: https://www.sydney.edu.au/
         area: Computer Science
         studyType: Bachelor of Computer Science
-        start_date: 2017-09
+        start_date: 2018-03
         end_date: 2021-12
         highlights:
           - "WAM: 76/100"
@@ -63,8 +69,8 @@ cv:
         url: https://www.fudan.edu.cn/
         area: Economics
         studyType: Exchange Student
-        start_date: 2020-12
-        end_date: 2021-03
+        start_date: 2021-06
+        end_date: 2021-08
         highlights:
           - "GPA: 3.5/4.0"
 
@@ -73,8 +79,8 @@ cv:
         url: https://www.sjtu.edu.cn/
         area: Data Science and Analytics
         studyType: Exchange Student
-        start_date: 2019-11
-        end_date: 2020-02
+        start_date: 2020-12
+        end_date: 2021-01
         highlights:
           - "GPA: 4.0/4.0"
 
@@ -105,9 +111,9 @@ cv:
       - company: Huawei Technologies Co., Ltd.
         position: Software Development Leader
         location: Chengdu, China
-        start_date: 2022-04
+        start_date: 2021-09
         end_date: 2023-08
-        summary: Led 5-person team as Committer. Core developer on <a href="https://www.huaweicloud.com/product/dwr.html">Data Workshop</a> distributed messaging system.
+        summary: Led 5-person team as Committer. Core developer on <a href="https://www.huaweicloud.com/product/dwr.html">Data Workshop</a> distributed messaging system. (incl. internship from Sep 2021)
         highlights:
           - "Built on Pulsar distributed messaging middleware with self-developed storage engine"
           - "Zero P3 incidents over 6 months; supported major customers at scale"
