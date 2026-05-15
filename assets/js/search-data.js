@@ -23,6 +23,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
+        },{id: "nav-open-source",
+          title: "Open Source",
+          description: "Open source projects and contributions.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/opensource/";
+          },
         },{id: "nav-cv",
           title: "CV",
           description: "Education, experience, awards, skills, and patents.",
