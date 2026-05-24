@@ -25,30 +25,13 @@ cv:
         date: 2026
         publisher: "ICML 2026"
         url: https://icml.cc/virtual/2026/poster/64878
-        summary: "Zixiong Yang*, Linxiao Li*, Jiaye Lin, Binrui Wu, Xiaoyu Kang, Jiechao Gao†. Co-first author. (* Equal contribution, † Corresponding author)"
+        summary: "Zixiong Yang&#42;, <strong>Linxiao Li&#42;</strong>, Jiaye Lin, Binrui Wu, Xiaoyu Kang, Jiechao Gao&#8224;"
 
       - title: "EcoThink: A Green Adaptive Inference Framework for Sustainable and Accessible Agents"
         date: 2026
         publisher: "ACM Web Conference (WWW'26)"
-        url: https://arxiv.org/abs/2603.25498
-        summary: "Linxiao Li*, Zhixiang Lu*. Co-first author. Average 40.4% energy savings for LLM agents. (* Equal contribution)"
-
-    Selected Research Projects:
-      - name: Ascend NPU User-Space Virtualization
-        summary: >
-          Designed a user-space virtualization framework for Ascend NPUs to improve hardware utilization in large-scale AI training.
-        highlights:
-          - 'Achieved <span class="cv-highlight"><3% performance overhead</span> while increasing NPU utilization from 10% to 30%'
-
-      - name: MoE Inference Memory Offloading
-        summary: >
-          Designed a memory offloading framework for large-scale Mixture-of-Experts inference to reduce GPU memory pressure.
-        highlights:
-          - 'Achieved <span class="cv-highlight"><3% overhead</span> while maintaining TTFT <3s and TPOT <100ms in production systems'
-          - '<span class="cv-highlight">Huawei Cloud High-Potential Patent</span>: A MoE Model-Oriented Inference Optimization Method'
-
-      - name: ""
-        summary: 'Both projects were deployed in Huawei Cloud and announced at <a href="https://live.huawei.com/hdc2025/meeting/cn/15569.html">Huawei HDC 2025</a> (~50 min mark).'
+        url: https://dl.acm.org/doi/10.1145/3774904.3792995
+        summary: "<strong>Linxiao Li&#42;</strong>, Zhixiang Lu&#42;&#8224;"
 
     Education:
       - institution: The University of Sydney
@@ -62,7 +45,7 @@ cv:
           - "WAM: 76/100"
           - "GRE: 334 (Q170, V164, AW 5.5)"
           - 'Advisor: <a href="https://www.sydney.edu.au/engineering/about/our-people/academic-staff/weiwilson-li.html">Prof. Wei (Wilson) Li</a>'
-          - "Received full scholarship doctoral offer from University of Sydney"
+          - "Received conditional full scholarship doctoral offer from The University of Sydney"
 
       - institution: Fudan University
         location: Shanghai, China
@@ -84,6 +67,29 @@ cv:
         highlights:
           - "GPA: 4.0/4.0"
 
+    Academic Service:
+      - name: Teaching
+        summary: "Teaching Assistant, The University of Sydney — Operating Systems, Algorithm Design"
+      - name: Reviewing
+        summary: "Reviewer, NeurIPS 2026"
+
+    Selected Research Projects:
+      - name: Ascend NPU User-Space Virtualization
+        summary: >
+          Designed a user-space virtualization framework for Ascend NPUs to improve hardware utilization in large-scale AI training.
+        highlights:
+          - 'Achieved <span class="cv-highlight"><3% performance overhead</span> while increasing NPU utilization from 10% to 30%'
+
+      - name: MoE Inference Memory Offloading
+        summary: >
+          Designed a memory offloading framework for large-scale Mixture-of-Experts inference to reduce GPU memory pressure.
+        highlights:
+          - 'Achieved <span class="cv-highlight"><3% overhead</span> while maintaining TTFT <3s and TPOT <100ms in production systems'
+          - '<span class="cv-highlight">Huawei Cloud High-Potential Patent</span>: A MoE Model-Oriented Inference Optimization Method'
+
+      - name: ""
+        summary: 'Both projects were deployed in Huawei Cloud and announced at <a href="https://live.huawei.com/hdc2025/meeting/cn/15569.html">Huawei HDC 2025</a> (~50 min mark).'
+
     Experience:
       - company: AIGCode (蔻町科技)
         position: AI Infrastructure / Training Systems Researcher
@@ -91,22 +97,23 @@ cv:
         url: https://www.autocoder.cc/platform
         start_date: 2025-11
         end_date: ""
-        summary: Leading model pretraining optimization and LLM training infrastructure.
+        summary: Leading LLM pre-training optimization and training infrastructure. Currently leading pre-training of a 300B+ parameter LLM from scratch.
         highlights:
-          - "Achieved 5x single-operator performance improvement (MoE Combine + FFN)"
+          - "Achieved 5x single-operator speedup (MoE Combine + FFN), improving overall MFU by 10% and reducing training cost by >10%"
           - 'Tech stack: Triton, TileLang, <a href="https://gitcode.com/lllleo/pypto">PyPTO</a> with Tile paradigm programming'
+          - "Profiling tools for end-to-end optimization. Building next-generation AI Infra and model architectures."
 
       - company: Huawei Technologies Co., Ltd.
         position: Senior Algorithm Researcher Leader / PL (Huawei Fellow Team)
         location: Shenzhen, China
         start_date: 2023-09
         end_date: 2025-11
-        summary: <a href="https://developer.huawei.com/consumer/cn/forum/topic/0202743458671690687">Huawei Cloud CTO Fellow Team</a>, Cloud Architecture Innovation Lab. Collaborated with <a href="https://www.gml.ac.cn/kytd/189.html">Guangming Lab</a> Intelligent Recommendation and Resource Scheduling Group.
+        summary: Core member of <a href="https://www.huaweicloud.com/lab/cloud/home.html">Huawei Cloud Architecture Innovation Lab (Cloud Lab)</a>, under <a href="https://developer.huawei.com/consumer/cn/forum/topic/0202743458671690687">CTO Fellow Jiongjiong Gu</a> (Chief Architect). Led a 10+ person joint team with the <a href="https://www.gml.ac.cn/kytd/189.html">Guangming Laboratory</a> on intelligent resource scheduling. All annual performance ratings A.
         highlights:
-          - "Worked on large-scale LLM inference systems and AI infrastructure"
-          - "Led MoE inference optimization and NPU virtualization projects"
-          - '<a href="https://www.huaweicloud.com/intl/en-us/product/flexus-x.html">FRCP Capacity Prediction</a>: iTransformer-based intelligent capacity prediction system, deployed at scale'
-          - "QoS MoE Model: MAE 3%, application classification accuracy 99.995%"
+          - '<strong>MoE Memory Offloading</strong>: Expert offloading for MoE LLM inference on Ascend NPUs. TTFT &lt;3s, TPOT &lt;100ms. Supports BF16/W8A8 (DeepSeek V3). (<a href="https://live.huawei.com/hdc2025/meeting/cn/15569.html">HDC 2025</a>, ~50 min)'
+          - '<strong>NPU User-Space Virtualization</strong>: Multi-tenant NPU sharing with &lt;3% overhead, utilization 10%→30%+. (<a href="https://live.huawei.com/hdc2025/meeting/cn/15569.html">HDC 2025</a>, ~50 min)'
+          - '<strong><a href="https://www.huaweicloud.com/intl/en-us/product/flexus-x.html">Huawei Cloud Flexus</a> FRCP</strong>: iTransformer capacity prediction for X/L instances, deployed at scale.'
+          - '<strong>QoS MoE Model</strong>: MAE 3%, classification accuracy 99.995%. Key support for Agricultural Bank of China HCS project.'
 
       - company: Huawei Technologies Co., Ltd.
         position: Software Development Leader
@@ -122,6 +129,7 @@ cv:
       - title: 'Huawei ICT Software Competition — <span class="cv-highlight">14th / 5200+</span>'
         date: 2025
         awarder: Huawei
+        url: /gallery/#ict-2025
         summary: '<span class="cv-highlight">Top 3</span> in Huawei Cloud product line, <span class="cv-highlight">1st</span> in Chengdu Research Institute.'
 
       - title: Golden Cloud Award (金代码)
@@ -137,6 +145,7 @@ cv:
       - title: Huawei "Rising Star" (明日之星) Award
         date: 2023
         awarder: Huawei
+        url: /gallery/#rising-star-2023
         summary: '<span class="cv-highlight">Top 5%</span> recognition.'
 
       - title: Huawei Trustworthy Professional Certification
@@ -147,7 +156,13 @@ cv:
       - title: Huawei "Rising Star" (明日之星) Award
         date: 2022
         awarder: Huawei
+        url: /gallery/#rising-star-2022
         summary: '<span class="cv-highlight">Top 5%</span> recognition.'
+
+      - title: Vice Chancellor's Global Mobility Scholarship
+        date: 2020
+        awarder: The University of Sydney
+        summary: "Awarded on the basis of academic merit and exchange destination."
 
     Skills:
       - name: Core Domains
@@ -195,3 +210,13 @@ cv:
         date: 2024
         awarder: ""
         summary: "Invention patent for intelligent serverless request scheduling."
+
+    Open Source:
+      - name: Codex AutoResearch
+        summary: '<span class="cv-highlight">1,000+ Stars</span> — <a href="https://github.com/leo-lilinxiao/codex-autoresearch">GitHub</a>. A self-directed iterative research system for Codex that continuously cycles through modify, verify, retain/discard, and repeat.'
+
+      - name: PyPTO
+        summary: '<a href="https://gitcode.com/lllleo/pypto">GitCode</a>. High-performance programming framework for AI accelerators using tile-based programming (PTO paradigm), compiling tensor graphs to hardware instructions via multi-level IR.'
+
+      - name: PyPTO-AutoGrad
+        summary: '<a href="https://gitcode.com/lllleo/pypto-autograd">GitCode</a>. Source-code level automatic differentiation tool for PyPTO kernels, generating readable and editable backward kernels from forward definitions.'

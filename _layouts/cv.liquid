@@ -60,7 +60,8 @@ layout: default
         {% comment %} RenderCV format {% endcomment %}
         {% assign cv = site.data.cv.cv %}
 
-        <!-- Header/Contact Information -->
+        <!-- Header/Contact Information hidden -->
+        {% comment %}
         {% if cv.name or cv.label or cv.location or cv.email or cv.phone or cv.website %}
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Contact Information</h3>
@@ -111,6 +112,7 @@ layout: default
             </table>
           </div>
         {% endif %}
+        {% endcomment %}
 
         <!-- Summary -->
         {% if cv.summary %}
@@ -172,7 +174,7 @@ layout: default
               {% elsif section_title == 'Certificates' %}
                 {% assign entries = section_entries %}
                 {% include cv/certificates.liquid %}
-              {% elsif section_title == 'Projects' or section_title == 'Open Source Projects' or section_title == 'Selected Research Projects' %}
+              {% elsif section_title == 'Projects' or section_title == 'Open Source Projects' or section_title == 'Selected Research Projects' or section_title == 'Open Source' or section_title == 'Academic Service' %}
                 {% assign entries = section_entries %}
                 {% include cv/projects.liquid %}
               {% elsif section_title == 'References' %}

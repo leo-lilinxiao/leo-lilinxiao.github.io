@@ -30,7 +30,7 @@ I am a researcher focusing on large-scale LLM systems and AI infrastructure. Cur
 
 My work focuses on large-scale LLM training systems. I study system-level optimizations to improve efficiency and hardware utilization, including Model FLOPs Utilization (MFU) improvement, communication–computation overlap, operator/kernel fusion, and runtime-level scheduling and memory optimization. I work closely with distributed training stacks to improve scalability, throughput, and cost-efficiency of foundation model training.
 
-Previously, I was a **Senior Researcher** at [Huawei Cloud Architecture Innovation Lab](https://www.huaweicloud.com/lab/cloud/home.html) (Cloud Lab), working in [Huawei Cloud CTO Fellow Team](https://developer.huawei.com/consumer/cn/forum/topic/0202743458671690687) (Huawei Fellow- and Academician-led) on MoE inference, memory offloading, and cloud-scale AI infrastructure. I also collaborated with the [Guangming Laboratory](https://www.gml.ac.cn/kytd/189.html) (Intelligent Recommendation & Resource Scheduling Group).
+Previously, I was a **Senior Researcher** and core member at [Huawei Cloud Architecture Innovation Lab (Cloud Lab)](https://www.huaweicloud.com/lab/cloud/home.html), under [CTO Fellow Jiongjiong Gu](https://developer.huawei.com/consumer/cn/forum/topic/0202743458671690687) (Chief Architect), working on MoE inference, memory offloading, and cloud-scale AI infrastructure. I also collaborated with the [Guangming Laboratory](https://www.gml.ac.cn/kytd/189.html) (Intelligent Recommendation & Resource Scheduling Group).
 
 My long-term research goal is to design more efficient system architectures for large-scale AI models, improving scalability and resource efficiency of future AI infrastructure.
 
