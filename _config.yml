@@ -43,7 +43,7 @@ socials_in_search: false
 posts_in_search: false
 bib_search: false
 
-max_width: 930px
+max_width: 1060px
 
 # -----------------------------------------------------------------------------
 # Open Graph & Schema.org

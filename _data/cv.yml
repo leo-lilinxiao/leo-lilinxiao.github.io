@@ -11,7 +11,6 @@ cv:
     <br><br>
     Currently AI Infrastructure / Training Systems Researcher at <a href="https://www.autocoder.cc/platform">AIGCode (蔻町科技)</a>.
     Previously Senior Algorithm Researcher at <a href="https://www.huaweicloud.com/lab/cloud/home.html">Huawei Cloud Architecture Innovation Lab</a>.
-    Bachelor of Computer Science from the University of Sydney.
 
   social_networks:
     - network: GitHub
@@ -23,72 +22,15 @@ cv:
     Publications:
       - title: "Deterministic Component Mining for Multi-framework UI2Code Generation"
         date: 2026
-        publisher: "ICML 2026"
+        publisher: "International Conference on Machine Learning (ICML 2026)"
         url: https://icml.cc/virtual/2026/poster/64878
         summary: "Zixiong Yang&#42;, <strong>Linxiao Li&#42;</strong>, Jiaye Lin, Binrui Wu, Xiaoyu Kang, Jiechao Gao&#8224;"
 
       - title: "EcoThink: A Green Adaptive Inference Framework for Sustainable and Accessible Agents"
         date: 2026
-        publisher: "ACM Web Conference (WWW'26)"
+        publisher: "ACM Web Conference (WWW 2026)"
         url: https://dl.acm.org/doi/10.1145/3774904.3792995
         summary: "<strong>Linxiao Li&#42;</strong>, Zhixiang Lu&#42;&#8224;"
-
-    Education:
-      - institution: The University of Sydney
-        location: Sydney, Australia
-        url: https://www.sydney.edu.au/
-        area: Computer Science
-        studyType: Bachelor of Computer Science
-        start_date: 2018-03
-        end_date: 2021-12
-        highlights:
-          - "WAM: 76/100"
-          - "GRE: 334 (Q170, V164, AW 5.5)"
-          - 'Advisor: <a href="https://www.sydney.edu.au/engineering/about/our-people/academic-staff/weiwilson-li.html">Prof. Wei (Wilson) Li</a>'
-          - "Received conditional full scholarship doctoral offer from The University of Sydney"
-
-      - institution: Fudan University
-        location: Shanghai, China
-        url: https://www.fudan.edu.cn/
-        area: Economics
-        studyType: Exchange Student
-        start_date: 2021-06
-        end_date: 2021-08
-        highlights:
-          - "GPA: 3.5/4.0"
-
-      - institution: Shanghai Jiao Tong University
-        location: Shanghai, China
-        url: https://www.sjtu.edu.cn/
-        area: Data Science and Analytics
-        studyType: Exchange Student
-        start_date: 2020-12
-        end_date: 2021-01
-        highlights:
-          - "GPA: 4.0/4.0"
-
-    Academic Service:
-      - name: Teaching
-        summary: "Teaching Assistant, The University of Sydney — Operating Systems, Algorithm Design"
-      - name: Reviewing
-        summary: "Reviewer, NeurIPS 2026"
-
-    Selected Research Projects:
-      - name: Ascend NPU User-Space Virtualization
-        summary: >
-          Designed a user-space virtualization framework for Ascend NPUs to improve hardware utilization in large-scale AI training.
-        highlights:
-          - 'Achieved <span class="cv-highlight"><3% performance overhead</span> while increasing NPU utilization from 10% to 30%'
-
-      - name: MoE Inference Memory Offloading
-        summary: >
-          Designed a memory offloading framework for large-scale Mixture-of-Experts inference to reduce GPU memory pressure.
-        highlights:
-          - 'Achieved <span class="cv-highlight"><3% overhead</span> while maintaining TTFT <3s and TPOT <100ms in production systems'
-          - '<span class="cv-highlight">Huawei Cloud High-Potential Patent</span>: A MoE Model-Oriented Inference Optimization Method'
-
-      - name: ""
-        summary: 'Both projects were deployed in Huawei Cloud and announced at <a href="https://live.huawei.com/hdc2025/meeting/cn/15569.html">Huawei HDC 2025</a> (~50 min mark).'
 
     Experience:
       - company: AIGCode (蔻町科技)
@@ -124,6 +66,60 @@ cv:
         highlights:
           - "Built on Pulsar distributed messaging middleware with self-developed storage engine"
           - "Zero P3 incidents over 6 months; supported major customers at scale"
+
+    Selected Research Projects:
+      - name: Ascend NPU User-Space Virtualization
+        summary: >
+          Designed a user-space virtualization framework for Ascend NPUs to improve hardware utilization in large-scale AI training.
+        highlights:
+          - 'Achieved <span class="cv-highlight"><3% performance overhead</span> while increasing NPU utilization from 10% to 30%'
+
+      - name: MoE Inference Memory Offloading
+        summary: >
+          Designed a memory offloading framework for large-scale Mixture-of-Experts inference to reduce GPU memory pressure.
+        highlights:
+          - 'Achieved <span class="cv-highlight"><3% overhead</span> while maintaining TTFT <3s and TPOT <100ms in production systems'
+          - '<span class="cv-highlight">Huawei Cloud High-Potential Patent</span>: A MoE Model-Oriented Inference Optimization Method'
+
+      - name: ""
+        summary: 'Both projects were deployed in Huawei Cloud and announced at <a href="https://live.huawei.com/hdc2025/meeting/cn/15569.html">Huawei HDC 2025</a> (~50 min mark).'
+
+    Education:
+      - institution: The University of Sydney
+        location: Sydney, Australia
+        url: https://www.sydney.edu.au/
+        studyType: Computer Science
+        start_date: 2018-03
+        end_date: 2021-12
+        highlights:
+          - "GRE: 334 (Q170, V164, AW 5.5)"
+          - 'Advisor: <a href="https://www.sydney.edu.au/engineering/about/our-people/academic-staff/weiwilson-li.html">Prof. Wei (Wilson) Li</a>'
+
+      - institution: Fudan University
+        location: Shanghai, China
+        url: https://www.fudan.edu.cn/
+        area: Economics
+        studyType: Exchange Student
+        start_date: 2021-06
+        end_date: 2021-08
+
+      - institution: Shanghai Jiao Tong University
+        location: Shanghai, China
+        url: https://www.sjtu.edu.cn/
+        area: Data Science and Analytics
+        studyType: Exchange Student
+        start_date: 2020-12
+        end_date: 2021-01
+
+    Open Source:
+      - name: Codex AutoResearch
+        summary: '<span class="cv-highlight">1,000+ Stars</span> — <a href="https://github.com/leo-lilinxiao/codex-autoresearch">GitHub</a>. A self-directed iterative research system for Codex that continuously cycles through modify, verify, retain/discard, and repeat.'
+
+      - name: PyPTO
+        summary: '<a href="https://gitcode.com/lllleo/pypto">GitCode</a>. High-performance programming framework for AI accelerators using tile-based programming (PTO paradigm), compiling tensor graphs to hardware instructions via multi-level IR.'
+
+      - name: PyPTO-AutoGrad
+        summary: '<a href="https://gitcode.com/lllleo/pypto-autograd">GitCode</a>. Source-code level automatic differentiation tool for PyPTO kernels, generating readable and editable backward kernels from forward definitions.'
 
     Awards:
       - title: 'Huawei ICT Software Competition — <span class="cv-highlight">14th / 5200+</span>'
@@ -164,6 +160,23 @@ cv:
         awarder: The University of Sydney
         summary: "Awarded on the basis of academic merit and exchange destination."
 
+    Patents:
+      - title: A MoE Model-Oriented Inference Optimization Method
+        date: 2024
+        awarder: '<span class="cv-highlight">Huawei Cloud High-Potential Patent</span>'
+        summary: "Invention patent for MoE large model inference memory offloading optimization."
+
+      - title: A Latency-Aware Serverless Request Scheduling Strategy
+        date: 2024
+        awarder: ""
+        summary: "Invention patent for intelligent serverless request scheduling."
+
+    Academic Service:
+      - name: Teaching
+        summary: "Teaching Assistant, The University of Sydney — Operating Systems, Algorithm Design"
+      - name: Reviewing
+        summary: "Reviewer, NeurIPS 2026"
+
     Skills:
       - name: Core Domains
         icon: fa-solid fa-brain
@@ -199,24 +212,3 @@ cv:
           - Docker
           - Kubernetes
           - Prometheus
-
-    Patents:
-      - title: A MoE Model-Oriented Inference Optimization Method
-        date: 2024
-        awarder: '<span class="cv-highlight">Huawei Cloud High-Potential Patent</span>'
-        summary: "Invention patent for MoE large model inference memory offloading optimization."
-
-      - title: A Latency-Aware Serverless Request Scheduling Strategy
-        date: 2024
-        awarder: ""
-        summary: "Invention patent for intelligent serverless request scheduling."
-
-    Open Source:
-      - name: Codex AutoResearch
-        summary: '<span class="cv-highlight">1,000+ Stars</span> — <a href="https://github.com/leo-lilinxiao/codex-autoresearch">GitHub</a>. A self-directed iterative research system for Codex that continuously cycles through modify, verify, retain/discard, and repeat.'
-
-      - name: PyPTO
-        summary: '<a href="https://gitcode.com/lllleo/pypto">GitCode</a>. High-performance programming framework for AI accelerators using tile-based programming (PTO paradigm), compiling tensor graphs to hardware instructions via multi-level IR.'
-
-      - name: PyPTO-AutoGrad
-        summary: '<a href="https://gitcode.com/lllleo/pypto-autograd">GitCode</a>. Source-code level automatic differentiation tool for PyPTO kernels, generating readable and editable backward kernels from forward definitions.'

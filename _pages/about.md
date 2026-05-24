@@ -24,8 +24,6 @@ latest_posts:
   enabled: false
 ---
 
-Welcome to my homepage!
-
 I am a researcher focusing on large-scale LLM systems and AI infrastructure. Currently I work as an **AI Infrastructure / Training Systems Researcher** at [AIGCode (蔻町科技)](https://www.autocoder.cc/).
 
 My work focuses on large-scale LLM training systems. I study system-level optimizations to improve efficiency and hardware utilization, including Model FLOPs Utilization (MFU) improvement, communication–computation overlap, operator/kernel fusion, and runtime-level scheduling and memory optimization. I work closely with distributed training stacks to improve scalability, throughput, and cost-efficiency of foundation model training.
@@ -40,5 +38,6 @@ My research and engineering interests include:
 - Communication–computation overlap and operator / kernel fusion
 - Distributed training systems and memory-efficient execution
 - Scalable inference systems for large models (LLMs, MoE)
+{: .research-interests }
 
 Check out my [publications](/publications/), [CV](/cv/), and [gallery](/gallery/) for more details.

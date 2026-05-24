@@ -7,6 +7,79 @@
   font-weight: 600;
 }
 
+.cv-experience-list {
+  .cv-experience-item {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .cv-experience-row {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .cv-experience-date {
+    flex: 0 0 7.6rem;
+    max-width: 7.6rem;
+  }
+
+  .cv-experience-date.date-column {
+    transform: none;
+  }
+
+  .cv-experience-content {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .cv-experience-role {
+    line-height: 1.35;
+    margin-bottom: 0.25rem;
+  }
+
+  .cv-experience-company {
+    font-size: 0.95rem;
+    line-height: 1.35;
+    margin-bottom: 0.35rem;
+  }
+
+  .cv-experience-summary {
+    font-size: 0.95rem;
+    font-style: italic;
+    line-height: 1.45;
+    margin-bottom: 0.55rem;
+  }
+
+  .cv-experience-highlights {
+    margin-top: 0.25rem;
+    margin-bottom: 0;
+    padding-left: 1.35rem;
+
+    li {
+      line-height: 1.42;
+      margin-bottom: 0.2rem;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .cv-experience-list {
+    .cv-experience-row {
+      display: block;
+    }
+
+    .cv-experience-date {
+      max-width: none;
+      text-align: left !important;
+      transform: none;
+    }
+  }
+}
+
 div.container-link-button {
   margin-right: 0.5rem;
 }
