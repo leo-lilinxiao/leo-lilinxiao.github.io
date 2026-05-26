@@ -7,8 +7,15 @@
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
-  background-color: var(--global-bg-color);
-  opacity: 0.95;
+  background-color: color-mix(in srgb, var(--global-bg-color) 76%, transparent);
+  opacity: 1;
+  min-height: 58px;
+  backdrop-filter: saturate(180%) blur(22px);
+  -webkit-backdrop-filter: saturate(180%) blur(22px);
+
+  .container {
+    align-items: center;
+  }
 }
 
 .navbar .dropdown-menu,
@@ -57,19 +64,29 @@
 
   .navbar-brand {
     color: var(--global-text-color);
+    font-size: 0.95rem;
+    letter-spacing: 0;
   }
 
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
+    border-radius: 999px;
+    font-size: 0.9rem;
+    line-height: 1;
+    padding: 0.55rem 0.78rem;
+    transition:
+      color 0.18s ease,
+      background-color 0.18s ease;
 
     &:hover {
       color: var(--global-hover-color);
+      background-color: var(--global-muted-surface-color);
     }
   }
 
   .navbar-nav .nav-item.active > .nav-link {
-    background-color: inherit;
-    font-weight: bolder;
+    background-color: var(--global-muted-surface-color);
+    font-weight: 600;
     color: var(--global-theme-color);
 
     &:hover {
@@ -80,24 +97,31 @@
   .navbar-brand.social {
     padding-bottom: 0;
     padding-top: 0;
-    font-size: 1.7rem;
+    font-size: 1.25rem;
 
     a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 999px;
+
       img {
-        width: 1.7rem;
-        height: 1.7rem;
-        margin-bottom: 0.5rem;
+        width: 1.1rem;
+        height: 1.1rem;
+        margin-bottom: 0;
         // margin: 0.5rem;
       }
 
       svg {
-        width: 1.7rem;
-        height: 1.7rem;
-        margin-bottom: 0.5rem;
+        width: 1.1rem;
+        height: 1.1rem;
+        margin-bottom: 0;
 
         image {
-          width: 1.7rem;
-          height: 1.7rem;
+          width: 1.1rem;
+          height: 1.1rem;
         }
       }
 
@@ -107,6 +131,9 @@
       }
 
       &:hover {
+        background-color: var(--global-muted-surface-color);
+        text-decoration: none;
+
         i::before {
           color: var(--global-theme-color);
         }
@@ -174,7 +201,7 @@
 
 @media (min-width: 576px) {
   #light-toggle {
-    transform: translateY(4px);
+    transform: none;
   }
 }
 

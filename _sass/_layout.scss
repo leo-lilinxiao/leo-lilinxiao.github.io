@@ -4,10 +4,20 @@
 
 @use "variables" as v;
 
+html,
+body {
+  background-color: var(--global-bg-color);
+}
+
 body {
   padding-bottom: 70px;
   color: var(--global-text-color);
-  background-color: var(--global-bg-color);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.58;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 
   h1,
   h2,
@@ -21,7 +31,7 @@ body {
 
 body.fixed-top-nav {
   // Add some padding for the nav-bar.
-  padding-top: 57px;
+  padding-top: 68px;
 }
 
 body.sticky-bottom-footer {
@@ -31,6 +41,46 @@ body.sticky-bottom-footer {
 
 .container {
   max-width: v.$max-content-width;
+}
+
+body > .container.mt-5 {
+  margin-top: 3.25rem !important;
+  padding-left: 1.35rem;
+  padding-right: 1.35rem;
+}
+
+.post {
+  margin-bottom: 4rem;
+}
+
+.post-header {
+  margin-bottom: 1.8rem;
+
+  .post-title {
+    margin-bottom: 0.35rem;
+    font-size: clamp(2.05rem, 5vw, 3.75rem);
+    font-weight: 650;
+    line-height: 1.02;
+    letter-spacing: 0;
+  }
+
+  .desc,
+  .post-description {
+    margin-bottom: 0;
+    color: var(--global-text-color-light);
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    line-height: 1.45;
+  }
+}
+
+.page-cv > .container.mt-5 {
+  max-width: 1000px;
+}
+
+.page-publications > .container.mt-5,
+.page-opensource > .container.mt-5,
+.page-gallery > .container.mt-5 {
+  max-width: 1060px;
 }
 
 // Profile
