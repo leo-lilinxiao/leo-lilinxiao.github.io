@@ -46,7 +46,7 @@
   {% endif %}
 
   <!-- Entry bib key -->
-  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-12{% endif %}">
+  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-10{% else %}col-sm-12{% endif %}">
     <!-- Title -->
     <div class="title">
       {% if entry.pdf %}
@@ -88,7 +88,7 @@
 
         {%- if forloop.length > 1 -%}
           {% if forloop.first == false -%}
-            {%- if forloop.length > 2 %}, {% elsif forloop.length == 2 %}  {% endif %}
+            {%- if author_array_limit < author_array_size or forloop.length > 2 %}, {% elsif forloop.length == 2 %}  {% endif %}
           {%- endif %}
           {%- if forloop.last and author_array_limit == author_array_size %}and {% endif -%}
         {% endif %}

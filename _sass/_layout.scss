@@ -6,6 +6,7 @@
 
 html,
 body {
+  min-height: 100%;
   background-color: var(--global-bg-color);
 }
 
@@ -36,7 +37,18 @@ body.fixed-top-nav {
 
 body.sticky-bottom-footer {
   // Remove padding below footer.
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   padding-bottom: 0;
+}
+
+body.fixed-top-nav.sticky-bottom-footer {
+  min-height: calc(100vh - 68px);
+}
+
+body.sticky-bottom-footer > .container.mt-5 {
+  flex: 1 0 auto;
 }
 
 .container {
@@ -44,7 +56,7 @@ body.sticky-bottom-footer {
 }
 
 body > .container.mt-5 {
-  margin-top: 3.25rem !important;
+  margin-top: 2.85rem !important;
   padding-left: 1.35rem;
   padding-right: 1.35rem;
 }
@@ -58,7 +70,7 @@ body > .container.mt-5 {
 
   .post-title {
     margin-bottom: 0.35rem;
-    font-size: clamp(2.05rem, 5vw, 3.75rem);
+    font-size: clamp(1.95rem, 4vw, 2.85rem);
     font-weight: 650;
     line-height: 1.02;
     letter-spacing: 0;
@@ -68,19 +80,25 @@ body > .container.mt-5 {
   .post-description {
     margin-bottom: 0;
     color: var(--global-text-color-light);
-    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-size: clamp(0.98rem, 1.8vw, 1.12rem);
     line-height: 1.45;
   }
 }
 
 .page-cv > .container.mt-5 {
-  max-width: 1000px;
+  max-width: 980px;
 }
 
 .page-publications > .container.mt-5,
 .page-opensource > .container.mt-5,
 .page-gallery > .container.mt-5 {
-  max-width: 1060px;
+  max-width: 1010px;
+}
+
+.page-publications .post-header,
+.page-opensource .post-header,
+.page-gallery .post-header {
+  max-width: 720px;
 }
 
 // Profile

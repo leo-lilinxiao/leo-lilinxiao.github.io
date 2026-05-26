@@ -18,12 +18,12 @@
   --global-footer-link-color: #1d1d1f;
   --global-distill-app-color: #{v.$grey-color};
   --global-divider-color: rgba(0, 0, 0, 0.12);
-  --global-card-bg-color: rgba(255, 255, 255, 0.78);
+  --global-card-bg-color: #ffffff;
   --global-highlight-color: #ff3b30;
-  --global-surface-color: rgba(255, 255, 255, 0.72);
-  --global-elevated-color: rgba(255, 255, 255, 0.9);
+  --global-surface-color: #ffffff;
+  --global-elevated-color: #fbfbfd;
   --global-muted-surface-color: rgba(0, 0, 0, 0.045);
-  --global-shadow-color: rgba(0, 0, 0, 0.08);
+  --global-shadow-color: rgba(0, 0, 0, 0.06);
   --global-back-to-top-bg-color: rgba(
     #{color.channel(v.$black-color, "red", v.$space: rgb)},
     #{color.channel(v.$black-color, "green", v.$space: rgb)},
@@ -92,12 +92,12 @@ html[data-theme="dark"] {
   --global-footer-link-color: #f5f5f7;
   --global-distill-app-color: #{v.$grey-color-light};
   --global-divider-color: rgba(255, 255, 255, 0.13);
-  --global-card-bg-color: rgba(28, 29, 33, 0.78);
+  --global-card-bg-color: #17181c;
   --global-highlight-color: #ff453a;
-  --global-surface-color: rgba(28, 29, 33, 0.72);
-  --global-elevated-color: rgba(36, 37, 42, 0.9);
-  --global-muted-surface-color: rgba(255, 255, 255, 0.065);
-  --global-shadow-color: rgba(0, 0, 0, 0.36);
+  --global-surface-color: #15161a;
+  --global-elevated-color: #1c1d22;
+  --global-muted-surface-color: rgba(255, 255, 255, 0.055);
+  --global-shadow-color: rgba(0, 0, 0, 0.26);
   --global-back-to-top-bg-color: rgba(
     #{color.channel(v.$white-color, "red", v.$space: rgb)},
     #{color.channel(v.$white-color, "green", v.$space: rgb)},

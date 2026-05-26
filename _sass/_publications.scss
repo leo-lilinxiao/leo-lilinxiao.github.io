@@ -24,11 +24,19 @@
   }
 
   h2.bibliography {
-    color: var(--global-divider-color);
-    border-top: 1px solid var(--global-divider-color);
-    padding-top: 1rem;
-    margin-top: 2rem;
-    text-align: right;
+    display: inline-flex;
+    align-items: center;
+    width: auto;
+    margin: 1.15rem 0 0.85rem;
+    padding: 0.25rem 0.6rem;
+    color: var(--global-text-color-light);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
+    background: var(--global-muted-surface-color);
+    font-size: 0.92rem;
+    font-weight: 600;
+    line-height: 1.25;
+    text-align: left;
   }
 
   ol.bibliography {
@@ -37,11 +45,16 @@
     margin-top: 0;
 
     li {
-      margin-bottom: 0.85rem;
-      padding: 1.15rem 1.25rem;
-      border: 1px solid var(--global-divider-color);
+      margin-bottom: 1rem;
+      padding: 1.25rem 1.35rem;
+      border: 1px solid color-mix(in srgb, var(--global-divider-color) 82%, var(--global-text-color) 18%);
       border-radius: 8px;
-      background: var(--global-surface-color);
+      background: var(--global-card-bg-color);
+      box-shadow: 0 12px 30px var(--global-shadow-color);
+
+      .row {
+        align-items: flex-start;
+      }
 
       .preview {
         display: inline-block;
@@ -49,6 +62,7 @@
 
       .abbr {
         margin-bottom: 0.5rem;
+        padding-top: 0.08rem;
 
         abbr {
           display: inline-block;
@@ -56,8 +70,9 @@
           margin-bottom: 0.5rem;
           color: var(--global-theme-color) !important;
           border-radius: 6px;
-          padding: 0.32rem 0.5rem;
-          font-size: 0.78rem;
+          padding: 0.35rem 0.55rem;
+          font-size: 0.76rem;
+          font-weight: 700;
           letter-spacing: 0;
 
           a {
@@ -76,15 +91,15 @@
       }
 
       .title {
-        font-weight: bolder;
-        font-size: 1.02rem;
-        line-height: 1.35;
-        margin-bottom: 0.35rem;
+        font-size: 1.08rem;
+        font-weight: 650;
+        line-height: 1.32;
+        margin-bottom: 0.42rem;
       }
 
       .author {
         color: var(--global-text-color-light);
-        font-size: 0.92rem;
+        font-size: 0.94rem;
         line-height: 1.45;
 
         a {
@@ -114,17 +129,20 @@
       }
 
       .links {
-        margin-top: 0.65rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.45rem;
+        margin-top: 0.8rem;
 
         a.btn {
           color: var(--global-text-color);
           border: 1px solid var(--global-divider-color);
           border-radius: 8px;
-          padding-left: 0.75rem;
-          padding-right: 0.75rem;
-          padding-top: 0.25rem;
-          padding-bottom: 0.25rem;
-          margin-left: 0;
+          background: transparent;
+          padding: 0.3rem 0.72rem;
+          margin: 0;
+          font-size: 0.78rem;
+          line-height: 1.25;
           text-transform: none;
 
           &:hover {
@@ -205,7 +223,7 @@
 
 .periodical {
   color: var(--global-text-color-light);
-  font-size: 0.9rem;
+  font-size: 0.91rem;
   line-height: 1.45;
 }
 
