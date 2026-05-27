@@ -14,16 +14,61 @@
 
   #toc-sidebar {
     top: 5.5rem;
-    padding: 0.75rem 0;
+    max-height: calc(100vh - 7rem);
+    padding: 0.55rem;
+    border: 1px solid var(--global-control-border-color);
+    border-radius: 8px;
     font-size: 0.82rem;
+    background:
+      linear-gradient(180deg, color-mix(in srgb, var(--global-inset-highlight-color) 42%, transparent), transparent 2.6rem),
+      color-mix(in srgb, var(--global-pane-bg-color) 88%, var(--global-chrome-bg-color));
+    box-shadow:
+      inset 0 1px 0 var(--global-inset-highlight-color),
+      0 12px 30px color-mix(in srgb, var(--global-shadow-color) 42%, transparent);
+    overflow-y: auto;
+    scrollbar-color: color-mix(in srgb, var(--global-text-color-light) 48%, transparent) transparent;
+    scrollbar-width: thin;
+    backdrop-filter: saturate(160%) blur(18px);
+    -webkit-backdrop-filter: saturate(160%) blur(18px);
 
     a {
+      display: block;
+      margin-bottom: 0.12rem;
+      padding: 0.34rem 0.5rem;
+      border-radius: 8px;
       color: var(--global-text-color-light);
       line-height: 1.35;
+      text-decoration: none;
+      transition:
+        color 0.18s ease,
+        background-color 0.18s ease,
+        transform 0.18s ease;
 
       &:hover {
+        background: var(--global-control-bg-color);
         color: var(--global-theme-color);
+        transform: translateX(2px);
       }
+    }
+
+    .nav-link.active {
+      position: relative;
+      background:
+        linear-gradient(180deg, color-mix(in srgb, var(--global-inset-highlight-color) 42%, transparent), transparent 62%),
+        color-mix(in srgb, var(--global-theme-color) 12%, var(--global-control-bg-color));
+      color: var(--global-theme-color);
+      font-weight: 650;
+      box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--global-theme-color) 12%, transparent);
+    }
+
+    .nav-link.active::before {
+      position: absolute;
+      inset: 0.44rem auto 0.44rem 0.08rem;
+      width: 0.16rem;
+      border-radius: 999px;
+      background: var(--global-theme-color);
+      content: "";
+      box-shadow: 0 0 14px color-mix(in srgb, var(--global-theme-color) 32%, transparent);
     }
   }
 }
@@ -31,22 +76,115 @@
 .cv {
   .card {
     padding: 1.35rem 1.45rem !important;
-    box-shadow: none;
+    border-color: var(--global-control-border-color);
+    background:
+      linear-gradient(180deg, color-mix(in srgb, var(--global-inset-highlight-color) 48%, transparent), transparent 3.1rem),
+      var(--global-card-bg-color);
+    box-shadow:
+      inset 0 1px 0 var(--global-inset-highlight-color),
+      0 8px 24px color-mix(in srgb, var(--global-shadow-color) 48%, transparent);
+
+    &:hover {
+      border-color: color-mix(in srgb, var(--global-theme-color) 18%, var(--global-divider-color));
+      background:
+        radial-gradient(
+          560px circle at var(--spotlight-x, 50%) var(--spotlight-y, 50%),
+          color-mix(in srgb, var(--global-theme-color) 10%, transparent),
+          transparent 50%
+        ),
+        radial-gradient(
+          480px circle at 100% 0%,
+          color-mix(in srgb, var(--global-highlight-color) 4%, transparent),
+          transparent 56%
+        ),
+        linear-gradient(180deg, color-mix(in srgb, var(--global-inset-highlight-color) 38%, transparent), transparent 3.1rem),
+        var(--global-card-bg-color);
+      box-shadow:
+        inset 0 1px 0 var(--global-inset-highlight-color),
+        0 14px 34px color-mix(in srgb, var(--global-card-shadow-color) 58%, transparent);
+    }
+  }
+
+  .cv-summary-card {
+    border-color: color-mix(in srgb, var(--global-theme-color) 20%, var(--global-divider-color));
+    background:
+      radial-gradient(
+        520px circle at 100% 0%,
+        color-mix(in srgb, var(--global-theme-color) 9%, transparent),
+        transparent 50%
+      ),
+      var(--global-card-bg-color);
+
+    p:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .card + .card,
   .anchor + .card {
-    margin-top: 1.05rem !important;
+    margin-top: 1.15rem !important;
   }
 
   .card-title {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
     margin-bottom: 1.2rem;
     font-size: clamp(1.28rem, 2.8vw, 1.8rem);
-    font-weight: 560;
+    font-weight: 600;
+    letter-spacing: 0;
+
+    &::before {
+      display: inline-block;
+      width: 0.28rem;
+      height: 1.25rem;
+      border-radius: 999px;
+      background: linear-gradient(180deg, var(--global-theme-color), color-mix(in srgb, var(--global-theme-color) 45%, transparent));
+      content: "";
+      box-shadow: 0 0 18px color-mix(in srgb, var(--global-theme-color) 22%, transparent);
+    }
   }
 
   .list-group-item {
     padding: 1rem 0;
+    border-color: color-mix(in srgb, var(--global-divider-color) 58%, transparent);
+  }
+
+  .list-group-item > .row {
+    display: grid;
+    grid-template-columns: 7.2rem minmax(0, 1fr);
+    gap: 1.7rem;
+    align-items: start;
+    margin-left: 0;
+    margin-right: 0;
+
+    > [class*="col-"] {
+      width: auto;
+      max-width: none;
+      flex: none;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    > [class*="col-xs-12"],
+    > [class*="col-sm-12"],
+    > [class*="col-md-12"] {
+      grid-column: 1 / -1;
+    }
+  }
+
+  .list-group-item h6,
+  .list-group-item p {
+    margin-left: 0 !important;
+  }
+
+  .list-group-item h6.title a,
+  .cv-experience-role a {
+    text-decoration: none;
+
+    &:hover {
+      color: var(--global-hover-color);
+    }
   }
 
   .list-group-item:first-child {
@@ -61,11 +199,20 @@
   span.badge-toc {
     min-width: 0 !important;
     border-radius: 6px;
-    padding: 0.28rem 0.55rem;
-    background: rgba(41, 151, 255, 0.16) !important;
+    padding: 0.3rem 0.56rem;
+    background:
+      linear-gradient(180deg, color-mix(in srgb, var(--global-inset-highlight-color) 45%, transparent), transparent 54%),
+      color-mix(in srgb, var(--global-theme-color) 11%, transparent) !important;
     color: var(--global-theme-color) !important;
+    border: 1px solid color-mix(in srgb, var(--global-theme-color) 18%, transparent);
     font-size: 0.72rem;
+    font-weight: 650;
     line-height: 1;
+    letter-spacing: 0;
+  }
+
+  table.table-cv {
+    margin-bottom: 0;
   }
 
   h6.title {
@@ -78,22 +225,102 @@
   h6 {
     font-size: 0.93rem;
   }
+
+  ul.items {
+    margin-top: 0.45rem;
+    margin-bottom: 0;
+    padding-left: 1.15rem;
+
+    li {
+      margin-bottom: 0.22rem;
+      line-height: 1.45;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .cv-publications-list,
+  .cv-projects-list {
+    .list-group-item {
+      padding-top: 0.92rem;
+      padding-bottom: 0.92rem;
+    }
+
+    h6.title {
+      margin-bottom: 0.3rem;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .cv-section-skills .card-text {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .skill-item {
+    padding: 0.1rem 0 0.65rem;
+
+    > strong {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      color: var(--global-text-color);
+      font-size: 0.9rem;
+    }
+
+    i {
+      color: var(--global-theme-color);
+      font-size: 0.86rem;
+    }
+  }
+
+  .skill-keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.34rem;
+    margin-top: 0.5rem !important;
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 1.36rem;
+      margin: 0;
+      padding: 0.28rem 0.52rem;
+      border: 1px solid color-mix(in srgb, var(--global-theme-color) 18%, transparent);
+      border-radius: 7px;
+      background:
+        linear-gradient(180deg, color-mix(in srgb, var(--global-inset-highlight-color) 42%, transparent), transparent 54%),
+        color-mix(in srgb, var(--global-theme-color) 10%, transparent) !important;
+      color: var(--global-theme-color) !important;
+      font-size: 0.72rem;
+      font-weight: 650;
+      line-height: 1;
+      white-space: normal;
+    }
+  }
 }
 
 .cv-experience-list {
   .cv-experience-item {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
+    padding-top: 1.15rem;
+    padding-bottom: 1.15rem;
   }
 
   .cv-experience-row {
     display: flex;
-    gap: 1.75rem;
+    gap: 1.7rem;
   }
 
   .cv-experience-date {
     flex: 0 0 7.2rem;
     max-width: 7.2rem;
+    position: relative;
   }
 
   .cv-experience-date.date-column {
@@ -108,6 +335,7 @@
   .cv-experience-role {
     line-height: 1.35;
     margin-bottom: 0.32rem;
+    letter-spacing: 0;
   }
 
   .cv-experience-company {
@@ -118,7 +346,8 @@
   }
 
   .cv-experience-summary {
-    font-size: 0.95rem;
+    color: color-mix(in srgb, var(--global-text-color) 82%, var(--global-text-color-light));
+    font-size: 0.94rem;
     font-style: italic;
     line-height: 1.5;
     margin-bottom: 0.7rem;
@@ -134,6 +363,11 @@
       margin-bottom: 0.28rem;
     }
 
+    strong {
+      color: var(--global-text-color);
+      font-weight: 650;
+    }
+
     li:last-child {
       margin-bottom: 0;
     }
@@ -141,6 +375,25 @@
 }
 
 @media (max-width: 575px) {
+  .cv {
+    .card {
+      padding: 1.15rem 1.1rem !important;
+    }
+
+    .list-group-item > .row {
+      display: block;
+
+      > [class*="col-"] + [class*="col-"] {
+        margin-top: 0.55rem !important;
+      }
+    }
+
+    .badge,
+    span.badge-toc {
+      margin-bottom: 0.2rem;
+    }
+  }
+
   .cv-experience-list {
     .cv-experience-row {
       display: block;
@@ -150,6 +403,7 @@
       max-width: none;
       text-align: left !important;
       transform: none;
+      margin-bottom: 0.55rem;
     }
   }
 }
@@ -198,7 +452,7 @@ p.location {
   margin-top: 0.35rem;
   margin-bottom: 0;
   color: var(--global-text-color-light);
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   white-space: nowrap;
 }
 

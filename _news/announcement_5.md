@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Awarded **Golden Cloud Award (金代码, <span style="color:#e74c3c;font-weight:600">Top 2%</span>)** and **HCS Cloud Summit Star (云巅之星, <span style="color:#e74c3c;font-weight:600">Top 5%</span>)** by Huawei Cloud.
+Awarded **Golden Cloud Award (金代码, <span class="news-highlight">Top 2%</span>)** and **HCS Cloud Summit Star (云巅之星, <span class="news-highlight">Top 5%</span>)** by Huawei Cloud.

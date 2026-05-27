@@ -116,7 +116,7 @@ layout: default
 
         <!-- Summary -->
         {% if cv.summary %}
-          <div class="card mt-3 p-3">
+          <div class="card mt-3 p-3 cv-card cv-summary-card">
             <h3 class="card-title font-weight-medium">Professional Summary</h3>
             <p>{{ cv.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
           </div>
@@ -140,7 +140,7 @@ layout: default
           {% endif %}
 
           <a class="anchor" id="{{ display_title | slugify }}"></a>
-          <div class="card mt-3 p-3">
+          <div class="card mt-3 p-3 cv-card cv-section-card cv-section-{{ display_title | slugify }}">
             <h3 class="card-title font-weight-medium">{{ display_title }}</h3>
             <div>
               {% if section_title == 'Education' %}

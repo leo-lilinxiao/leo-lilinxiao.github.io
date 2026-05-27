@@ -3,9 +3,11 @@
  ******************************************************************************/
 
 footer.fixed-bottom {
-  border-top: 1px solid var(--global-divider-color);
+  border-top: 1px solid var(--global-hairline-color);
   background-color: var(--global-footer-bg-color);
   font-size: 0.75rem;
+  backdrop-filter: saturate(180%) blur(22px);
+  -webkit-backdrop-filter: saturate(180%) blur(22px);
 
   .container {
     color: var(--global-footer-text-color);
@@ -25,11 +27,16 @@ footer.fixed-bottom {
 }
 
 footer.sticky-bottom {
+  position: static !important;
+  flex-shrink: 0;
   background-color: var(--global-footer-bg-color);
-  padding-top: 1rem;
-  padding-bottom: 1.4rem;
+  border-top: 1px solid var(--global-hairline-color);
+  padding-top: 1.1rem;
+  padding-bottom: 1.45rem;
   color: var(--global-footer-text-color);
   font-size: 0.76rem;
+  backdrop-filter: saturate(180%) blur(22px);
+  -webkit-backdrop-filter: saturate(180%) blur(22px);
 
   .container {
     text-align: center;
@@ -37,5 +44,10 @@ footer.sticky-bottom {
 
   a {
     color: var(--global-footer-link-color);
+
+    &:hover {
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
   }
 }

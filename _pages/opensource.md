@@ -13,7 +13,7 @@ nav_order: 4
     <div class="card-body">
       <h4 class="card-title font-weight-medium">
         <a href="https://github.com/leo-lilinxiao/codex-autoresearch" target="_blank">Codex AutoResearch</a>
-        <span class="badge badge-danger ml-2" style="font-size:0.75rem;">1,000+ Stars</span>
+        <span class="project-status-badge ml-2">1,000+ Stars</span>
       </h4>
       <p class="card-text font-weight-light">
         A self-directed iterative research system for Codex that continuously cycles through modify, verify, retain/discard, and repeat. Enables autonomous research loops without human intervention.
@@ -57,7 +57,7 @@ nav_order: 4
     <div class="card-body">
       <h4 class="card-title font-weight-medium">An Inference Optimization Method for MoE Models</h4>
       <p class="card-text font-weight-light">
-        <span style="color:#e74c3c;font-weight:600">Huawei Cloud High-Potential Patent</span> (2024) — Invention patent for MoE large model inference memory offloading optimization.
+        <span class="project-highlight">Huawei Cloud High-Potential Patent</span> (2024) — Invention patent for MoE large model inference memory offloading optimization.
       </p>
     </div>
   </div>

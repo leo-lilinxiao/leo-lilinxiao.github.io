@@ -106,10 +106,72 @@ progress::-moz-progress-bar {
 }
 
 .progress-bar {
-  background-color: var(--global-theme-color);
+  background: linear-gradient(
+    90deg,
+    var(--global-theme-color),
+    color-mix(in srgb, var(--global-theme-color) 62%, var(--global-highlight-color))
+  );
   width: 0%;
   display: block;
   height: inherit;
+  box-shadow: 0 0 16px color-mix(in srgb, var(--global-theme-color) 32%, transparent);
+}
+
+// Floating back-to-top control
+
+#back-to-top {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 42px !important;
+  height: 42px !important;
+  right: max(1.75rem, env(safe-area-inset-right)) !important;
+  bottom: max(1.75rem, env(safe-area-inset-bottom)) !important;
+  border: 1px solid var(--global-glass-border-color) !important;
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--global-elevated-color) 22%, transparent), transparent),
+    var(--global-glass-bg-color) !important;
+  color: var(--global-text-color) !important;
+  box-shadow:
+    0 14px 30px color-mix(in srgb, var(--global-shadow-color) 72%, transparent),
+    inset 0 1px 0 color-mix(in srgb, white 22%, transparent) !important;
+  backdrop-filter: saturate(180%) blur(18px);
+  -webkit-backdrop-filter: saturate(180%) blur(18px);
+  transition:
+    opacity 0.22s ease,
+    bottom 0.22s ease,
+    transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1),
+    border-color 0.2s ease,
+    box-shadow 0.2s ease !important;
+
+  svg {
+    margin: 0 !important;
+    transform: translateY(-1px);
+  }
+}
+
+#back-to-top.hidden {
+  bottom: -48px !important;
+}
+
+@media (max-width: 575px) {
+  #back-to-top {
+    right: max(1rem, env(safe-area-inset-right)) !important;
+    bottom: max(1rem, env(safe-area-inset-bottom)) !important;
+  }
+}
+
+#back-to-top:not(.hidden):hover {
+  border-color: color-mix(in srgb, var(--global-theme-color) 34%, var(--global-glass-border-color)) !important;
+  color: var(--global-theme-color) !important;
+  box-shadow:
+    0 18px 40px color-mix(in srgb, var(--global-card-shadow-color) 76%, transparent),
+    inset 0 1px 0 color-mix(in srgb, white 28%, transparent) !important;
+  transform: translateY(-2px) scale(1.02);
+}
+
+#back-to-top:not(.hidden):active {
+  transform: translateY(0) scale(0.96);
 }
 
 // Themes transition
@@ -118,8 +180,27 @@ html.transition,
 html.transition *,
 html.transition *:before,
 html.transition *:after {
-  transition: all 750ms !important;
+  transition:
+    background-color 320ms ease,
+    border-color 320ms ease,
+    color 320ms ease,
+    box-shadow 320ms ease !important;
   transition-delay: 0 !important;
+}
+
+@supports (view-transition-name: root) {
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation-duration: 280ms;
+    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation-duration: 0.001ms !important;
+  }
 }
 
 // Copy button

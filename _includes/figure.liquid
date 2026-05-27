@@ -70,6 +70,11 @@
       {% endif %}
       {% if include.zoomable %}
         data-zoomable
+        data-zoom-src="{% if include.zoom_src %}{{ include.zoom_src | relative_url }}{% elsif include.url %}{{ include.url }}{% else %}{{ include.path | relative_url }}{% endif %}"
+      {% endif %}
+      {% if include.gallery_lightbox %}
+        data-gallery-lightbox
+        data-gallery-src="{% if include.zoom_src %}{{ include.zoom_src | relative_url }}{% elsif include.url %}{{ include.url }}{% else %}{{ include.path | relative_url }}{% endif %}"
       {% endif %}
       {% if include.loading %}
         loading="{{ include.loading }}"

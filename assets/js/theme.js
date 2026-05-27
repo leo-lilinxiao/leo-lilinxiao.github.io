@@ -1,7 +1,12 @@
 // Has to be in the head tag, otherwise a flicker effect will occur.
 
 // Toggle through light, dark, and system theme settings.
-let toggleThemeSetting = () => {
+let toggleThemeSetting = (event) => {
+  if (event?.clientX !== undefined && event?.clientY !== undefined) {
+    document.documentElement.style.setProperty("--theme-transition-x", `${event.clientX}px`);
+    document.documentElement.style.setProperty("--theme-transition-y", `${event.clientY}px`);
+  }
+
   let themeSetting = determineThemeSetting();
   if (themeSetting == "system") {
     setThemeSetting("light");
@@ -13,12 +18,26 @@ let toggleThemeSetting = () => {
 };
 
 // Change the theme setting and apply the theme.
-let setThemeSetting = (themeSetting) => {
-  localStorage.setItem("theme", themeSetting);
+let setThemeSetting = (themeSetting, animate = true) => {
+  const updateTheme = () => {
+    localStorage.setItem("theme", themeSetting);
 
-  document.documentElement.setAttribute("data-theme-setting", themeSetting);
+    document.documentElement.setAttribute("data-theme-setting", themeSetting);
 
-  applyTheme();
+    applyTheme();
+  };
+
+  const motionAllowed = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (animate && motionAllowed && document.startViewTransition) {
+    document.documentElement.classList.add("theme-changing");
+    const transition = document.startViewTransition(updateTheme);
+    transition.finished.finally(() => {
+      document.documentElement.classList.remove("theme-changing");
+    });
+    return;
+  }
+
+  updateTheme();
 };
 
 // Apply the computed dark or light theme to the website.
@@ -58,6 +77,7 @@ let applyTheme = () => {
   }
 
   document.documentElement.setAttribute("data-theme", theme);
+  updateThemeToggleLabel();
 
   // Add class to tables.
   let tables = document.getElementsByTagName("table");
@@ -291,17 +311,36 @@ let determineComputedTheme = () => {
   }
 };
 
+let updateThemeToggleLabel = () => {
+  const toggle = document.getElementById("light-toggle");
+  if (!toggle) return;
+
+  const themeSetting = determineThemeSetting();
+  const computedTheme = determineComputedTheme();
+  const nextTheme = themeSetting == "system" ? "Light" : themeSetting == "light" ? "Dark" : "System";
+  const currentTheme = themeSetting.charAt(0).toUpperCase() + themeSetting.slice(1);
+  const computedThemeLabel = computedTheme.charAt(0).toUpperCase() + computedTheme.slice(1);
+  const label =
+    themeSetting == "system"
+      ? `Theme: System (${computedThemeLabel}). Click for ${nextTheme}.`
+      : `Theme: ${currentTheme}. Click for ${nextTheme}.`;
+
+  toggle.setAttribute("aria-label", label);
+  toggle.setAttribute("title", label);
+};
+
 let initTheme = () => {
   let themeSetting = determineThemeSetting();
 
-  setThemeSetting(themeSetting);
+  setThemeSetting(themeSetting, false);
 
   // Add event listener to the theme toggle button.
   document.addEventListener("DOMContentLoaded", function () {
     const mode_toggle = document.getElementById("light-toggle");
+    updateThemeToggleLabel();
 
-    mode_toggle.addEventListener("click", function () {
-      toggleThemeSetting();
+    mode_toggle.addEventListener("click", function (event) {
+      toggleThemeSetting(event);
     });
   });
 
