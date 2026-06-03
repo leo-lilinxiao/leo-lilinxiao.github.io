@@ -116,7 +116,7 @@ layout: default
 
         <!-- Summary -->
         {% if cv.summary %}
-          <div class="card mt-3 p-3 cv-card cv-summary-card">
+          <div class="card mt-3 p-3 cv-card cv-summary-card cv-featured-card">
             <h3 class="card-title font-weight-medium">Professional Summary</h3>
             <p>{{ cv.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
           </div>
