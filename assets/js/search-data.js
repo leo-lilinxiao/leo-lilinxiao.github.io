@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-publications",
           title: "Publications",
-          description: "Publications in reversed chronological order.",
+          description: "Publications and public talks in reverse chronological order.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
@@ -64,8 +64,14 @@ ninja.data = [{
           section: "News",},{id: "news-codex-autoresearch-my-open-source-project-a-self-directed-iterative-research-system-inspired-by-karpathy-s-autoresearch-concept-reached-1-000-github-stars",
           title: 'Codex AutoResearch — my open-source project, a self-directed iterative research system inspired by...',
           description: "",
+          section: "News",},{id: "news-released-a-technical-talk-on-deepseek-v4-mechanism-details-at-aigcode",
+          title: 'Released a technical talk on DeepSeek-V4 mechanism details at AIGCode.',
+          description: "",
           section: "News",},{id: "news-paper-deterministic-component-mining-for-multi-framework-ui2code-generation-accepted-to-icml-2026-as-co-first-author-acceptance-rate-26-6",
           title: 'Paper Deterministic Component Mining for Multi-framework UI2Code Generation accepted to ICML 2026 as...',
+          description: "",
+          section: "News",},{id: "news-gave-an-academic-seminar-at-guangming-laboratory-on-communication-aware-scheduling-optimization-for-large-scale-moe-model-training-on-ascend-npus",
+          title: 'Gave an academic seminar at Guangming Laboratory on communication-aware scheduling optimization for large-scale...',
           description: "",
           section: "News",},{
       id: 'light-theme',
