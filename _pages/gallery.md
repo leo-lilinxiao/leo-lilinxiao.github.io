@@ -11,7 +11,7 @@ nav_order: 2
   <div id="ecnu-recruiting" class="gallery-card gallery-card-wide">
     {% include figure.liquid loading="eager" path="assets/img/recruiting_ecnu.jpg" class="img-fluid rounded z-depth-1" gallery_lightbox=true alt="Representing Huawei Shanghai Research Institute at ECNU Campus Recruitment in 2025" caption="Representing Huawei Shanghai Research Institute at ECNU Campus Recruitment (2025)" %}
   </div>
-  <div id="ict-2025" class="gallery-card gallery-card-portrait">
+  <div id="ict-2025" class="gallery-card gallery-card-portrait gallery-card-featured">
     {% include figure.liquid loading="eager" path="assets/img/honors_IMG_5235.jpg" class="img-fluid rounded z-depth-1" gallery_lightbox=true alt="Huawei ICT Software Competition certificate and medal in 2025" caption="Huawei ICT Software Competition — <span class='achievement-highlight'>14th / 5200+</span> (2025)" %}
   </div>
 </div>

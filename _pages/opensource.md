@@ -53,7 +53,7 @@ nav_order: 4
 
 <div class="projects">
 
-  <div class="card mt-3">
+  <div class="card mt-3 featured-patent">
     <div class="card-body">
       <h4 class="card-title font-weight-medium">An Inference Optimization Method for MoE Models</h4>
       <p class="card-text font-weight-light">
