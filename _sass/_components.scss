@@ -167,6 +167,205 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// Selected research highlights
+
+.selected-research-highlights {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 1rem;
+}
+
+.research-highlight-card {
+  display: grid;
+  grid-template-columns: 7.2rem minmax(0, 1fr);
+  gap: 1.25rem;
+  align-items: flex-start;
+  min-height: 8.6rem;
+  padding: 1.18rem 1.25rem;
+
+  h3 {
+    margin: 0 0 0.38rem;
+    font-size: 1.08rem;
+    font-weight: 660;
+    line-height: 1.32;
+    text-wrap: pretty;
+
+    a {
+      color: var(--global-theme-color);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--global-hover-color);
+      }
+    }
+  }
+}
+
+.research-highlight-featured {
+  border-color: color-mix(in srgb, var(--global-highlight-color) 22%, var(--global-divider-color));
+  background:
+    radial-gradient(
+      430px circle at 88% 0%,
+      color-mix(in srgb, var(--global-highlight-color) 10%, transparent),
+      transparent 48%
+    ),
+    radial-gradient(
+      520px circle at 4% 0%,
+      color-mix(in srgb, var(--global-theme-color) 10%, transparent),
+      transparent 50%
+    ),
+    linear-gradient(180deg, color-mix(in srgb, var(--global-inset-highlight-color) 46%, transparent), transparent 3rem),
+    color-mix(in srgb, var(--global-card-bg-color) 92%, var(--global-pane-bg-color));
+}
+
+.research-highlight-talk-featured {
+  border-color: color-mix(in srgb, var(--global-theme-color) 30%, var(--global-divider-color));
+  background:
+    radial-gradient(
+      500px circle at 92% 0%,
+      color-mix(in srgb, var(--global-highlight-color) 12%, transparent),
+      transparent 50%
+    ),
+    radial-gradient(
+      560px circle at 0% 0%,
+      color-mix(in srgb, var(--global-theme-color) 14%, transparent),
+      transparent 54%
+    ),
+    linear-gradient(180deg, color-mix(in srgb, var(--global-inset-highlight-color) 50%, transparent), transparent 3rem),
+    color-mix(in srgb, var(--global-card-bg-color) 90%, var(--global-pane-bg-color));
+
+  .research-highlight-kind {
+    color: var(--global-highlight-color);
+    border-color: color-mix(in srgb, var(--global-highlight-color) 34%, transparent);
+    background: color-mix(in srgb, var(--global-highlight-color) 8%, transparent);
+  }
+}
+
+.research-highlight-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+}
+
+.research-highlight-abbr,
+.research-highlight-kind,
+.research-highlight-chip,
+.research-highlight-actions a {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 7px;
+  font-size: 0.78rem;
+  font-weight: 650;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.research-highlight-abbr {
+  min-width: 4.4rem;
+  justify-content: center;
+  padding: 0.3rem 0.58rem;
+  color: var(--global-theme-color);
+  border: 1px solid color-mix(in srgb, var(--global-theme-color) 18%, transparent);
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--global-inset-highlight-color) 38%, transparent), transparent),
+    color-mix(in srgb, var(--global-theme-color) 10%, transparent);
+}
+
+.research-highlight-kind {
+  padding: 0.22rem 0.52rem;
+  color: var(--global-text-color-light);
+  border: 1px solid var(--global-control-border-color);
+  background: color-mix(in srgb, var(--global-control-bg-color) 58%, transparent);
+  font-size: 0.72rem;
+}
+
+.research-highlight-meta,
+.research-highlight-venue {
+  margin-bottom: 0;
+}
+
+.research-highlight-meta {
+  color: var(--global-text-color-light);
+  font-size: 0.93rem;
+  line-height: 1.45;
+
+  strong {
+    color: var(--global-text-color);
+  }
+}
+
+.research-highlight-venue {
+  margin-top: 0.14rem;
+  color: color-mix(in srgb, var(--global-text-color) 78%, var(--global-text-color-light));
+  font-size: 0.91rem;
+  font-style: italic;
+  line-height: 1.45;
+}
+
+.research-highlight-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.78rem;
+
+  a {
+    padding: 0.3rem 0.72rem;
+    color: var(--global-text-color);
+    border: 1px solid var(--global-control-border-color);
+    background: color-mix(in srgb, var(--global-control-bg-color) 54%, transparent);
+    text-decoration: none;
+    transition:
+      color 0.18s ease,
+      border-color 0.18s ease,
+      background-color 0.18s ease,
+      transform 0.18s ease;
+
+    &:hover {
+      color: var(--global-theme-color);
+      border-color: var(--global-theme-color);
+      background: color-mix(in srgb, var(--global-theme-color) 9%, var(--global-control-bg-color));
+      transform: translateY(-1px);
+    }
+  }
+}
+
+.research-highlight-chip {
+  padding: 0.3rem 0.72rem;
+  color: var(--global-theme-color);
+  border: 1px solid color-mix(in srgb, var(--global-theme-color) 20%, transparent);
+  background: color-mix(in srgb, var(--global-theme-color) 9%, transparent);
+}
+
+.research-highlight-chip-accent {
+  color: var(--global-highlight-color);
+  border-color: color-mix(in srgb, var(--global-highlight-color) 42%, transparent);
+  background: var(--global-highlight-bg-color);
+}
+
+@media (max-width: 575px) {
+  .research-highlight-card {
+    grid-template-columns: 1fr;
+    gap: 0.82rem;
+    min-height: auto;
+    padding: 1rem;
+  }
+
+  .research-highlight-marker {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.38rem;
+  }
+
+  .research-highlight-abbr {
+    min-width: 3.9rem;
+  }
+
+  .research-highlight-card h3 {
+    font-size: 1rem;
+  }
+}
+
 // Profile
 
 .profile {
@@ -307,7 +506,6 @@ ul.task-list input[type="checkbox"] {
 .news {
   .table-responsive {
     position: relative;
-    max-height: min(42vh, 27rem);
     border: 1px solid var(--global-control-border-color);
     border-radius: 8px;
     background:
@@ -317,10 +515,15 @@ ul.task-list input[type="checkbox"] {
       inset 0 1px 0 var(--global-inset-highlight-color),
       0 10px 28px color-mix(in srgb, var(--global-shadow-color) 56%, transparent);
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: visible;
     overscroll-behavior: contain;
     scrollbar-color: color-mix(in srgb, var(--global-text-color-light) 55%, transparent) transparent;
     scrollbar-width: thin;
+  }
+
+  .news-scrollable {
+    max-height: clamp(28rem, 62vh, 34rem);
+    overflow-y: auto;
   }
 
   .table-responsive::before,
@@ -381,11 +584,26 @@ ul.task-list input[type="checkbox"] {
     }
   }
 
+  .news-scrollable tr {
+    height: 5.15rem;
+  }
+
   th,
   td {
     padding: 0.9rem 1rem !important;
     color: var(--global-text-color);
     vertical-align: top;
+  }
+
+  .news-scrollable th,
+  .news-scrollable td {
+    padding-top: 0.85rem !important;
+    padding-bottom: 0.85rem !important;
+    vertical-align: middle;
+  }
+
+  .news-scrollable td {
+    line-height: 1.45;
   }
 
   th {
@@ -989,6 +1207,14 @@ body.gallery-lightbox-open {
   .news {
     .table-responsive {
       border-radius: 8px;
+    }
+
+    .news-scrollable {
+      max-height: 34rem;
+    }
+
+    .news-scrollable tr {
+      height: auto;
     }
 
     th,

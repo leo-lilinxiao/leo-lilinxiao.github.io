@@ -268,7 +268,7 @@ $(document).ready(function () {
   if (motionAllowed && "IntersectionObserver" in window) {
     document.documentElement.classList.add("motion-ready");
     const revealTargets = [...document.querySelectorAll(
-      ".post-header, article > .about-hero, article > hr, .news .table-responsive, .publications ol.bibliography > li, .public-talk-list, .projects > .card, .page-gallery .gallery-card, .page-gallery .gallery-collection-title, .cv > .card",
+      ".post-header, article > .about-hero, article > hr, .news .table-responsive, .selected-research-highlights, .publications ol.bibliography > li, .public-talk-list, .projects > .card, .page-gallery .gallery-card, .page-gallery .gallery-collection-title, .cv > .card",
     )].filter((element) => !element.matches(".about-hero .post-header"));
 
     revealTargets.forEach((element, index) => {

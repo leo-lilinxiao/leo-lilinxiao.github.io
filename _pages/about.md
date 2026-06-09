@@ -12,7 +12,7 @@ profile:
     <p>李麟霄</p>
     <p>Shanghai, China</p>
 
-selected_papers: true
+selected_research_highlights: true
 social: true
 
 announcements:

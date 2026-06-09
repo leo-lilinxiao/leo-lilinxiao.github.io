@@ -65,14 +65,14 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
+    <!-- Selected research highlights -->
+    {% if page.selected_research_highlights or page.selected_papers %}
       <hr class="mt-4 mb-3">
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Research Highlights</a>
       </h2>
-      <p class="text-muted"><em>More papers coming in 2026 — <strong style="color: var(--global-theme-color);">stay tuned!</strong></em></p>
-      {% include selected_papers.liquid %}
+      <p class="text-muted"><em>Selected papers and talks aligned with efficient large-scale AI systems.</em></p>
+      {% include selected_research_highlights.liquid %}
     {% endif %}
 
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
