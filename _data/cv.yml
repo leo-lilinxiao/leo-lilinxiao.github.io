@@ -23,12 +23,14 @@ cv:
       - title: "Deterministic Component Mining for Multi-framework UI2Code Generation"
         date: 2026
         publisher: "International Conference on Machine Learning (ICML 2026)"
+        presentation: "Poster"
         url: https://icml.cc/virtual/2026/poster/64878
         summary: "Zixiong Yang&#42;, <strong>Linxiao Li&#42;</strong>, Jiaye Lin, Binrui Wu, Xiaoyu Kang, Jiechao Gao&#8224;"
 
       - title: "EcoThink: A Green Adaptive Inference Framework for Sustainable and Accessible Agents"
         date: 2026
-        publisher: "ACM Web Conference (WWW 2026)"
+        publisher: "The Web Conference (WWW 2026)"
+        presentation: "Oral"
         url: https://dl.acm.org/doi/10.1145/3774904.3792995
         summary: "<strong>Linxiao Li&#42;</strong>, Zhixiang Lu&#42;&#8224;"
 

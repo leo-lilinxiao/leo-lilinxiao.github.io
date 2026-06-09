@@ -35,7 +35,12 @@
 
             {% if entry.publisher %}
               <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
-                <em>{{ entry.publisher }}</em>
+                <em>
+                  {{- entry.publisher -}}
+                  {%- if entry.presentation -%}
+                    , <span class="cv-presentation cv-presentation-{{ entry.presentation | slugify }}">{{ entry.presentation }}</span>
+                  {%- endif -%}
+                </em>
               </h6>
             {% endif %}
 
@@ -55,7 +60,12 @@
 
             {% if entry.publisher %}
               <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
-                <em>{{ entry.publisher }}</em>
+                <em>
+                  {{- entry.publisher -}}
+                  {%- if entry.presentation -%}
+                    , <span class="cv-presentation cv-presentation-{{ entry.presentation | slugify }}">{{ entry.presentation }}</span>
+                  {%- endif -%}
+                </em>
               </h6>
             {% endif %}
 

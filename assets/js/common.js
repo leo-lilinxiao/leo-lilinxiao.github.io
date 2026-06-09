@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  const publicationToggles = "a.abstract, a.award, a.bibtex";
+  const publicationToggles = "a.abstract, a.bibtex";
   $(publicationToggles).attr({ "aria-expanded": "false", tabindex: "0" });
 
   function setPublicationPanel(button, panelClass) {
@@ -8,7 +8,7 @@ $(document).ready(function () {
     const $targetPanels = $entry.find(`div.${panelClass}.hidden`);
     const willOpen = !$targetPanels.first().hasClass("open");
 
-    $entry.find("div.abstract.hidden.open, div.award.hidden.open, div.bibtex.hidden.open").removeClass("open");
+    $entry.find("div.abstract.hidden.open, div.bibtex.hidden.open").removeClass("open");
     $entry.find(publicationToggles).removeClass("is-active").attr("aria-expanded", "false");
 
     if (willOpen) {
@@ -17,14 +17,10 @@ $(document).ready(function () {
     }
   }
 
-  // add toggle functionality to abstract, award and bibtex buttons
+  // add toggle functionality to abstract and bibtex buttons
   $("a.abstract").click(function (event) {
     event.preventDefault();
     setPublicationPanel(this, "abstract");
-  });
-  $("a.award").click(function (event) {
-    event.preventDefault();
-    setPublicationPanel(this, "award");
   });
   $("a.bibtex").click(function (event) {
     event.preventDefault();

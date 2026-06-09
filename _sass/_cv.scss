@@ -294,6 +294,13 @@
 
     h6.title {
       margin-bottom: 0.3rem;
+      max-width: none;
+      text-wrap: wrap;
+    }
+
+    .cv-presentation-oral {
+      color: var(--global-highlight-color);
+      font-weight: 700;
     }
 
     p:last-child {
