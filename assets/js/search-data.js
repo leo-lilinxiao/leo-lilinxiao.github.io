@@ -73,6 +73,9 @@ ninja.data = [{
           section: "News",},{id: "news-gave-an-academic-seminar-at-guangming-laboratory-on-communication-aware-scheduling-optimization-for-large-scale-moe-model-training-on-ascend-npus",
           title: 'Gave an academic seminar at Guangming Laboratory on communication-aware scheduling optimization for large-scale...',
           description: "",
+          section: "News",},{id: "news-paper-ecothink-selected-as-oral-4-6-at-www-2026",
+          title: 'Paper EcoThink selected as Oral (4.6%) at WWW 2026.',
+          description: "",
           section: "News",},{
       id: 'light-theme',
       title: 'Change theme to light',
