@@ -235,12 +235,6 @@
   opacity: 1;
 }
 
-.navbar-brand-social a[href*="gitcode.com"] img,
-.navbar-mobile-social a[href*="gitcode.com"] img {
-  filter: grayscale(1) saturate(0) brightness(1.08) !important;
-  opacity: 0.78;
-}
-
 .navbar-brand-social a svg,
 .navbar-mobile-social a svg {
   display: block;
@@ -249,14 +243,14 @@
   object-fit: contain;
 }
 
-.navbar-brand-social a[href*="gitcode.com"],
-.navbar-mobile-social a[href*="gitcode.com"] {
-  img,
-  svg {
-    width: 1.05em;
-    height: 1.05em;
-    border-radius: 0.22em;
-  }
+.navbar-brand-social .gitcode-icon,
+.navbar-mobile-social .gitcode-icon {
+  display: block;
+  width: 1.05em;
+  height: 1.05em;
+  background-color: currentColor;
+  -webkit-mask: url("/assets/img/gitcode.png") center / contain no-repeat;
+  mask: url("/assets/img/gitcode.png") center / contain no-repeat;
 }
 
 @media (max-width: 1099px) {
