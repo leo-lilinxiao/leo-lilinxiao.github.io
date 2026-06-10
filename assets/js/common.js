@@ -268,13 +268,22 @@ $(document).ready(function () {
   if (motionAllowed && "IntersectionObserver" in window) {
     document.documentElement.classList.add("motion-ready");
     const revealTargets = [...document.querySelectorAll(
-      ".post-header, article > .about-hero, article > hr, .news .table-responsive, .selected-research-highlights, .publications ol.bibliography > li, .public-talk-list, .projects > .card, .page-gallery .gallery-card, .page-gallery .gallery-collection-title, .cv > .card",
-    )].filter((element) => !element.matches(".about-hero .post-header"));
+      "article > hr, .news .table-responsive, .selected-research-highlights, .publications ol.bibliography > li, .public-talk-list, .projects > .card, .page-gallery .gallery-card, .page-gallery .gallery-collection-title, .cv > .card",
+    )];
 
     revealTargets.forEach((element, index) => {
       element.classList.add("reveal-on-scroll");
       element.style.setProperty("--reveal-delay", `${Math.min(index * 38, 190)}ms`);
     });
+
+    function markVisibleIfInViewport(element) {
+      const rect = element.getBoundingClientRect();
+      if (rect.top < window.innerHeight * 0.96 && rect.bottom > 0) {
+        element.classList.add("is-visible");
+        return true;
+      }
+      return false;
+    }
 
     const revealObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -288,7 +297,11 @@ $(document).ready(function () {
       { rootMargin: "0px 0px -8% 0px", threshold: 0.12 },
     );
 
-    revealTargets.forEach((element) => revealObserver.observe(element));
+    revealTargets.forEach((element) => {
+      if (!markVisibleIfInViewport(element)) {
+        revealObserver.observe(element);
+      }
+    });
 
     const spotlightTargets = document.querySelectorAll(".card, .publications ol.bibliography > li, .public-talk-card, .page-gallery .gallery-card");
     spotlightTargets.forEach((element) => {

@@ -37,7 +37,8 @@ layout: default
     {% endif %}
   </header>
 
-  <article>
+  <div class="cv-layout{% if page.toc and page.toc.sidebar %} has-cv-toc{% endif %}">
+  <article class="cv-layout-main">
     <div class="cv">
       {% comment %} Determine which CV format to render {% endcomment %}
       {% assign render_rendercv = false %}
@@ -384,4 +385,11 @@ layout: default
       {% endif %}
     </div>
   </article>
+
+  {% if page.toc and page.toc.sidebar %}
+    <aside class="cv-layout-aside" aria-label="CV section navigation">
+      <nav id="toc-sidebar" class="cv-top-toc" aria-label="CV sections"></nav>
+    </aside>
+  {% endif %}
+  </div>
 </div>

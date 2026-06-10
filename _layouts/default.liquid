@@ -23,7 +23,7 @@
 
     <!-- Content -->
     <div class="container mt-5" role="main">
-      {% if page.toc and page.toc.sidebar %}
+      {% if page.toc and page.toc.sidebar and page_slug != 'cv' %}
         {% assign toc_col_class = 'col-sm-3' %}
         {% assign content_col_class = 'col-sm-9' %}
         {% if page.toc.sidebar == 'right' %}

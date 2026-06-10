@@ -19,14 +19,11 @@ layout: default
   <article>
     {% if page.profile %}
       <div class="about-hero clearfix">
-        <aside class="profile about-profile">
+        {{ about_header }}
+        <aside class="profile about-profile about-portrait-card">
           {% if page.profile.image %}
             {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-            {% if page.profile.image_circular %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-            {% else %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
-            {% endif %}
+            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle about-profile-image' %}
             {% capture sizes %}(min-width: {{ site.max_width }}) 168px, (min-width: 576px) 16vw, 72vw{% endcapture %}
             {%
               include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
@@ -37,7 +34,6 @@ layout: default
             <div class="more-info">{{ page.profile.more_info }}</div>
           {% endif %}
         </aside>
-        {{ about_header }}
         <div class="about-copy">
           {{ content }}
         </div>

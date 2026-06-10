@@ -327,6 +327,11 @@ let updateThemeToggleLabel = () => {
 
   toggle.setAttribute("aria-label", label);
   toggle.setAttribute("title", label);
+
+  const labelEl = toggle.querySelector(".theme-toggle-label");
+  if (labelEl) {
+    labelEl.textContent = themeSetting == "system" ? "Auto" : currentTheme;
+  }
 };
 
 let initTheme = () => {
@@ -339,6 +344,7 @@ let initTheme = () => {
     const mode_toggle = document.getElementById("light-toggle");
     updateThemeToggleLabel();
 
+    if (!mode_toggle) return;
     mode_toggle.addEventListener("click", function (event) {
       toggleThemeSetting(event);
     });

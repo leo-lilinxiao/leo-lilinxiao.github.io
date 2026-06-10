@@ -47,9 +47,19 @@ function getCurrentScrollPosition() {
 
 function initializeProgressElement() {
   let navbarHeight = $("#navbar").outerHeight(true);
-  $("body").css({ "padding-top": navbarHeight });
-  $("progress-container").css({ "padding-top": navbarHeight });
-  progressBar.css({ top: navbarHeight });
+  let navbarWidth = $("#navbar").outerWidth(true);
+  let sideRailNav =
+    $("body").hasClass("fixed-top-nav") &&
+    window.matchMedia("(min-width: 1100px)").matches &&
+    $("#navbar").outerHeight(true) > $(window).height() * 0.75;
+
+  $("body").css({ "padding-top": sideRailNav ? 0 : navbarHeight });
+  $(".progress-container").css({ "padding-top": sideRailNav ? 0 : navbarHeight });
+  progressBar.css({
+    top: sideRailNav ? 0 : navbarHeight,
+    left: sideRailNav ? navbarWidth : 0,
+    width: sideRailNav ? `calc(100% - ${navbarWidth}px)` : "100%",
+  });
   progressBar.attr({
     max: getDistanceToScroll(),
     value: getCurrentScrollPosition(),
