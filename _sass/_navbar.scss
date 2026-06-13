@@ -600,8 +600,10 @@ html[data-theme-setting="system"] #light-toggle .theme-toggle-track {
   }
 
   .navbar-brand-social {
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    align-items: center;
+    justify-items: center;
     gap: 0.32rem;
     width: 100%;
     margin-left: 0;
@@ -609,8 +611,8 @@ html[data-theme-setting="system"] #light-toggle .theme-toggle-track {
     border-left: 0;
 
     a {
-      width: clamp(1.72rem, 2.2vw, 1.95rem);
-      height: clamp(1.72rem, 2.2vw, 1.95rem);
+      width: clamp(1.82rem, 2.35vw, 2.08rem);
+      height: clamp(1.82rem, 2.35vw, 2.08rem);
       border: 1px solid color-mix(in srgb, var(--global-divider-color) 58%, transparent);
       background:
         linear-gradient(180deg, color-mix(in srgb, var(--global-inset-highlight-color) 42%, transparent), transparent 62%),
@@ -630,6 +632,12 @@ html[data-theme-setting="system"] #light-toggle .theme-toggle-track {
           inset 0 1px 0 var(--global-inset-highlight-color),
           0 10px 22px color-mix(in srgb, var(--global-theme-color) 13%, transparent);
       }
+    }
+
+    .gitcode-icon {
+      width: 0.98em;
+      height: 0.98em;
+      opacity: 0.92;
     }
   }
 
@@ -700,8 +708,11 @@ html[data-theme-setting="system"] #light-toggle .theme-toggle-track {
 
   .toggle-container #light-toggle {
     position: relative;
-    gap: 0.65rem;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(2.7rem, 1fr);
+    column-gap: 0.62rem;
+    align-items: center;
+    justify-content: stretch;
     width: 100%;
     min-width: 0;
     min-height: 2.62rem;
@@ -712,14 +723,16 @@ html[data-theme-setting="system"] #light-toggle .theme-toggle-track {
     .theme-toggle-track {
       position: relative;
       left: auto;
+      justify-self: center;
       flex: 0 0 auto;
     }
 
     .theme-toggle-label {
       display: block;
       width: auto;
-      min-width: 2.65rem;
+      min-width: 0;
       text-align: center;
+      justify-self: center;
     }
   }
 
