@@ -31,7 +31,7 @@ nav_order: 3
           <a href="https://mp.weixin.qq.com/s/tvtTHvvBlF8Kzuc21OJSKw" target="_blank" rel="noopener noreferrer">Communication-Aware Scheduling Optimization for Large-Scale MoE Model Training on Ascend NPUs</a>
         </h3>
         <div class="public-talk-context">
-          <span>Academic Frontiers Seminar</span>
+          <span>Frontiers Series</span>
           <span>Guangming Laboratory</span>
         </div>
         <p>Academic seminar on communication-aware scheduling optimization for large-scale MoE model training on Ascend NPUs.</p>

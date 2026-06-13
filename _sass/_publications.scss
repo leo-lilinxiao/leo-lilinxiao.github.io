@@ -465,12 +465,12 @@
 .public-talk-card {
   position: relative;
   display: grid;
-  grid-template-columns: 8.2rem minmax(0, 1fr);
-  gap: 1.15rem;
+  grid-template-columns: minmax(7.6rem, 0.16fr) minmax(0, 1fr);
+  gap: clamp(0.95rem, 2vw, 1.35rem);
   align-items: start;
   overflow: hidden;
-  min-height: 8.65rem;
-  padding: 1.2rem 1.25rem;
+  min-height: 0;
+  padding: 1.12rem 1.22rem;
   border: 1px solid var(--global-control-border-color);
   border-radius: 8px;
   background:
@@ -628,13 +628,13 @@
   position: relative;
 
   h3 {
-    max-width: calc(100% - 13rem);
-    margin: 0.12rem 0 0.28rem;
+    max-width: none;
+    margin: 0.06rem 0 0.3rem;
     color: var(--global-text-color);
     font-size: 1.06rem;
     font-weight: 650;
     line-height: 1.32;
-    text-wrap: pretty;
+    text-wrap: balance;
 
     a {
       color: var(--global-theme-color);
@@ -648,26 +648,39 @@
   }
 
   .public-talk-context {
-    position: absolute;
-    top: 0.12rem;
-    right: 0;
-    max-width: 12.35rem;
-    color: var(--global-text-color-light);
-    font-size: 0.78rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem 0.42rem;
+    align-items: center;
+    max-width: none;
+    margin: 0.12rem 0 0.44rem;
+    color: color-mix(in srgb, var(--global-text-color-light) 88%, transparent);
+    font-size: 0.76rem;
     font-weight: 560;
     line-height: 1.38;
-    text-align: right;
+    text-align: left;
     text-wrap: pretty;
 
     span {
-      display: block;
+      display: inline-flex;
+      align-items: center;
       white-space: nowrap;
+    }
+
+    span + span::before {
+      display: inline-block;
+      width: 0.24rem;
+      height: 0.24rem;
+      margin-right: 0.42rem;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--global-text-color-light) 48%, transparent);
+      content: "";
     }
   }
 
   p {
-    max-width: calc(100% - 13rem);
-    margin: 0.52rem 0 0;
+    max-width: min(100%, 58rem);
+    margin: 0.44rem 0 0;
     color: var(--global-text-color-light);
     font-size: 0.91rem;
     line-height: 1.48;
@@ -769,6 +782,10 @@
       max-width: none;
       margin-bottom: 0.42rem;
       text-align: left;
+
+      span {
+        white-space: normal;
+      }
     }
   }
 }
@@ -789,6 +806,10 @@
       max-width: none;
       margin-bottom: 0.42rem;
       text-align: left;
+
+      span {
+        white-space: normal;
+      }
     }
   }
 }
