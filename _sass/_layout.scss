@@ -301,6 +301,12 @@ body.sticky-bottom-footer .post {
   max-width: 1060px;
 }
 
+@media (min-width: 1200px) {
+  .page-cv > .container.mt-5 {
+    max-width: 1180px;
+  }
+}
+
 .page-publications > .container.mt-5,
 .page-opensource > .container.mt-5,
 .page-gallery > .container.mt-5 {

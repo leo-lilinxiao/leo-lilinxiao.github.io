@@ -15,7 +15,7 @@
   .cv-layout {
     display: flex;
     flex-direction: column;
-    max-width: 1040px;
+    max-width: min(100%, 1080px);
     margin-right: auto;
     margin-left: auto;
   }
@@ -32,11 +32,11 @@
 
   #toc-sidebar.cv-top-toc {
     position: sticky;
-    top: 4.2rem;
+    top: 0.85rem;
     z-index: 20;
-    max-width: 980px;
-    margin: 0.75rem auto 1.2rem;
-    padding: 0.42rem;
+    max-width: min(100%, 980px);
+    margin: 0.75rem auto 1rem;
+    padding: 0.34rem;
     overflow-x: auto;
     border: 1px solid color-mix(in srgb, var(--global-divider-color) 46%, transparent);
     border-radius: 16px;
@@ -45,7 +45,7 @@
       color-mix(in srgb, var(--global-pane-bg-color) 82%, transparent);
     box-shadow:
       inset 0 1px 0 var(--global-inset-highlight-color),
-      0 12px 28px color-mix(in srgb, var(--global-shadow-color) 42%, transparent);
+      0 10px 24px color-mix(in srgb, var(--global-shadow-color) 34%, transparent);
     -webkit-backdrop-filter: saturate(160%) blur(18px);
     backdrop-filter: saturate(160%) blur(18px);
     scrollbar-width: thin;
@@ -60,7 +60,7 @@
       flex-direction: row !important;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 0.32rem;
+      gap: 0.26rem;
       margin: 0;
       padding: 0;
       list-style: none;
@@ -75,8 +75,8 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 1.78rem;
-      padding: 0.34rem 0.62rem;
+      min-height: 1.68rem;
+      padding: 0.3rem 0.56rem;
       border: 1px solid transparent;
       border-radius: 999px;
       color: var(--global-text-color-light);
@@ -113,19 +113,19 @@
 @media (min-width: 1200px) {
   .page-cv {
     .post-header {
-      max-width: 1240px;
+      max-width: min(100%, 1160px);
       margin-right: auto;
       margin-left: auto;
     }
 
     .cv-layout.has-cv-toc {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) clamp(12rem, 15vw, 13.5rem);
-      gap: 1.35rem;
+      grid-template-columns: minmax(0, 1fr) clamp(10.8rem, 13vw, 12.6rem);
+      gap: clamp(0.9rem, 1.8vw, 1.25rem);
       align-items: start;
       justify-content: center;
       width: 100%;
-      max-width: 1240px;
+      max-width: min(100%, 1160px);
     }
 
     .cv-layout-aside {
@@ -144,7 +144,8 @@
       max-width: none;
       max-height: calc(100vh - 2.5rem);
       margin: 0;
-      padding: 0.62rem;
+      padding: 0.52rem;
+      border-radius: 14px;
 
       ul,
       .nav {
@@ -158,9 +159,9 @@
       a,
       .nav-link {
         justify-content: flex-start;
-        min-height: 1.95rem;
-        padding: 0.44rem 0.62rem;
-        font-size: 0.76rem;
+        min-height: 1.82rem;
+        padding: 0.38rem 0.55rem;
+        font-size: 0.72rem;
         line-height: 1.18;
         white-space: normal;
       }
@@ -310,12 +311,11 @@
 
   .cv-section-education {
     .list-group {
-      display: grid;
-      width: max-content;
+      display: block;
+      width: min(100%, 52rem);
+      max-width: 100%;
       margin-right: auto;
       margin-left: auto;
-      max-width: 100%;
-      justify-items: stretch;
     }
 
     .list-group-item {
@@ -329,9 +329,10 @@
     .list-group-item > .row {
       display: grid;
       width: 100%;
-      grid-template-columns: max-content minmax(clamp(14rem, 38vw, 18rem), 1fr);
-      column-gap: clamp(1.2rem, 4vw, 3rem);
+      grid-template-columns: minmax(8.2rem, max-content) minmax(16rem, 34rem);
+      column-gap: clamp(1.35rem, 4.2vw, 3.4rem);
       align-items: start;
+      justify-content: center;
       margin-right: 0;
       margin-left: 0;
     }
@@ -345,7 +346,13 @@
     }
 
     .list-group-item > .row > [class*="col-"] + [class*="col-"] {
+      justify-self: start;
       margin-top: 0;
+    }
+
+    .date-column {
+      justify-self: end;
+      text-align: left !important;
     }
 
     .list-group-item:last-child {
@@ -389,6 +396,14 @@
     font-weight: 650;
     line-height: 1;
     letter-spacing: 0;
+  }
+
+  .cv-date-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: clamp(5.45rem, 8vw, 6.6rem) !important;
+    text-align: center;
   }
 
   table.table-cv {
