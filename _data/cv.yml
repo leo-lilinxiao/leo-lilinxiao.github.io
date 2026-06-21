@@ -152,6 +152,9 @@ cv:
       - name: PyPTO-AutoGrad
         summary: '<a href="https://gitcode.com/lllleo/pypto-autograd">GitCode</a>. Source-code level automatic differentiation tool for PyPTO kernels, generating readable and editable backward kernels from forward definitions.'
 
+      - name: Modern LLM Notebook
+        summary: '<span class="cv-highlight">80+ Stars</span> — <a href="https://github.com/walkinglabs/modern-llm-notebook">GitHub</a>, <a href="https://walkinglabs.github.io/modern-llm-notebook/">Website</a>. A hands-on PyTorch curriculum for building modern LLM systems from scratch, covering tokenization, attention, MoE, inference, evaluation, and distillation.'
+
     Awards:
       - title: 'Huawei ICT Software Competition — <span class="cv-highlight">14th / 5200+</span>'
         date: 2025

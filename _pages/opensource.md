@@ -46,6 +46,22 @@ nav_order: 4
     </div>
   </div>
 
+  <div class="card mt-3">
+    <div class="card-body">
+      <h4 class="card-title font-weight-medium">
+        <a href="https://github.com/walkinglabs/modern-llm-notebook" target="_blank">Modern LLM Notebook</a>
+        <span class="project-status-badge ml-2">80+ Stars</span>
+      </h4>
+      <p class="card-text font-weight-light">
+        A hands-on PyTorch curriculum for building modern LLM systems from scratch, covering tokenization, attention, MoE, inference, evaluation, and distillation.
+      </p>
+      <div class="project-links">
+        <a href="https://github.com/walkinglabs/modern-llm-notebook" target="_blank" class="btn btn-sm btn-outline-primary">GitHub</a>
+        <a href="https://walkinglabs.github.io/modern-llm-notebook/" target="_blank" class="btn btn-sm btn-outline-primary">Website</a>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <hr class="mt-4 mb-3">

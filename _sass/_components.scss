@@ -778,6 +778,17 @@ ul.task-list input[type="checkbox"] {
       line-height: 1.55;
     }
 
+    .project-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      margin-top: auto;
+    }
+
+    .project-links .btn {
+      margin-top: 0;
+    }
+
     .btn {
       align-self: flex-start;
       margin-top: auto;
