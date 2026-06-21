@@ -20,6 +20,13 @@ cv:
 
   sections:
     Publications:
+      - title: "Zeta: Dual Whitening for Matrix Optimization via Coordinate-Adaptive Preconditioning"
+        date: 2026
+        publisher: "arXiv:2606.14187"
+        presentation: "Preprint"
+        url: https://arxiv.org/abs/2606.14187v2
+        summary: "Kaiwen Chen&#42;, Shuhai Zhang&#42;, Zimo Liu, <strong>Linxiao Li</strong>, Ying Sun, Yuchen Li, Yifan Zhang, Bo Han, Mingkui Tan&#8224;, Qiuwu Chen&#8224;"
+
       - title: "Deterministic Component Mining for Multi-framework UI2Code Generation"
         date: 2026
         publisher: "International Conference on Machine Learning (ICML 2026)"
@@ -33,6 +40,28 @@ cv:
         presentation: "Oral"
         url: https://dl.acm.org/doi/10.1145/3774904.3792995
         summary: "<strong>Linxiao Li&#42;</strong>, Zhixiang Lu&#42;&#8224;"
+
+    Public Talks:
+      - title: "Communication-Aware Scheduling Optimization for Large-Scale MoE Model Training on Ascend NPUs"
+        date: "Jun 2026"
+        publisher: "Frontiers Series · Guangming Laboratory"
+        presentation: "Academic Seminar"
+        url: https://mp.weixin.qq.com/s/tvtTHvvBlF8Kzuc21OJSKw
+        summary: "Academic seminar on communication-aware scheduling optimization for large-scale MoE model training on Ascend NPUs."
+
+      - title: "DeepSeek-V4 Mechanism Deep Dive"
+        date: "Apr 2026"
+        publisher: "Internal Technical Sharing · AIGCode"
+        presentation: "Technical Talk"
+        url: https://www.bilibili.com/video/BV1sCoLBtE3f?t=1256.3
+        summary: "Company technical interpretation and discussion of DeepSeek-V4 mechanism details."
+
+      - title: "Research Methodology, Internship Planning, and Career Development"
+        date: "Dec 2025"
+        publisher: "Graduate Career Workshop · Guangming Laboratory"
+        presentation: "Invited Talk"
+        url: https://www.gml.ac.cn/
+        summary: "Invited talk for graduate students on research methodology, internship planning, and career development."
 
     Experience:
       - company: AIGCode (蔻町科技)

@@ -153,7 +153,7 @@ layout: default
               {% elsif section_title == 'Awards' or section_title == 'Honors and Awards' or section_title == 'Patents' %}
                 {% assign entries = section_entries %}
                 {% include cv/awards.liquid %}
-              {% elsif section_title == 'Publications' %}
+              {% elsif section_title == 'Publications' or section_title == 'Public Talks' %}
                 {% assign entries = section_entries %}
                 {% include cv/publications.liquid %}
               {% elsif section_title == 'Skills' %}
