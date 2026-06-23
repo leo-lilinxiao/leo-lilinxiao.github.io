@@ -725,12 +725,29 @@ ul.task-list input[type="checkbox"] {
     }
   }
 
+  .project-role-badge,
   .project-status-badge,
   .project-highlight {
     display: inline-flex;
     align-items: center;
-    color: var(--global-highlight-color);
     font-weight: 650;
+  }
+
+  .project-role-badge {
+    padding: 0.19rem 0.44rem;
+    border: 1px solid color-mix(in srgb, var(--global-divider-color) 86%, transparent);
+    border-radius: 6px;
+    background: color-mix(in srgb, var(--global-card-bg-color) 72%, var(--global-pane-bg-color));
+    color: var(--global-text-muted-color);
+    font-size: 0.7rem;
+    letter-spacing: 0.01em;
+    line-height: 1.1;
+    vertical-align: middle;
+  }
+
+  .project-status-badge,
+  .project-highlight {
+    color: var(--global-highlight-color);
   }
 
   .project-status-badge {

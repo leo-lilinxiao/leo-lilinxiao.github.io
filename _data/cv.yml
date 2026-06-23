@@ -144,16 +144,16 @@ cv:
 
     Open Source:
       - name: Codex AutoResearch
-        summary: '<span class="cv-highlight">1,000+ Stars</span> — <a href="https://github.com/leo-lilinxiao/codex-autoresearch">GitHub</a>. A self-directed iterative research system for Codex that continuously cycles through modify, verify, retain/discard, and repeat.'
+        summary: 'Creator · <span class="cv-highlight">1,000+ Stars</span> — <a href="https://github.com/leo-lilinxiao/codex-autoresearch">GitHub</a>. A self-directed iterative research system for Codex that continuously cycles through modify, verify, retain/discard, and repeat.'
 
       - name: PyPTO
-        summary: '<a href="https://gitcode.com/lllleo/pypto">GitCode</a>. High-performance programming framework for AI accelerators using tile-based programming (PTO paradigm), compiling tensor graphs to hardware instructions via multi-level IR.'
+        summary: 'Contributor — <a href="https://gitcode.com/lllleo/pypto">GitCode</a>. High-performance programming framework for AI accelerators using tile-based programming (PTO paradigm), compiling tensor graphs to hardware instructions via multi-level IR.'
 
       - name: PyPTO-AutoGrad
-        summary: '<a href="https://gitcode.com/lllleo/pypto-autograd">GitCode</a>. Source-code level automatic differentiation tool for PyPTO kernels, generating readable and editable backward kernels from forward definitions.'
+        summary: 'Creator — <a href="https://gitcode.com/lllleo/pypto-autograd">GitCode</a>. Source-code level automatic differentiation tool for PyPTO kernels, generating readable and editable backward kernels from forward definitions.'
 
       - name: Modern LLM Notebook
-        summary: '<span class="cv-highlight">80+ Stars</span> — <a href="https://github.com/walkinglabs/modern-llm-notebook">GitHub</a>, <a href="https://walkinglabs.github.io/modern-llm-notebook/">Website</a>. A hands-on PyTorch curriculum for building modern LLM systems from scratch, covering tokenization, attention, MoE, inference, evaluation, and distillation.'
+        summary: 'Contributor · <span class="cv-highlight">80+ Stars</span> — <a href="https://github.com/walkinglabs/modern-llm-notebook">GitHub</a>, <a href="https://walkinglabs.github.io/modern-llm-notebook/">Website</a>. A hands-on PyTorch curriculum for building modern LLM systems from scratch, covering tokenization, attention, MoE, inference, evaluation, and distillation.'
 
     Awards:
       - title: 'Huawei ICT Software Competition — <span class="cv-highlight">14th / 5200+</span>'

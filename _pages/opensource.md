@@ -13,6 +13,7 @@ nav_order: 4
     <div class="card-body">
       <h4 class="card-title font-weight-medium">
         <a href="https://github.com/leo-lilinxiao/codex-autoresearch" target="_blank">Codex AutoResearch</a>
+        <span class="project-role-badge">Creator</span>
         <span class="project-status-badge ml-2">1,000+ Stars</span>
       </h4>
       <p class="card-text font-weight-light">
@@ -26,6 +27,7 @@ nav_order: 4
     <div class="card-body">
       <h4 class="card-title font-weight-medium">
         <a href="https://gitcode.com/lllleo/pypto" target="_blank">PyPTO</a>
+        <span class="project-role-badge">Contributor</span>
       </h4>
       <p class="card-text font-weight-light">
         High-performance programming framework for AI accelerators using tile-based programming (PTO paradigm). Compiles tensor graphs to hardware instructions via multi-level IR, enabling efficient kernel development for GPU/NPU targets.
@@ -38,6 +40,7 @@ nav_order: 4
     <div class="card-body">
       <h4 class="card-title font-weight-medium">
         <a href="https://gitcode.com/lllleo/pypto-autograd" target="_blank">PyPTO-AutoGrad</a>
+        <span class="project-role-badge">Creator</span>
       </h4>
       <p class="card-text font-weight-light">
         Source-code level automatic differentiation tool for PyPTO kernels. Generates readable and editable backward kernels from forward definitions, simplifying gradient computation for custom AI accelerator kernels.
@@ -50,6 +53,7 @@ nav_order: 4
     <div class="card-body">
       <h4 class="card-title font-weight-medium">
         <a href="https://github.com/walkinglabs/modern-llm-notebook" target="_blank">Modern LLM Notebook</a>
+        <span class="project-role-badge">Contributor</span>
         <span class="project-status-badge ml-2">80+ Stars</span>
       </h4>
       <p class="card-text font-weight-light">
