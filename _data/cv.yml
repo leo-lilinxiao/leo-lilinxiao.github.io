@@ -155,6 +155,9 @@ cv:
       - name: Modern LLM Notebook
         summary: 'Contributor · <span class="cv-highlight">80+ Stars</span> — <a href="https://github.com/walkinglabs/modern-llm-notebook">GitHub</a>, <a href="https://walkinglabs.github.io/modern-llm-notebook/">Website</a>. A hands-on PyTorch curriculum for building modern LLM systems from scratch, covering tokenization, attention, MoE, inference, evaluation, and distillation.'
 
+      - name: Pie
+        summary: 'Contributor · <span class="cv-highlight">170+ Stars</span> — <a href="https://github.com/pie-project/pie">GitHub</a>, <a href="https://pie-project.org/">Website</a>. A programmable LLM serving system for custom inference logic, stateful agents, and serving-side optimization.'
+
     Awards:
       - title: 'Huawei ICT Software Competition — <span class="cv-highlight">14th / 5200+</span>'
         date: 2025

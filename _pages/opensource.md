@@ -66,6 +66,23 @@ nav_order: 4
     </div>
   </div>
 
+  <div class="card mt-3">
+    <div class="card-body">
+      <h4 class="card-title font-weight-medium">
+        <a href="https://github.com/pie-project/pie" target="_blank">Pie</a>
+        <span class="project-role-badge">Contributor</span>
+        <span class="project-status-badge ml-2">170+ Stars</span>
+      </h4>
+      <p class="card-text font-weight-light">
+        A programmable LLM serving system for custom inference logic, stateful agents, and serving-side optimization.
+      </p>
+      <div class="project-links">
+        <a href="https://github.com/pie-project/pie" target="_blank" class="btn btn-sm btn-outline-primary">GitHub</a>
+        <a href="https://pie-project.org/" target="_blank" class="btn btn-sm btn-outline-primary">Website</a>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <hr class="mt-4 mb-3">
