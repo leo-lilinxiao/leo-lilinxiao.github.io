@@ -88,7 +88,25 @@ nav_order: 4
 <hr class="mt-4 mb-3">
 <h2>Patents</h2>
 
-<div class="projects">
+<div class="projects patents-grid">
+
+  <div class="card mt-3">
+    <div class="card-body">
+      <h4 class="card-title font-weight-medium">Runtime Semantic Authorization for Shortcut Actions in Branch-Structured Large Language Model Programs</h4>
+      <p class="card-text font-weight-light patent-meta">
+        2026 · First inventor · Pending
+      </p>
+    </div>
+  </div>
+
+  <div class="card mt-3">
+    <div class="card-body">
+      <h4 class="card-title font-weight-medium">Expert Module Selection for Mixture-of-Experts Models</h4>
+      <p class="card-text font-weight-light patent-meta">
+        2026 · First inventor · Pending
+      </p>
+    </div>
+  </div>
 
   <div class="card mt-3 featured-patent">
     <div class="card-body">

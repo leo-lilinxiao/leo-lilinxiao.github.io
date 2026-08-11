@@ -31,7 +31,7 @@ cv:
         date: 2026
         publisher: "International Conference on Machine Learning (ICML 2026)"
         presentation: "Poster"
-        url: https://icml.cc/virtual/2026/poster/64878
+        url: https://openreview.net/pdf?id=IuGOrMmYCK
         summary: "Zixiong Yang&#42;, <strong>Linxiao Li&#42;</strong>, Jiaye Lin, Binrui Wu, Xiaoyu Kang, Jiechao Gao&#8224;"
 
       - title: "EcoThink: A Green Adaptive Inference Framework for Sustainable and Accessible Agents"
@@ -128,7 +128,7 @@ cv:
 
       - institution: Fudan University
         location: Shanghai, China
-        url: https://www.fudan.edu.cn/
+        url: https://www.fudan.edu.cn/en/
         area: Economics
         studyType: Exchange Student
         start_date: 2021-06
@@ -136,7 +136,7 @@ cv:
 
       - institution: Shanghai Jiao Tong University
         location: Shanghai, China
-        url: https://www.sjtu.edu.cn/
+        url: https://en.sjtu.edu.cn/
         area: Data Science and Analytics
         studyType: Exchange Student
         start_date: 2020-12
@@ -198,6 +198,16 @@ cv:
         summary: "Awarded on the basis of academic merit and exchange destination."
 
     Patents:
+      - title: Runtime Semantic Authorization for Shortcut Actions in Branch-Structured Large Language Model Programs
+        date: 2026
+        awarder: ""
+        summary: "First inventor. Pending."
+
+      - title: Expert Module Selection for Mixture-of-Experts Models
+        date: 2026
+        awarder: ""
+        summary: "First inventor. Pending."
+
       - title: A MoE Model-Oriented Inference Optimization Method
         date: 2024
         awarder: '<span class="cv-highlight">Huawei Cloud High-Potential Patent</span>'
