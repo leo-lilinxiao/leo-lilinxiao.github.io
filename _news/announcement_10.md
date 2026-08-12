@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Paper [**Deterministic Component Mining for Multi-framework UI2Code Generation**](https://icml.cc/virtual/2026/poster/64878) accepted to **ICML 2026** as <span class="news-highlight">co-first author</span>! (Acceptance rate: 26.6%)
+Paper [**Deterministic Component Mining for Multi-framework UI2Code Generation**](https://openreview.net/pdf?id=IuGOrMmYCK) accepted to **ICML 2026** as <span class="news-highlight">co-first author</span>! (Acceptance rate: 26.6%)
