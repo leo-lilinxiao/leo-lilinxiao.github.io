@@ -79,6 +79,9 @@ ninja.data = [{
           section: "News",},{id: "news-three-papers-accepted-to-neurips-2026-poster-including-two-as-co-first-author",
           title: 'Three papers accepted to NeurIPS 2026 (Poster), including two as co-first author!',
           description: "",
+          section: "News",},{id: "news-codex-autoresearch-has-reached-2-600-github-stars",
+          title: 'Codex AutoResearch has reached 2,600+ GitHub Stars!',
+          description: "",
           section: "News",},{
       id: 'light-theme',
       title: 'Change theme to light',
