@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-publications",
           title: "Publications",
-          description: "Publications and public talks in reverse chronological order.",
+          description: "Publications in chronological order, followed by public talks.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
@@ -67,7 +67,7 @@ ninja.data = [{
           section: "News",},{id: "news-released-a-technical-talk-on-deepseek-v4-mechanism-details-at-aigcode",
           title: 'Released a technical talk on DeepSeek-V4 mechanism details at AIGCode.',
           description: "",
-          section: "News",},{id: "news-paper-deterministic-component-mining-for-multi-framework-ui2code-generation-accepted-to-icml-2026-as-co-first-author-acceptance-rate-26-6",
+          section: "News",},{id: "news-paper-deterministic-component-mining-for-multi-framework-ui2code-generation-accepted-to-icml-2026-as-co-first-author",
           title: 'Paper Deterministic Component Mining for Multi-framework UI2Code Generation accepted to ICML 2026 as...',
           description: "",
           section: "News",},{id: "news-gave-an-academic-seminar-at-guangming-laboratory-on-communication-aware-scheduling-optimization-for-large-scale-moe-model-training-on-ascend-npus",
@@ -75,6 +75,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-paper-ecothink-selected-as-oral-4-6-at-www-2026",
           title: 'Paper EcoThink selected as Oral (4.6%) at WWW 2026.',
+          description: "",
+          section: "News",},{id: "news-three-papers-accepted-to-neurips-2026-poster-including-two-as-co-first-author",
+          title: 'Three papers accepted to NeurIPS 2026 (Poster), including two as co-first author!',
           description: "",
           section: "News",},{
       id: 'light-theme',
