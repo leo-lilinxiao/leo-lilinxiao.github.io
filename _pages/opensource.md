@@ -14,7 +14,7 @@ nav_order: 4
       <h4 class="card-title font-weight-medium">
         <a href="https://github.com/leo-lilinxiao/codex-autoresearch" target="_blank">Codex AutoResearch</a>
         <span class="project-role-badge">Creator</span>
-        <span class="project-status-badge ml-2">1,000+ Stars</span>
+        <span class="project-status-badge ml-2" title="GitHub stars as of Sep 25, 2026">2,651 Stars</span>
       </h4>
       <p class="card-text font-weight-light">
         A self-directed iterative research system for Codex that continuously cycles through modify, verify, retain/discard, and repeat. Enables autonomous research loops without human intervention.
@@ -54,7 +54,7 @@ nav_order: 4
       <h4 class="card-title font-weight-medium">
         <a href="https://github.com/walkinglabs/modern-llm-notebook" target="_blank">Modern LLM Notebook</a>
         <span class="project-role-badge">Contributor</span>
-        <span class="project-status-badge ml-2">80+ Stars</span>
+        <span class="project-status-badge ml-2" title="GitHub stars as of Sep 25, 2026">215 Stars</span>
       </h4>
       <p class="card-text font-weight-light">
         A hands-on PyTorch curriculum for building modern LLM systems from scratch, covering tokenization, attention, MoE, inference, evaluation, and distillation.
@@ -71,7 +71,7 @@ nav_order: 4
       <h4 class="card-title font-weight-medium">
         <a href="https://github.com/pie-project/pie" target="_blank">Pie</a>
         <span class="project-role-badge">Contributor</span>
-        <span class="project-status-badge ml-2">170+ Stars</span>
+        <span class="project-status-badge ml-2" title="GitHub stars as of Sep 25, 2026">217 Stars</span>
       </h4>
       <p class="card-text font-weight-light">
         A programmable LLM serving system for custom inference logic, stateful agents, and serving-side optimization.
