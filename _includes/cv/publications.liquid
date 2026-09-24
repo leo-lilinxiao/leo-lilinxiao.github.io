@@ -47,6 +47,9 @@
             {% if entry.summary %}
               <p class="ml-1 ml-md-4">{{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
             {% endif %}
+            {% if entry.code %}
+              <p class="ml-1 ml-md-4"><a href="{{ entry.code }}" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+            {% endif %}
           </div>
         {% else %}
           <div class="col-xs-12 col-sm-12 col-md-12">

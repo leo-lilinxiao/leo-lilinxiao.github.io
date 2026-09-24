@@ -449,6 +449,10 @@
       text-wrap: wrap;
     }
 
+    .cv-presentation-poster {
+      color: var(--global-theme-color);
+    }
+
     .cv-presentation-oral {
       color: var(--global-highlight-color);
       font-weight: 700;
@@ -457,6 +461,10 @@
     p:last-child {
       margin-bottom: 0;
     }
+  }
+
+  .cv-section-publications h6.title {
+    color: var(--global-theme-color);
   }
 
   .cv-section-skills .card-text {

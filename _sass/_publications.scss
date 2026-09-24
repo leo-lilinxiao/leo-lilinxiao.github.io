@@ -196,6 +196,7 @@
       }
 
       .title {
+        color: var(--global-theme-color);
         font-size: 1.08rem;
         font-weight: 650;
         line-height: 1.32;
@@ -288,6 +289,19 @@
             linear-gradient(180deg, color-mix(in srgb, var(--global-inset-highlight-color) 42%, transparent), transparent),
             color-mix(in srgb, var(--global-theme-color) 9%, transparent);
           box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--global-theme-color) 8%, transparent);
+        }
+
+        .presentation.btn {
+          cursor: default;
+
+          &,
+          &:hover,
+          &:active {
+            color: var(--global-theme-color);
+            border-color: color-mix(in srgb, var(--global-theme-color) 42%, transparent);
+            background: color-mix(in srgb, var(--global-theme-color) 9%, transparent);
+            transform: none;
+          }
         }
 
         .award.btn {
@@ -729,7 +743,8 @@
             white-space: nowrap;
           }
 
-          .award.btn {
+          .award.btn,
+          .presentation.btn {
             display: inline-flex;
             justify-content: center;
             flex-basis: 100%;

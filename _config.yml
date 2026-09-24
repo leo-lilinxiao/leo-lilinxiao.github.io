@@ -212,8 +212,10 @@ scholar:
   details_link: Details
 
   query: "@*"
+  sort_by: [timeline_date, author_position]
+  order: ascending
   group_by: year
-  group_order: descending
+  group_order: ascending
 
 enable_publication_badges:
   altmetric: false
@@ -229,6 +231,7 @@ filtered_bibtex_keywords:
     altmetric,
     annotation,
     arxiv,
+    author_position,
     award,
     award_name,
     bibtex_show,
@@ -247,6 +250,7 @@ filtered_bibtex_keywords:
     selected,
     slides,
     supp,
+    timeline_date,
     video,
     website,
   ]

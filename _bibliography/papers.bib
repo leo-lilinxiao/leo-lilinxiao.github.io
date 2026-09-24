@@ -1,9 +1,63 @@
+% Website chronology uses conference notification dates or the first arXiv submission.
+% These are separate from the publication year and from individual submission dates.
+% Within the same date, order by Linxiao Li's position in the author list.
+% Sources (checked 2026-09-25):
+% WWW: https://www2026.thewebconf.org/important-dates.html
+% ICML: https://icml.cc/Conferences/2026/Dates
+% Zeta v1: https://arxiv.org/abs/2606.14187
+% NeurIPS: https://neurips.cc/Conferences/2026/CallForPapers
+
+@inproceedings{ma2026phasewise,
+  title     = {Phase-wise {MLLM} Tuning for Multi-framework {WebUI} Code Generation},
+  author    = {Haoran Ma* and Linxiao Li* and Chenyue Wang and Haochen Sui and Jiechao Gao†},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2026},
+  abbr      = {NeurIPS},
+  timeline_date = {2026-09-24},
+  author_position = {2},
+  bibtex_show = {true},
+  abstract  = {Multimodal large language models (MLLMs) achieve strong performance in translating WebUI screenshots into HTML/CSS. However, when they face multiple frontend frameworks (React/Vue/Angular), they often suffer from negative transfer that leads to compilation failures. These failures commonly stem from mixing framework specific syntax and violating framework constraints. This paper studies supervised fine tuning for multi-framework WebUI code generation and proposes a phase-wise MLLM tuning method driven by compatibility and heterogeneity signals across frameworks. We first apply a normalization mapping that preserves each framework's native syntax while suppressing noise from variable naming and literal content. We then estimate cross framework heterogeneity and compatibility offline, and automatically derive training groups and their ordering by maximizing a phased objective. Finally, we perform phase-wise adapter tuning to reduce cross framework interference. Experiments on multiple benchmarks show that the proposed method improves both generation quality and compilation success rates compared with baselines.},
+  award     = {Poster},
+  award_name = {Poster},
+}
+
+@inproceedings{li2026selfcorrection,
+  title     = {Toward Executable Multi-framework Front-end Code Generation with Self-Correction},
+  author    = {Linxiao Li* and Haoran Ma* and Chenyue Wang and Jiaye Lin and Haochen Sui and Jiechao Gao†},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2026},
+  abbr      = {NeurIPS},
+  timeline_date = {2026-09-24},
+  author_position = {1},
+  code      = {https://github.com/leo-lilinxiao/MESCoder},
+  bibtex_show = {true},
+  abstract  = {Generating codes from UI screenshots has recently benefited from MLLMs, yet existing methods centered on HTML targets and transfer poorly to multi-frameworks such as React, Vue, and Angular. However, unlike HTML, which does not entail compilation issues, generating executable code in multi-framework settings is more challenging due to framework-specific differences in syntax and failure modes, as well as the need to maintain global consistency across files. To address this problem, we study executable multi-framework front-end code generation and propose MESCoder, a tree-structured self-corrective generation framework. Our method first extracts a structural scaffold from the screenshot and then constructs sub-trees and assembly relations step by step, transforming large project generation into a sequence of localized decisions. On top of this scaffold, we introduce a unified Project Agent that continuously revises its own partial project under runtime sandbox feedback and dynamically chooses between local repair and cluster level repair. For training, we adopt a two-stage strategy that first initializes the policy offline to learn basic multi-framework generation and repair priors, and then refines it with online reinforcement learning to optimize long horizon executability and final page quality. The resulting framework models multi-framework executability as a conditioned project state transition process and improves the stability and quality of complex front end generation through self correction. Experiments show that our method improves executability, while narrowing the visual-fidelity gap to HTML-based generation.},
+  award     = {Poster},
+  award_name = {Poster},
+}
+
+@inproceedings{chen2026treerope,
+  title     = {Tree Rotary Positional Encoding for Extreme Length Extrapolation from Scratch},
+  author    = {Qiuwu Chen and Ziteng Huang and Shuhai Zhang and Zimo Liu and Linxiao Li and Ying Sun and Yuchen Li and Yifan Zhang and Yaofo Chen and Mingkui Tan†},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2026},
+  abbr      = {NeurIPS},
+  timeline_date = {2026-09-24},
+  author_position = {5},
+  bibtex_show = {true},
+  abstract  = {Large language models rely on positional representations for long context modeling, yet are typically trained on short sequences and evaluated at much longer lengths. Bridging this gap requires positional encodings remaining distinguishable at large distances while generalizing beyond the training length. In this paper, we identify a structural limitation of existing rotary-based positional encodings: all positional dimensions are controlled by a single global index, which couples training-time positional variation with long-range extrapolation. To address this, we propose Tree Rotary Positional Encoding (TPE), a structured multi-scale positional encoding designed for training from scratch that represents absolute position through combinations of different components, avoiding single-index extrapolation. We further devise an Offset-based Positional Training (OPT) strategy to improve learning interactions across TPE components, enabling better generalization to longer contexts. We theoretically analyze that its multi-scale decomposition enables effective combinatorial position coverage. Experimental results show strong gains under extreme length extrapolation: with a 1.2B model trained from scratch on length 512, our TPE achieves a 64× extrapolation to 32K tokens, reducing perplexity from 4532.21 (RoPE) to 149.96, with comparable inference-time efficiency.},
+  award     = {Poster},
+  award_name = {Poster},
+}
+
 @article{chen2026zeta,
   title     = {Zeta: Dual Whitening for Matrix Optimization via Coordinate-Adaptive Preconditioning},
   author    = {Kaiwen Chen* and Shuhai Zhang* and Zimo Liu and Linxiao Li and Ying Sun and Yuchen Li and Yifan Zhang and Bo Han and Mingkui Tan† and Qiuwu Chen†},
   journal   = {arXiv preprint arXiv:2606.14187},
   year      = {2026},
   abbr      = {arXiv},
+  timeline_date = {2026-06-12},
+  author_position = {4},
   selected  = {true},
   bibtex_show = {true},
   abstract  = {Zeta is a dual whitening optimizer for matrix-aware neural network training. It combines coordinate whitening and spectral whitening to address coordinate-wise scale imbalance in momentum matrices, improving conditioning and orthogonalization reliability across language modeling, MoE, and vision workloads.},
@@ -19,6 +73,8 @@
   booktitle = {Proceedings of the ACM Web Conference (WWW)},
   year      = {2026},
   abbr      = {WWW},
+  timeline_date = {2026-01-13},
+  author_position = {1},
   selected  = {true},
   bibtex_show = {true},
   abstract  = {EcoThink is a green adaptive inference framework that addresses LLM overthinking in agent systems. It achieves an average of 40.4% energy savings (up to 81.9%) without significant performance loss, making AI agents more sustainable and accessible.},
@@ -35,11 +91,13 @@
   booktitle = {Proceedings of the International Conference on Machine Learning (ICML)},
   year      = {2026},
   abbr      = {ICML},
+  timeline_date = {2026-04-30},
+  author_position = {2},
   selected  = {true},
   bibtex_show = {true},
   abstract  = {We propose a deterministic component mining approach for multi-framework UI2Code generation, enabling accurate and framework-agnostic code synthesis from UI designs.},
   award     = {Poster},
-  award_name = {Poster (Acceptance Rate: 26.6%)},
+  award_name = {Poster},
   pdf       = {https://openreview.net/pdf?id=IuGOrMmYCK},
   url       = {https://icml.cc/virtual/2026/poster/64878},
 }

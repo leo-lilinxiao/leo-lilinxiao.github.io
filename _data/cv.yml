@@ -10,7 +10,7 @@ cv:
     MoE inference optimization, and hardware-efficient execution for large-scale AI infrastructure.
     <br><br>
     Currently AI Infrastructure / Training Systems Researcher at <a href="https://www.autocoder.cc/platform">AIGCode (蔻町科技)</a>.
-    Previously Senior Algorithm Researcher at <a href="https://www.huaweicloud.com/lab/cloud/home.html">Huawei Cloud Architecture Innovation Lab</a>.
+    Previously Senior Algorithm Researcher and TL at <a href="https://www.huaweicloud.com/lab/cloud/home.html">Huawei Cloud Architecture Innovation Lab</a>.
 
   social_networks:
     - network: GitHub
@@ -20,22 +20,48 @@ cv:
 
   sections:
     Publications:
+      # Match the acceptance/preprint chronology in _bibliography/papers.bib.
+      - title: "Phase-wise MLLM Tuning for Multi-framework WebUI Code Generation"
+        date: "2026-09-24"
+        author_position: 2
+        publisher: "Advances in Neural Information Processing Systems (NeurIPS 2026)"
+        presentation: "Poster"
+        summary: "Haoran Ma&#42;, <strong>Linxiao Li&#42;</strong>, Chenyue Wang, Haochen Sui, Jiechao Gao&#8224;"
+
+      - title: "Toward Executable Multi-framework Front-end Code Generation with Self-Correction"
+        date: "2026-09-24"
+        author_position: 1
+        code: https://github.com/leo-lilinxiao/MESCoder
+        publisher: "Advances in Neural Information Processing Systems (NeurIPS 2026)"
+        presentation: "Poster"
+        summary: "<strong>Linxiao Li&#42;</strong>, Haoran Ma&#42;, Chenyue Wang, Jiaye Lin, Haochen Sui, Jiechao Gao&#8224;"
+
+      - title: "Tree Rotary Positional Encoding for Extreme Length Extrapolation from Scratch"
+        date: "2026-09-24"
+        author_position: 5
+        publisher: "Advances in Neural Information Processing Systems (NeurIPS 2026)"
+        presentation: "Poster"
+        summary: "Qiuwu Chen, Ziteng Huang, Shuhai Zhang, Zimo Liu, <strong>Linxiao Li</strong>, Ying Sun, Yuchen Li, Yifan Zhang, Yaofo Chen, Mingkui Tan&#8224;"
+
       - title: "Zeta: Dual Whitening for Matrix Optimization via Coordinate-Adaptive Preconditioning"
-        date: 2026
+        date: "2026-06-12"
+        author_position: 4
         publisher: "arXiv:2606.14187"
         presentation: "Preprint"
         url: https://arxiv.org/abs/2606.14187v2
         summary: "Kaiwen Chen&#42;, Shuhai Zhang&#42;, Zimo Liu, <strong>Linxiao Li</strong>, Ying Sun, Yuchen Li, Yifan Zhang, Bo Han, Mingkui Tan&#8224;, Qiuwu Chen&#8224;"
 
       - title: "Deterministic Component Mining for Multi-framework UI2Code Generation"
-        date: 2026
+        date: "2026-04-30"
+        author_position: 2
         publisher: "International Conference on Machine Learning (ICML 2026)"
         presentation: "Poster"
         url: https://openreview.net/pdf?id=IuGOrMmYCK
         summary: "Zixiong Yang&#42;, <strong>Linxiao Li&#42;</strong>, Jiaye Lin, Binrui Wu, Xiaoyu Kang, Jiechao Gao&#8224;"
 
       - title: "EcoThink: A Green Adaptive Inference Framework for Sustainable and Accessible Agents"
-        date: 2026
+        date: "2026-01-13"
+        author_position: 1
         publisher: "The Web Conference (WWW 2026)"
         presentation: "Oral"
         url: https://dl.acm.org/doi/10.1145/3774904.3792995
@@ -81,7 +107,7 @@ cv:
         location: Shenzhen, China
         start_date: 2023-09
         end_date: 2025-11
-        summary: Core member of <a href="https://www.huaweicloud.com/lab/cloud/home.html">Huawei Cloud Architecture Innovation Lab (Cloud Lab)</a>, under <a href="https://developer.huawei.com/consumer/cn/forum/topic/0202743458671690687">CTO Fellow Jiongjiong Gu</a> (Chief Architect). Led a 10+ person joint team with the <a href="https://www.gml.ac.cn/kytd/189.html">Guangming Laboratory</a> on intelligent resource scheduling. All annual performance ratings A.
+        summary: TL at <a href="https://www.huaweicloud.com/lab/cloud/home.html">Huawei Cloud Architecture Innovation Lab (Cloud Lab)</a>, under <a href="https://developer.huawei.com/consumer/cn/forum/topic/0202743458671690687">CTO Fellow Jiongjiong Gu</a> (Chief Architect). Led a 10+ person joint team with the <a href="https://www.gml.ac.cn/kytd/189.html">Guangming Laboratory</a> on intelligent resource scheduling. All annual performance ratings A.
         highlights:
           - '<strong>MoE Memory Offloading</strong>: Expert offloading for MoE LLM inference on Ascend NPUs. TTFT &lt;3s, TPOT &lt;100ms. Supports BF16/W8A8 (DeepSeek V3). (<a href="https://live.huawei.com/hdc2025/meeting/cn/15569.html">HDC 2025</a>, ~50 min)'
           - '<strong>NPU User-Space Virtualization</strong>: Multi-tenant NPU sharing with &lt;3% overhead, utilization 10%→30%+. (<a href="https://live.huawei.com/hdc2025/meeting/cn/15569.html">HDC 2025</a>, ~50 min)'
@@ -222,7 +248,7 @@ cv:
       - name: Teaching
         summary: "Teaching Assistant, The University of Sydney — Operating Systems, Algorithm Design"
       - name: Reviewing
-        summary: "Reviewer, NeurIPS 2026"
+        summary: "Reviewer, NeurIPS 2026 and ICLR 2027"
 
     Skills:
       - name: Core Domains

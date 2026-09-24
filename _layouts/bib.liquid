@@ -210,7 +210,7 @@
     <!-- Links/Buttons -->
     <div class="links">
       {% if entry.award %}
-        <span class="award btn btn-sm z-depth-0">
+        <span class="{% if entry.award == 'Poster' %}presentation{% else %}award{% endif %} btn btn-sm z-depth-0">
           {%- if entry.award_name %}{{ entry.award_name }}{% else %}Awarded{% endif -%}
         </span>
       {% endif %}
