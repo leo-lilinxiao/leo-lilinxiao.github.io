@@ -85,45 +85,43 @@ nav_order: 4
 
 </div>
 
-<hr class="mt-4 mb-3">
-<h2>Patents</h2>
-
-<div class="projects patents-grid">
-
-  <div class="card mt-3">
-    <div class="card-body">
-      <h4 class="card-title font-weight-medium">Runtime Semantic Authorization for Shortcut Actions in Branch-Structured Large Language Model Programs</h4>
-      <p class="card-text font-weight-light patent-meta">
-        2026 · First inventor · Pending
-      </p>
-    </div>
-  </div>
-
-  <div class="card mt-3">
-    <div class="card-body">
-      <h4 class="card-title font-weight-medium">Expert Module Selection for Mixture-of-Experts Models</h4>
-      <p class="card-text font-weight-light patent-meta">
-        2026 · First inventor · Pending
-      </p>
-    </div>
-  </div>
-
-  <div class="card mt-3 featured-patent">
-    <div class="card-body">
-      <h4 class="card-title font-weight-medium">An Inference Optimization Method for MoE Models</h4>
-      <p class="card-text font-weight-light">
-        <span class="project-highlight">Huawei Cloud High-Potential Patent</span> (2024) — Invention patent for MoE large model inference memory offloading optimization.
-      </p>
-    </div>
-  </div>
-
-  <div class="card mt-3">
-    <div class="card-body">
-      <h4 class="card-title font-weight-medium">A Latency-Aware Request Scheduling Strategy for Serverless Platforms</h4>
-      <p class="card-text font-weight-light">
-        Invention patent (2024) — Intelligent serverless request scheduling.
-      </p>
-    </div>
-  </div>
-
-</div>
+<section class="patents-section" aria-labelledby="patents-heading">
+  <h2 id="patents-heading">Patents</h2>
+  <ul class="patent-list" role="list">
+    <li class="patent-entry" id="patent-cn122571589b">
+      <div class="patent-content">
+        <h3 class="patent-title">Runtime Semantic Authorization for Shortcut Actions in Branch-Structured Large Language Model Programs</h3>
+        <p class="patent-meta">First inventor · Granted · <span class="patent-reference">CN122571589B</span></p>
+      </div>
+      <span class="patent-year">2026</span>
+    </li>
+    <li class="patent-entry">
+      <div class="patent-content">
+        <h3 class="patent-title">Expert Module Selection for Mixture-of-Experts Models</h3>
+        <p class="patent-meta">First inventor · <span class="patent-reference">Application No. 202611106026.3</span></p>
+      </div>
+      <span class="patent-year">2026</span>
+    </li>
+    <li class="patent-entry">
+      <div class="patent-content">
+        <h3 class="patent-title">Method for Evaluating Large Language Model Inference Interfaces, Terminal Device, and Storage Medium</h3>
+        <p class="patent-meta">First inventor · <span class="patent-reference">Application No. 202611242873.2</span></p>
+      </div>
+      <span class="patent-year">2026</span>
+    </li>
+    <li class="patent-entry patent-entry-featured">
+      <div class="patent-content">
+        <h3 class="patent-title">An Inference Optimization Method for MoE Models</h3>
+        <p class="patent-meta"><span class="patent-highlight">Huawei Cloud High-Potential Patent</span> · Invention patent for MoE large model inference memory offloading optimization.</p>
+      </div>
+      <span class="patent-year">2024</span>
+    </li>
+    <li class="patent-entry">
+      <div class="patent-content">
+        <h3 class="patent-title">A Latency-Aware Request Scheduling Strategy for Serverless Platforms</h3>
+        <p class="patent-meta">Invention patent · Intelligent serverless request scheduling.</p>
+      </div>
+      <span class="patent-year">2024</span>
+    </li>
+  </ul>
+</section>

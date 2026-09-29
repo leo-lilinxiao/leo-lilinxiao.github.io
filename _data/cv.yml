@@ -224,15 +224,21 @@ cv:
         summary: "Awarded on the basis of academic merit and exchange destination."
 
     Patents:
+      # Certificate: ZL 2026 1 1075117.5; grant publication CN122571589B, 2026-09-25.
       - title: Runtime Semantic Authorization for Shortcut Actions in Branch-Structured Large Language Model Programs
         date: 2026
         awarder: ""
-        summary: "First inventor. Pending."
+        summary: "First inventor. Granted. CN122571589B."
 
       - title: Expert Module Selection for Mixture-of-Experts Models
         date: 2026
         awarder: ""
-        summary: "First inventor. Pending."
+        summary: "First inventor. Application No. 202611106026.3."
+
+      - title: Method for Evaluating Large Language Model Inference Interfaces, Terminal Device, and Storage Medium
+        date: 2026
+        awarder: ""
+        summary: "First inventor. Application No. 202611242873.2."
 
       - title: A MoE Model-Oriented Inference Optimization Method
         date: 2024

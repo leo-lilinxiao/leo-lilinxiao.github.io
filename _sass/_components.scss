@@ -60,46 +60,8 @@ ul.task-list input[type="checkbox"] {
   font-weight: 650;
 }
 
-// Card
-
-.card {
-  position: relative;
-  overflow: hidden;
-  background:
-    linear-gradient(180deg, color-mix(in srgb, var(--global-inset-highlight-color) 54%, transparent), transparent 3rem),
-    var(--global-card-bg-color);
-  border: 1px solid var(--global-control-border-color);
-  border-radius: 8px;
-  box-shadow:
-    inset 0 1px 0 var(--global-inset-highlight-color),
-    0 10px 28px var(--global-shadow-color);
-  transition:
-    transform 0.26s cubic-bezier(0.2, 0.8, 0.2, 1),
-    border-color 0.26s ease,
-    background-color 0.26s ease,
-    box-shadow 0.26s ease;
-
-  &:hover {
-    border-color: color-mix(in srgb, var(--global-theme-color) 20%, var(--global-divider-color));
-    background:
-      radial-gradient(
-        520px circle at var(--spotlight-x, 50%) var(--spotlight-y, 50%),
-        color-mix(in srgb, var(--global-theme-color) 10%, transparent),
-        transparent 48%
-      ),
-      radial-gradient(
-        460px circle at 100% 0%,
-        color-mix(in srgb, var(--global-highlight-color) 5%, transparent),
-        transparent 54%
-      ),
-      linear-gradient(180deg, color-mix(in srgb, var(--global-elevated-color) 18%, transparent), transparent),
-      var(--global-card-hover-bg-color);
-    box-shadow:
-      inset 0 1px 0 var(--global-inset-highlight-color),
-      0 16px 36px var(--global-card-shadow-color);
-    transform: translateY(-2px);
-  }
-
+// Shared hover lighting for positioned, clipped surfaces.
+@mixin material-hover-light {
   &::before {
     position: absolute;
     inset: 0;
@@ -151,6 +113,49 @@ ul.task-list input[type="checkbox"] {
     position: relative;
     z-index: 1;
   }
+}
+
+// Card
+
+.card {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--global-inset-highlight-color) 54%, transparent), transparent 3rem),
+    var(--global-card-bg-color);
+  border: 1px solid var(--global-control-border-color);
+  border-radius: 8px;
+  box-shadow:
+    inset 0 1px 0 var(--global-inset-highlight-color),
+    0 10px 28px var(--global-shadow-color);
+  transition:
+    transform 0.26s cubic-bezier(0.2, 0.8, 0.2, 1),
+    border-color 0.26s ease,
+    background-color 0.26s ease,
+    box-shadow 0.26s ease;
+
+  &:hover {
+    border-color: color-mix(in srgb, var(--global-theme-color) 20%, var(--global-divider-color));
+    background:
+      radial-gradient(
+        520px circle at var(--spotlight-x, 50%) var(--spotlight-y, 50%),
+        color-mix(in srgb, var(--global-theme-color) 10%, transparent),
+        transparent 48%
+      ),
+      radial-gradient(
+        460px circle at 100% 0%,
+        color-mix(in srgb, var(--global-highlight-color) 5%, transparent),
+        transparent 54%
+      ),
+      linear-gradient(180deg, color-mix(in srgb, var(--global-elevated-color) 18%, transparent), transparent),
+      var(--global-card-hover-bg-color);
+    box-shadow:
+      inset 0 1px 0 var(--global-inset-highlight-color),
+      0 16px 36px var(--global-card-shadow-color);
+    transform: translateY(-2px);
+  }
+
+  @include material-hover-light;
 
   .card-img {
     width: 100%;
@@ -847,26 +852,45 @@ ul.task-list input[type="checkbox"] {
     }
   }
 
-  .patents-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .patents-section {
+    margin-top: 1.9rem;
+    padding-top: 1.3rem;
+    border-top: 1px solid var(--global-divider-color);
 
-    .card-title {
-      margin-bottom: 0.75rem;
-    }
-
-    .card-text {
-      margin-bottom: 0;
-    }
-
-    .patent-meta {
-      color: var(--global-text-muted-color) !important;
-      font-size: 0.92rem;
-      font-weight: 500 !important;
+    > h2 {
+      margin: 0 0 0.9rem;
+      font-size: 1.75rem;
+      font-weight: 600;
     }
   }
 
-  h2 + .projects .card.featured-patent {
-    border-color: color-mix(in srgb, var(--global-highlight-color) 26%, var(--global-divider-color));
+  .patent-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid var(--global-control-border-color);
+    border-radius: 8px;
+    background: color-mix(in srgb, var(--global-card-bg-color) 94%, var(--global-pane-bg-color));
+  }
+
+  .patent-entry {
+    position: relative;
+    overflow: hidden;
+    @include material-hover-light;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 3rem;
+    column-gap: 1.5rem;
+    align-items: baseline;
+    padding: 1.1rem 1.4rem;
+
+    + .patent-entry {
+      border-top: 1px solid var(--global-hairline-color);
+    }
+  }
+
+  .patent-entry-featured {
     background:
       radial-gradient(
         360px circle at 92% 0%,
@@ -882,8 +906,46 @@ ul.task-list input[type="checkbox"] {
       color-mix(in srgb, var(--global-card-bg-color) 94%, var(--global-pane-bg-color));
   }
 
-  article > hr {
-    margin-top: 1.75rem !important;
+  .patent-content {
+    min-width: 0;
+  }
+
+  .patent-title {
+    margin: 0 0 0.35rem;
+    color: var(--global-text-color);
+    font-size: 1.02rem;
+    font-weight: 500;
+    line-height: 1.5;
+    text-wrap: pretty;
+  }
+
+  .patent-meta,
+  .patent-year {
+    color: var(--global-text-color-light);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.55;
+  }
+
+  .patent-meta {
+    margin: 0;
+  }
+
+  .patent-reference {
+    display: inline-block;
+    max-width: 100%;
+    color: inherit;
+    overflow-wrap: anywhere;
+  }
+
+  .patent-highlight {
+    color: var(--global-highlight-color);
+    font-weight: 600;
+  }
+
+  .patent-year {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
   }
 }
 
@@ -1359,8 +1421,10 @@ body.gallery-lightbox-open {
       }
     }
 
-    .patents-grid {
-      grid-template-columns: 1fr;
+    .patent-entry {
+      padding: 1rem 1.1rem;
+      column-gap: 0.75rem;
+      grid-template-columns: minmax(0, 1fr) 2.5rem;
     }
   }
 
@@ -1387,6 +1451,7 @@ body.gallery-lightbox-open {
 
 @media (prefers-reduced-motion: reduce) {
   .card:hover::after,
+  .page-opensource .patent-entry:hover::after,
   .publications ol.bibliography > li:hover::after,
   .page-gallery .gallery-card:hover::after {
     animation: none;

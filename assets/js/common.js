@@ -303,7 +303,7 @@ $(document).ready(function () {
       }
     });
 
-    const spotlightTargets = document.querySelectorAll(".card, .publications ol.bibliography > li, .public-talk-card, .page-gallery .gallery-card");
+    const spotlightTargets = document.querySelectorAll(".card, .publications ol.bibliography > li, .public-talk-card, .page-gallery .gallery-card, .page-opensource .patent-entry");
     spotlightTargets.forEach((element) => {
       element.addEventListener("pointermove", (event) => {
         const rect = element.getBoundingClientRect();
