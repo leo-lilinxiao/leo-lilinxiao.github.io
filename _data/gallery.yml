@@ -1,0 +1,70 @@
+# Newest year first; same-year records retain the approved editorial order.
+# MFU role: user-confirmed technical lead; media coverage is the CTO's interview.
+- id: ecothink-oral-2026
+  year: 2026
+  title: EcoThink · WWW 2026 Oral
+  description: First author
+  cover: assets/img/gallery/ecothink-www2026-oral.png
+  cover_alt: EcoThink, WWW 2026, Oral
+  action: View oral invitation
+  photos:
+    - path: assets/img/gallery/ecothink-oral-invitation.png
+      caption: EcoThink — oral presentation invitation, The ACM Web Conference 2026
+
+- id: mfu-65-2026
+  year: 2026
+  title: 65% MFU on Ascend
+  description: Led training-system optimization at AIGCode.
+  cover: assets/img/gallery/mfu65-ascend-2026.png
+  cover_alt: AIGCode, 65% MFU for MoE pre-training on Ascend
+  fit: contain
+  action: Read coverage · 36Kr
+  url: https://mp.weixin.qq.com/s/cOsJ_55UWvyR2l107xk02A
+
+- id: ict-2025
+  year: 2025
+  title: Huawei ICT Software Competition
+  description: 14th / 5200+
+  cover: assets/img/honors_IMG_5235.jpg
+  cover_alt: Huawei ICT Software Competition certificate and medal, 2025
+  fit: contain
+  action: View photo
+  photos:
+    - path: assets/img/honors_IMG_5235.jpg
+      caption: Huawei ICT Software Competition — 14th / 5200+ (2025)
+
+- id: ecnu-recruiting
+  year: 2025
+  title: ECNU Campus Recruitment
+  description: Representing Huawei Shanghai Research Institute
+  cover: assets/img/recruiting_ecnu.jpg
+  cover_alt: Representing Huawei Shanghai Research Institute at ECNU Campus Recruitment, 2025
+  action: View photo
+  photos:
+    - path: assets/img/recruiting_ecnu.jpg
+      caption: Representing Huawei Shanghai Research Institute at ECNU Campus Recruitment (2025)
+
+- id: rising-star-2023
+  year: 2023
+  title: Huawei Rising Star Award
+  cover: assets/img/honors_IMG_5238.jpg
+  cover_alt: Huawei Rising Star award medal in its presentation case, 2023
+  position: center 80%
+  action: View 2 photos
+  photos:
+    - path: assets/img/honors_IMG_5238.jpg
+      caption: Huawei Rising Star (明日之星) Award — front (2023)
+    - path: assets/img/honors_IMG_5239.jpg
+      caption: Huawei Rising Star (明日之星) Award — reverse (2023)
+
+- id: rising-star-2022
+  year: 2022
+  title: Huawei Rising Star Award
+  cover: assets/img/honors_IMG_5236.jpg
+  cover_alt: Huawei Rising Star gold medal with blue ribbon, 2022
+  action: View 2 photos
+  photos:
+    - path: assets/img/honors_IMG_5236.jpg
+      caption: Huawei Rising Star (明日之星) Award — front (2022)
+    - path: assets/img/honors_IMG_5237.jpg
+      caption: Huawei Rising Star (明日之星) Award — reverse (2022)

@@ -1,0 +1,946 @@
+# Albums are newest first; same-year ordering is intentional.
+# Childhood: owner-confirmed 1998, photographed with his mother.
+# Erli: May 2026 from HEIC DateTimeOriginal; age three confirmed in October 2026.
+# Source photographs remain untouched; web copies preserve full dimensions.
+# Latest import: 62 camera files, checked against the existing 40 photos; no exact duplicates found.
+# New locations were matched locally from GPS and checked against the visible scene.
+# Snow collage IMG_6702.JPG: 2026-01-01, Hengdaohezi, confirmed by the owner.
+- id: pingtan-2026
+  year: 2026
+  sort_date: '2026-10-03'
+  title: A few days on Pingtan
+  period: '2026'
+  description: Fujian coast
+  cover: assets/img/gallery/life/2026-10-03-img-6990.jpg
+  cover_alt: The coast and offshore wind turbines, Pingtan, Fujian · 3 October 2026
+  action: View 2 photos
+  photos:
+  - path: assets/img/gallery/life/2026-10-02-img-6965.jpg
+    display: assets/img/gallery/life/2026-10-02-img-6965-view.webp
+    thumbnail: assets/img/gallery/life/2026-10-02-img-6965-thumb.webp
+    caption: Waves along the Pingtan coast, Fujian · 2 October 2026
+    width: 4284
+    height: 5712
+    date: '2026-10-02'
+  - path: assets/img/gallery/life/2026-10-03-img-6990.jpg
+    display: assets/img/gallery/life/2026-10-03-img-6990-view.webp
+    thumbnail: assets/img/gallery/life/2026-10-03-img-6990-thumb.webp
+    caption: The coast and offshore wind turbines, Pingtan, Fujian · 3 October 2026
+    width: 5712
+    height: 4284
+    date: '2026-10-03'
+- id: zhejiang-spring-2026
+  year: 2026
+  sort_date: '2026-05-30'
+  title: Spring in Zhejiang
+  period: '2026'
+  description: Ningbo, Shaoxing, Yueqing & Hengdian
+  cover: assets/img/gallery/life/2026-05-01-img-5664.jpg
+  cover_alt: Mountain views near Longxi, Yueqing, Zhejiang · 1 May 2026
+  action: View 6 photos
+  photos:
+  - path: assets/img/gallery/life/2026-04-01-img-5391.jpg
+    display: assets/img/gallery/life/2026-04-01-img-5391-view.webp
+    thumbnail: assets/img/gallery/life/2026-04-01-img-5391-thumb.webp
+    caption: A quiet courtyard in Ningbo, Zhejiang · 1 April 2026
+    width: 4284
+    height: 5712
+    date: '2026-04-01'
+  - path: assets/img/gallery/life/2026-04-04-img-5447.jpg
+    display: assets/img/gallery/life/2026-04-04-img-5447-view.webp
+    thumbnail: assets/img/gallery/life/2026-04-04-img-5447-thumb.webp
+    caption: Along the canal in Anchang, Shaoxing · 4 April 2026
+    width: 4284
+    height: 5712
+    date: '2026-04-04'
+  - path: assets/img/gallery/life/2026-05-01-img-5664.jpg
+    display: assets/img/gallery/life/2026-05-01-img-5664-view.webp
+    thumbnail: assets/img/gallery/life/2026-05-01-img-5664-thumb.webp
+    caption: Mountain views near Longxi, Yueqing, Zhejiang · 1 May 2026
+    width: 4284
+    height: 5712
+    date: '2026-05-01'
+  - path: assets/img/gallery/life/2026-05-01-img-6934.jpg
+    display: assets/img/gallery/life/2026-05-01-img-6934-view.webp
+    thumbnail: assets/img/gallery/life/2026-05-01-img-6934-thumb.webp
+    caption: Climbing near Longxi, Yueqing, Zhejiang · 1 May 2026
+    width: 4284
+    height: 5712
+    date: '2026-05-01'
+  - path: assets/img/gallery/life/2026-05-01-img-5708.jpg
+    display: assets/img/gallery/life/2026-05-01-img-5708-view.webp
+    thumbnail: assets/img/gallery/life/2026-05-01-img-5708-thumb.webp
+    caption: A pause above the valley near Longxi, Yueqing, Zhejiang · 1 May 2026
+    width: 4284
+    height: 5712
+    date: '2026-05-01'
+  - path: assets/img/gallery/life/2026-05-30-img-6099.jpg
+    display: assets/img/gallery/life/2026-05-30-img-6099-view.webp
+    thumbnail: assets/img/gallery/life/2026-05-30-img-6099-thumb.webp
+    caption: A walk through Hengdian, Zhejiang · 30 May 2026
+    width: 4284
+    height: 5712
+    date: '2026-05-30'
+- id: erli-2026
+  title: Erli · 二粒
+  period: May 2026
+  description: Part of the family · Three years old in 2026
+  cover: assets/img/gallery/life/2026-erli.jpg
+  cover_alt: Erli (二粒), a member of my family, by the water · May 2026
+  position: center 70%
+  action: View 1 photo
+  photos:
+  - path: assets/img/gallery/life/2026-erli.jpg
+    display: assets/img/gallery/life/2026-erli-view.webp
+    thumbnail: assets/img/gallery/life/2026-erli-thumb.webp
+    caption: Erli (二粒), part of the family · May 2026
+    width: 3024
+    height: 4032
+  year: 2026
+  sort_date: '2026-05-16'
+- id: winter-2026
+  year: 2026
+  sort_date: '2026-02-22'
+  title: From snow to sea
+  period: '2026'
+  description: Heilongjiang & Hainan
+  cover: assets/img/gallery/life/2026-01-01-img-4370.jpg
+  cover_alt: New Year snow in Hengdaohezi, Heilongjiang · 1 January 2026
+  action: View 5 photos
+  photos:
+  - path: assets/img/gallery/life/2026-01-01-img-4316.jpg
+    display: assets/img/gallery/life/2026-01-01-img-4316-view.webp
+    thumbnail: assets/img/gallery/life/2026-01-01-img-4316-thumb.webp
+    caption: Welcoming the New Year in Harbin, Heilongjiang · 1 January 2026
+    width: 4284
+    height: 5712
+    date: '2026-01-01'
+  - path: assets/img/gallery/life/2026-01-01-img-4370.jpg
+    display: assets/img/gallery/life/2026-01-01-img-4370-view.webp
+    thumbnail: assets/img/gallery/life/2026-01-01-img-4370-thumb.webp
+    caption: New Year snow in Hengdaohezi, Heilongjiang · 1 January 2026
+    width: 4284
+    height: 5712
+    date: '2026-01-01'
+  - path: assets/img/gallery/life/2026-01-01-img-6702.jpg
+    display: assets/img/gallery/life/2026-01-01-img-6702-view.webp
+    thumbnail: assets/img/gallery/life/2026-01-01-img-6702-thumb.webp
+    caption: Snowy moments in Hengdaohezi, Heilongjiang · 1 January 2026
+    width: 5130
+    height: 6840
+    date: '2026-01-01'
+  - path: assets/img/gallery/life/2026-02-20-img-4862.jpg
+    display: assets/img/gallery/life/2026-02-20-img-4862-view.webp
+    thumbnail: assets/img/gallery/life/2026-02-20-img-4862-thumb.webp
+    caption: The sea around Wuzhizhou Island, Hainan · 20 February 2026
+    width: 4284
+    height: 5712
+    date: '2026-02-20'
+  - path: assets/img/gallery/life/2026-02-22-img-4987.jpg
+    display: assets/img/gallery/life/2026-02-22-img-4987-view.webp
+    thumbnail: assets/img/gallery/life/2026-02-22-img-4987-thumb.webp
+    caption: By the sea at Nanshan, Sanya · 22 February 2026
+    width: 3024
+    height: 4032
+    date: '2026-02-22'
+- id: putuoshan-2025
+  year: 2025
+  sort_date: '2025-12-27'
+  title: A quiet day on Putuoshan
+  period: '2025'
+  description: Zhejiang
+  cover: assets/img/gallery/life/2025-12-27-img-4207.jpg
+  cover_alt: A quiet day on Putuoshan, Zhejiang · 27 December 2025
+  action: View 1 photo
+  photos:
+  - path: assets/img/gallery/life/2025-12-27-img-4207.jpg
+    display: assets/img/gallery/life/2025-12-27-img-4207-view.webp
+    thumbnail: assets/img/gallery/life/2025-12-27-img-4207-thumb.webp
+    caption: A quiet day on Putuoshan, Zhejiang · 27 December 2025
+    width: 4284
+    height: 5712
+    date: '2025-12-27'
+- id: japan-2025
+  year: 2025
+  sort_date: '2025-10-08'
+  title: Days in Japan
+  period: '2025'
+  description: Osaka, Tokyo & Mount Fuji
+  cover: assets/img/gallery/life/2025-10-08-img-3409.jpg
+  cover_alt: Mount Fuji seen from the train · 8 October 2025
+  action: View 4 photos
+  photos:
+  - path: assets/img/gallery/life/2025-10-03-img-3305.jpg
+    display: assets/img/gallery/life/2025-10-03-img-3305-view.webp
+    thumbnail: assets/img/gallery/life/2025-10-03-img-3305-thumb.webp
+    caption: Super Nintendo World at Universal Studios Japan, Osaka · 3 October 2025
+    width: 3024
+    height: 4032
+    date: '2025-10-03'
+  - path: assets/img/gallery/life/2025-10-05-img-3340.jpg
+    display: assets/img/gallery/life/2025-10-05-img-3340-view.webp
+    thumbnail: assets/img/gallery/life/2025-10-05-img-3340-thumb.webp
+    caption: An evening at Shibuya Crossing, Tokyo · 5 October 2025
+    width: 4284
+    height: 5712
+    date: '2025-10-05'
+  - path: assets/img/gallery/life/2025-10-06-img-3348.jpg
+    display: assets/img/gallery/life/2025-10-06-img-3348-view.webp
+    thumbnail: assets/img/gallery/life/2025-10-06-img-3348-thumb.webp
+    caption: Tokyo Skytree by the river · 6 October 2025
+    width: 4284
+    height: 5712
+    date: '2025-10-06'
+  - path: assets/img/gallery/life/2025-10-08-img-3409.jpg
+    display: assets/img/gallery/life/2025-10-08-img-3409-view.webp
+    thumbnail: assets/img/gallery/life/2025-10-08-img-3409-thumb.webp
+    caption: Mount Fuji seen from the train · 8 October 2025
+    width: 3024
+    height: 4032
+    date: '2025-10-08'
+- id: beijing-2025
+  year: 2025
+  sort_date: '2025-05-27'
+  title: Back in Beijing
+  period: '2025'
+  description: City walks and a return to Tsinghua
+  cover: assets/img/gallery/life/2025-05-27-img-2566.jpg
+  cover_alt: Back at Tsinghua University, Beijing · 27 May 2025
+  action: View 7 photos
+  photos:
+  - path: assets/img/gallery/life/2025-04-05-img-2073.jpg
+    display: assets/img/gallery/life/2025-04-05-img-2073-view.webp
+    thumbnail: assets/img/gallery/life/2025-04-05-img-2073-thumb.webp
+    caption: Looking over the Forbidden City from Jingshan, Beijing · 5 April 2025
+    width: 5712
+    height: 4284
+    date: '2025-04-05'
+  - path: assets/img/gallery/life/2025-04-06-img-2098.jpg
+    display: assets/img/gallery/life/2025-04-06-img-2098-view.webp
+    thumbnail: assets/img/gallery/life/2025-04-06-img-2098-thumb.webp
+    caption: Tiananmen, Beijing · 6 April 2025
+    width: 4284
+    height: 5712
+    date: '2025-04-06'
+  - path: assets/img/gallery/life/2025-04-06-img-2111.jpg
+    display: assets/img/gallery/life/2025-04-06-img-2111-view.webp
+    thumbnail: assets/img/gallery/life/2025-04-06-img-2111-thumb.webp
+    caption: Inside the Forbidden City, Beijing · 6 April 2025
+    width: 3024
+    height: 4032
+    date: '2025-04-06'
+  - path: assets/img/gallery/life/2025-05-17-img-2401.jpg
+    display: assets/img/gallery/life/2025-05-17-img-2401-view.webp
+    thumbnail: assets/img/gallery/life/2025-05-17-img-2401-thumb.webp
+    caption: A lakeside walk in Beijing · 17 May 2025
+    width: 5712
+    height: 4284
+    date: '2025-05-17'
+  - path: assets/img/gallery/life/2025-05-17-img-2409.jpg
+    display: assets/img/gallery/life/2025-05-17-img-2409-view.webp
+    thumbnail: assets/img/gallery/life/2025-05-17-img-2409-thumb.webp
+    caption: An afternoon in Beijing · 17 May 2025
+    width: 3024
+    height: 4032
+    date: '2025-05-17'
+  - path: assets/img/gallery/life/2025-05-25-img-2546.jpg
+    display: assets/img/gallery/life/2025-05-25-img-2546-view.webp
+    thumbnail: assets/img/gallery/life/2025-05-25-img-2546-thumb.webp
+    caption: Hogwarts at Universal Beijing Resort · 25 May 2025
+    width: 3024
+    height: 4032
+    date: '2025-05-25'
+  - path: assets/img/gallery/life/2025-05-27-img-2566.jpg
+    display: assets/img/gallery/life/2025-05-27-img-2566-view.webp
+    thumbnail: assets/img/gallery/life/2025-05-27-img-2566-thumb.webp
+    caption: Back at Tsinghua University, Beijing · 27 May 2025
+    width: 4284
+    height: 5712
+    date: '2025-05-27'
+- id: shandong-2025
+  year: 2025
+  sort_date: '2025-02-03'
+  title: Winter on the Shandong coast
+  period: '2025'
+  description: Qingdao & Weihai
+  cover: assets/img/gallery/life/2025-01-31-img-1599.jpg
+  cover_alt: A street walk in Qingdao, Shandong · 31 January 2025
+  action: View 3 photos
+  photos:
+  - path: assets/img/gallery/life/2025-01-31-img-1599.jpg
+    display: assets/img/gallery/life/2025-01-31-img-1599-view.webp
+    thumbnail: assets/img/gallery/life/2025-01-31-img-1599-thumb.webp
+    caption: A street walk in Qingdao, Shandong · 31 January 2025
+    width: 4284
+    height: 5712
+    date: '2025-01-31'
+  - path: assets/img/gallery/life/2025-02-02-img-1715.jpg
+    display: assets/img/gallery/life/2025-02-02-img-1715-view.webp
+    thumbnail: assets/img/gallery/life/2025-02-02-img-1715-thumb.webp
+    caption: By the winter sea in Weihai, Shandong · 2 February 2025
+    width: 3024
+    height: 4032
+    date: '2025-02-02'
+  - path: assets/img/gallery/life/2025-02-03-img-1760.jpg
+    display: assets/img/gallery/life/2025-02-03-img-1760-view.webp
+    thumbnail: assets/img/gallery/life/2025-02-03-img-1760-thumb.webp
+    caption: A snowy day in Weihai, Shandong · 3 February 2025
+    width: 4032
+    height: 3024
+    date: '2025-02-03'
+- id: harbours-2025
+  year: 2025
+  sort_date: '2025-01-12'
+  title: Two cities by the sea
+  period: '2025'
+  description: Hong Kong & Shenzhen
+  cover: assets/img/gallery/life/2025-01-11-img-1327.jpg
+  cover_alt: Victoria Harbour at night, Hong Kong · 11 January 2025
+  action: View 2 photos
+  photos:
+  - path: assets/img/gallery/life/2025-01-11-img-1327.jpg
+    display: assets/img/gallery/life/2025-01-11-img-1327-view.webp
+    thumbnail: assets/img/gallery/life/2025-01-11-img-1327-thumb.webp
+    caption: Victoria Harbour at night, Hong Kong · 11 January 2025
+    width: 4284
+    height: 5712
+    date: '2025-01-11'
+  - path: assets/img/gallery/life/2025-01-12-img-1339.jpg
+    display: assets/img/gallery/life/2025-01-12-img-1339-view.webp
+    thumbnail: assets/img/gallery/life/2025-01-12-img-1339-thumb.webp
+    caption: By the waterfront in Shekou, Shenzhen · 12 January 2025
+    width: 4284
+    height: 5712
+    date: '2025-01-12'
+- id: sichuan-days-2024
+  year: 2024
+  sort_date: '2024-12-14'
+  title: Quiet days in Sichuan
+  period: '2024'
+  description: Dujiangyan & Chengdu
+  cover: assets/img/gallery/life/2024-12-07-img-0971.jpg
+  cover_alt: Golden ginkgo leaves in Chengdu, Sichuan · 7 December 2024
+  action: View 3 photos
+  photos:
+  - path: assets/img/gallery/life/2024-03-25-img-8785.jpg
+    display: assets/img/gallery/life/2024-03-25-img-8785-view.webp
+    thumbnail: assets/img/gallery/life/2024-03-25-img-8785-thumb.webp
+    caption: Tea with a view in Dujiangyan, Sichuan · 25 March 2024
+    width: 3024
+    height: 4032
+    date: '2024-03-25'
+  - path: assets/img/gallery/life/2024-12-07-img-0971.jpg
+    display: assets/img/gallery/life/2024-12-07-img-0971-view.webp
+    thumbnail: assets/img/gallery/life/2024-12-07-img-0971-thumb.webp
+    caption: Golden ginkgo leaves in Chengdu, Sichuan · 7 December 2024
+    width: 4284
+    height: 5712
+    date: '2024-12-07'
+  - path: assets/img/gallery/life/2024-12-14-img-1030.jpg
+    display: assets/img/gallery/life/2024-12-14-img-1030-view.webp
+    thumbnail: assets/img/gallery/life/2024-12-14-img-1030-thumb.webp
+    caption: A snowy landscape in western Chengdu, Sichuan · 14 December 2024
+    width: 3024
+    height: 4032
+    date: '2024-12-14'
+- id: seoul-2024
+  year: 2024
+  sort_date: '2024-09-21'
+  title: A walk in Seoul
+  period: '2024'
+  description: South Korea
+  cover: assets/img/gallery/life/2024-09-21-img-0402.jpg
+  cover_alt: A street walk in Seoul, South Korea · 21 September 2024
+  action: View 1 photo
+  photos:
+  - path: assets/img/gallery/life/2024-09-21-img-0402.jpg
+    display: assets/img/gallery/life/2024-09-21-img-0402-view.webp
+    thumbnail: assets/img/gallery/life/2024-09-21-img-0402-thumb.webp
+    caption: A street walk in Seoul, South Korea · 21 September 2024
+    width: 4284
+    height: 5712
+    date: '2024-09-21'
+- id: guizhou-2024
+  year: 2024
+  sort_date: '2024-05-03'
+  title: Back in Guizhou
+  period: '2024'
+  description: Zhenyuan & Guiyang
+  cover: assets/img/gallery/life/2024-05-02-img-9010.jpg
+  cover_alt: The old bridge in Zhenyuan, Guizhou · 2 May 2024
+  action: View 2 photos
+  photos:
+  - path: assets/img/gallery/life/2024-05-02-img-9010.jpg
+    display: assets/img/gallery/life/2024-05-02-img-9010-view.webp
+    thumbnail: assets/img/gallery/life/2024-05-02-img-9010-thumb.webp
+    caption: The old bridge in Zhenyuan, Guizhou · 2 May 2024
+    width: 4284
+    height: 5712
+    date: '2024-05-02'
+  - path: assets/img/gallery/life/2024-05-03-img-9017.jpg
+    display: assets/img/gallery/life/2024-05-03-img-9017-view.webp
+    thumbnail: assets/img/gallery/life/2024-05-03-img-9017-thumb.webp
+    caption: A green path near Guiyang, Guizhou · 3 May 2024
+    width: 4284
+    height: 5712
+    date: '2024-05-03'
+- id: fujian-2023
+  year: 2023
+  sort_date: '2023-12-31'
+  title: By the coast in Fujian
+  period: '2023'
+  description: Xiamen & Zhangzhou
+  cover: assets/img/gallery/life/2023-12-31-img-8175.jpg
+  cover_alt: By the coast near Zhenhai, Zhangzhou · 31 December 2023
+  action: View 2 photos
+  photos:
+  - path: assets/img/gallery/life/2023-12-30-img-8114.jpg
+    display: assets/img/gallery/life/2023-12-30-img-8114-view.webp
+    thumbnail: assets/img/gallery/life/2023-12-30-img-8114-thumb.webp
+    caption: Architecture on Gulangyu, Xiamen · 30 December 2023
+    width: 4284
+    height: 5712
+    date: '2023-12-30'
+  - path: assets/img/gallery/life/2023-12-31-img-8175.jpg
+    display: assets/img/gallery/life/2023-12-31-img-8175-view.webp
+    thumbnail: assets/img/gallery/life/2023-12-31-img-8175-thumb.webp
+    caption: By the coast near Zhenhai, Zhangzhou · 31 December 2023
+    width: 3024
+    height: 4032
+    date: '2023-12-31'
+- id: chongqing-2023
+  year: 2023
+  sort_date: '2023-11-04'
+  title: An evening in Chongqing
+  period: '2023'
+  description: Jiefangbei
+  cover: assets/img/gallery/life/2023-11-04-img-7624.jpg
+  cover_alt: An evening at Jiefangbei, Chongqing · 4 November 2023
+  action: View 1 photo
+  photos:
+  - path: assets/img/gallery/life/2023-11-04-img-7624.jpg
+    display: assets/img/gallery/life/2023-11-04-img-7624-view.webp
+    thumbnail: assets/img/gallery/life/2023-11-04-img-7624-thumb.webp
+    caption: An evening at Jiefangbei, Chongqing · 4 November 2023
+    width: 4284
+    height: 5712
+    date: '2023-11-04'
+- id: yunnan-2023
+  year: 2023
+  sort_date: '2023-10-05'
+  title: Yunnan skies
+  period: '2023'
+  description: Kunming & Dali
+  cover: assets/img/gallery/life/2023-10-04-img-7183.jpg
+  cover_alt: By Erhai Lake, Dali · 4 October 2023
+  action: View 5 photos
+  photos:
+  - path: assets/img/gallery/life/2023-09-29-img-6989.jpg
+    display: assets/img/gallery/life/2023-09-29-img-6989-view.webp
+    thumbnail: assets/img/gallery/life/2023-09-29-img-6989-thumb.webp
+    caption: Evening clouds in Kunming, Yunnan · 29 September 2023
+    width: 4284
+    height: 5712
+    date: '2023-09-29'
+  - path: assets/img/gallery/life/2023-10-03-img-7151.jpg
+    display: assets/img/gallery/life/2023-10-03-img-7151-view.webp
+    thumbnail: assets/img/gallery/life/2023-10-03-img-7151-thumb.webp
+    caption: On the road through Yunnan · 3 October 2023
+    width: 4284
+    height: 5712
+    date: '2023-10-03'
+  - path: assets/img/gallery/life/2023-10-04-img-7183.jpg
+    display: assets/img/gallery/life/2023-10-04-img-7183-view.webp
+    thumbnail: assets/img/gallery/life/2023-10-04-img-7183-thumb.webp
+    caption: By Erhai Lake, Dali · 4 October 2023
+    width: 4284
+    height: 5712
+    date: '2023-10-04'
+  - path: assets/img/gallery/life/2023-10-04-img-7202.jpg
+    display: assets/img/gallery/life/2023-10-04-img-7202-view.webp
+    thumbnail: assets/img/gallery/life/2023-10-04-img-7202-thumb.webp
+    caption: An afternoon beside Erhai Lake, Dali · 4 October 2023
+    width: 3024
+    height: 4032
+    date: '2023-10-04'
+  - path: assets/img/gallery/life/2023-10-05-img-7278.jpg
+    display: assets/img/gallery/life/2023-10-05-img-7278-view.webp
+    thumbnail: assets/img/gallery/life/2023-10-05-img-7278-thumb.webp
+    caption: Reeds and clouds beside Erhai Lake, Dali · 5 October 2023
+    width: 4284
+    height: 5712
+    date: '2023-10-05'
+- id: sichuan-days-2023
+  year: 2023
+  sort_date: '2023-08-12'
+  title: Sichuan days
+  period: '2023'
+  description: Chengdu, Dujiangyan & the western mountains
+  cover: assets/img/gallery/life/2023-07-02-img-4959.jpg
+  cover_alt: Sunrise over the mountains of western Sichuan · 2 July 2023
+  action: View 9 photos
+  photos:
+  - path: assets/img/gallery/life/2023-05-20-img-3265.jpg
+    display: assets/img/gallery/life/2023-05-20-img-3265-view.webp
+    thumbnail: assets/img/gallery/life/2023-05-20-img-3265-thumb.webp
+    caption: An indoor snowboarding day in Dujiangyan, Sichuan · 20 May 2023
+    width: 3024
+    height: 4032
+    date: '2023-05-20'
+  - path: assets/img/gallery/life/2023-06-03-img-3671.jpg
+    display: assets/img/gallery/life/2023-06-03-img-3671-view.webp
+    thumbnail: assets/img/gallery/life/2023-06-03-img-3671-thumb.webp
+    caption: Green hills near Chengdu, Sichuan · 3 June 2023
+    width: 4032
+    height: 3024
+    date: '2023-06-03'
+  - path: assets/img/gallery/life/2023-06-18-img-4361.jpg
+    display: assets/img/gallery/life/2023-06-18-img-4361-view.webp
+    thumbnail: assets/img/gallery/life/2023-06-18-img-4361-thumb.webp
+    caption: An early morning near Chengdu, Sichuan · 18 June 2023
+    width: 3024
+    height: 4032
+    date: '2023-06-18'
+  - path: assets/img/gallery/life/2023-07-01-img-4919.jpg
+    display: assets/img/gallery/life/2023-07-01-img-4919-view.webp
+    thumbnail: assets/img/gallery/life/2023-07-01-img-4919-thumb.webp
+    caption: An evening in the mountains of western Sichuan · 1 July 2023
+    width: 4032
+    height: 3024
+    date: '2023-07-01'
+  - path: assets/img/gallery/life/2023-07-02-img-4936.jpg
+    display: assets/img/gallery/life/2023-07-02-img-4936-view.webp
+    thumbnail: assets/img/gallery/life/2023-07-02-img-4936-thumb.webp
+    caption: Waiting for sunrise above the clouds in western Sichuan · 2 July 2023
+    width: 3024
+    height: 4032
+    date: '2023-07-02'
+  - path: assets/img/gallery/life/2023-07-02-img-4948.jpg
+    display: assets/img/gallery/life/2023-07-02-img-4948-view.webp
+    thumbnail: assets/img/gallery/life/2023-07-02-img-4948-thumb.webp
+    caption: Mountain grasslands above the clouds in western Sichuan · 2 July 2023
+    width: 3024
+    height: 4032
+    date: '2023-07-02'
+  - path: assets/img/gallery/life/2023-07-02-img-4949.jpg
+    display: assets/img/gallery/life/2023-07-02-img-4949-view.webp
+    thumbnail: assets/img/gallery/life/2023-07-02-img-4949-thumb.webp
+    caption: Morning light above the clouds in western Sichuan · 2 July 2023
+    width: 3024
+    height: 4032
+    date: '2023-07-02'
+  - path: assets/img/gallery/life/2023-07-02-img-4959.jpg
+    display: assets/img/gallery/life/2023-07-02-img-4959-view.webp
+    thumbnail: assets/img/gallery/life/2023-07-02-img-4959-thumb.webp
+    caption: Sunrise over the mountains of western Sichuan · 2 July 2023
+    width: 3024
+    height: 4032
+    date: '2023-07-02'
+  - path: assets/img/gallery/life/2023-08-12-img-6078.jpg
+    display: assets/img/gallery/life/2023-08-12-img-6078-view.webp
+    thumbnail: assets/img/gallery/life/2023-08-12-img-6078-thumb.webp
+    caption: An afternoon by the lake near Chengdu, Sichuan · 12 August 2023
+    width: 3024
+    height: 4032
+    date: '2023-08-12'
+- id: guangxi-2023
+  year: 2023
+  sort_date: '2023-05-03'
+  title: Along the water in Guangxi
+  period: '2023'
+  description: Yangshuo & Beihai
+  cover: assets/img/gallery/life/2023-05-01-img-2435.jpg
+  cover_alt: Looking out over Yangshuo, Guangxi · 1 May 2023
+  action: View 3 photos
+  photos:
+  - path: assets/img/gallery/life/2023-05-01-img-2435.jpg
+    display: assets/img/gallery/life/2023-05-01-img-2435-view.webp
+    thumbnail: assets/img/gallery/life/2023-05-01-img-2435-thumb.webp
+    caption: Looking out over Yangshuo, Guangxi · 1 May 2023
+    width: 4032
+    height: 3024
+    date: '2023-05-01'
+  - path: assets/img/gallery/life/2023-05-02-img-2658.jpg
+    display: assets/img/gallery/life/2023-05-02-img-2658-view.webp
+    thumbnail: assets/img/gallery/life/2023-05-02-img-2658-thumb.webp
+    caption: Bamboo rafting in Yangshuo, Guangxi · 2 May 2023
+    width: 3024
+    height: 4032
+    date: '2023-05-02'
+  - path: assets/img/gallery/life/2023-05-03-img-2797.jpg
+    display: assets/img/gallery/life/2023-05-03-img-2797-view.webp
+    thumbnail: assets/img/gallery/life/2023-05-03-img-2797-thumb.webp
+    caption: By the sea in Beihai, Guangxi · 3 May 2023
+    width: 3024
+    height: 4032
+    date: '2023-05-03'
+- id: guizhou-2023
+  year: 2023
+  sort_date: '2023-03-05'
+  title: Guizhou in spring
+  period: '2023'
+  description: Guiyang, Libo & Xijiang
+  cover: assets/img/gallery/life/2023-03-04-img-0691.jpg
+  cover_alt: The old stone bridge at Xiaoqikong, Libo · 4 March 2023
+  action: View 6 photos
+  photos:
+  - path: assets/img/gallery/life/2023-03-03-img-0594.jpg
+    display: assets/img/gallery/life/2023-03-03-img-0594-view.webp
+    thumbnail: assets/img/gallery/life/2023-03-03-img-0594-thumb.webp
+    caption: Evening reflections in Guizhou · 3 March 2023
+    width: 4032
+    height: 3024
+    date: '2023-03-03'
+  - path: assets/img/gallery/life/2023-03-04-img-0622.jpg
+    display: assets/img/gallery/life/2023-03-04-img-0622-view.webp
+    thumbnail: assets/img/gallery/life/2023-03-04-img-0622-thumb.webp
+    caption: Emerald water at Xiaoqikong, Libo · 4 March 2023
+    width: 4032
+    height: 3024
+    date: '2023-03-04'
+  - path: assets/img/gallery/life/2023-03-04-img-0663.jpg
+    display: assets/img/gallery/life/2023-03-04-img-0663-view.webp
+    thumbnail: assets/img/gallery/life/2023-03-04-img-0663-thumb.webp
+    caption: A walk beside the water at Xiaoqikong, Libo · 4 March 2023
+    width: 3024
+    height: 4032
+    date: '2023-03-04'
+  - path: assets/img/gallery/life/2023-03-04-img-0681.jpg
+    display: assets/img/gallery/life/2023-03-04-img-0681-view.webp
+    thumbnail: assets/img/gallery/life/2023-03-04-img-0681-thumb.webp
+    caption: Waterfalls at Xiaoqikong, Libo · 4 March 2023
+    width: 4032
+    height: 3024
+    date: '2023-03-04'
+  - path: assets/img/gallery/life/2023-03-04-img-0691.jpg
+    display: assets/img/gallery/life/2023-03-04-img-0691-view.webp
+    thumbnail: assets/img/gallery/life/2023-03-04-img-0691-thumb.webp
+    caption: The old stone bridge at Xiaoqikong, Libo · 4 March 2023
+    width: 4032
+    height: 3024
+    date: '2023-03-04'
+  - path: assets/img/gallery/life/2023-03-05-img-0794.jpg
+    display: assets/img/gallery/life/2023-03-05-img-0794-view.webp
+    thumbnail: assets/img/gallery/life/2023-03-05-img-0794-thumb.webp
+    caption: The river through Xijiang, Guizhou · 5 March 2023
+    width: 3024
+    height: 4032
+    date: '2023-03-05'
+- id: classroom-2019
+  title: Back in the classroom
+  period: March 2019
+  description: A full lecture hall
+  cover: assets/img/gallery/life/2019-lecture-hall.jpg
+  cover_alt: A full lecture hall; I arrived late · 6 March 2019
+  action: View 1 photo
+  photos:
+  - path: assets/img/gallery/life/2019-lecture-hall.jpg
+    display: assets/img/gallery/life/2019-lecture-hall-view.webp
+    thumbnail: assets/img/gallery/life/2019-lecture-hall-thumb.webp
+    caption: A full lecture hall; I arrived late · 6 March 2019
+    width: 2048
+    height: 1536
+  year: 2019
+  sort_date: '2019-03-06'
+- id: algorithms-2018
+  title: Sharing algorithms
+  period: March 2018
+  description: A moment in the classroom
+  cover: assets/img/gallery/life/2018-algorithms.jpg
+  cover_alt: Sharing algorithms in class · 23 March 2018
+  action: View 1 photo
+  photos:
+  - path: assets/img/gallery/life/2018-algorithms.jpg
+    display: assets/img/gallery/life/2018-algorithms-view.webp
+    thumbnail: assets/img/gallery/life/2018-algorithms-thumb.webp
+    caption: Sharing algorithms in class · 23 March 2018
+    width: 1536
+    height: 2048
+  year: 2018
+  position: center 32%
+  sort_date: '2018-03-23'
+- id: sydney-2017
+  title: Sydney days
+  period: '2017'
+  description: Friends, shared meals, and days by the sea
+  cover: assets/img/gallery/life/2017-sunset-with-friends.jpg
+  cover_alt: Watching the sunset with friends · Sydney, 2 June 2017
+  action: View 13 photos
+  position: center 65%
+  photos:
+  - path: assets/img/gallery/life/2017-sydney-opera-house.jpg
+    display: assets/img/gallery/life/2017-sydney-opera-house-view.webp
+    thumbnail: assets/img/gallery/life/2017-sydney-opera-house-thumb.webp
+    caption: Sydney Opera House and the harbour at night · 30 April 2017
+    width: 4032
+    height: 3024
+  - path: assets/img/gallery/life/2017-dinner-at-home.jpg
+    display: assets/img/gallery/life/2017-dinner-at-home-view.webp
+    thumbnail: assets/img/gallery/life/2017-dinner-at-home-thumb.webp
+    caption: Dinner with friends at our student residence · 6 May 2017
+    width: 4032
+    height: 3024
+  - path: assets/img/gallery/life/2017-sydney-evening.jpg
+    display: assets/img/gallery/life/2017-sydney-evening-view.webp
+    thumbnail: assets/img/gallery/life/2017-sydney-evening-thumb.webp
+    caption: An evening out in Sydney · 13 May 2017
+    width: 4032
+    height: 3024
+  - path: assets/img/gallery/life/2017-sydney-church.jpg
+    display: assets/img/gallery/life/2017-sydney-church-view.webp
+    thumbnail: assets/img/gallery/life/2017-sydney-church-thumb.webp
+    caption: A jump in front of a church in Sydney · 27 May 2017
+    width: 4032
+    height: 3024
+  - path: assets/img/gallery/life/2017-sunset-with-friends.jpg
+    display: assets/img/gallery/life/2017-sunset-with-friends-view.webp
+    thumbnail: assets/img/gallery/life/2017-sunset-with-friends-thumb.webp
+    caption: Watching the sunset with friends · Sydney, 2 June 2017
+    width: 4032
+    height: 3024
+  - path: assets/img/gallery/life/2017-sydney-harbour.jpg
+    display: assets/img/gallery/life/2017-sydney-harbour-view.webp
+    thumbnail: assets/img/gallery/life/2017-sydney-harbour-thumb.webp
+    caption: By Sydney Harbour · 4 June 2017
+    width: 4032
+    height: 3024
+  - path: assets/img/gallery/life/2017-birthday-cheers.jpg
+    display: assets/img/gallery/life/2017-birthday-cheers-view.webp
+    thumbnail: assets/img/gallery/life/2017-birthday-cheers-thumb.webp
+    caption: A toast at a friend’s birthday · 6 June 2017
+    width: 1536
+    height: 2048
+  - path: assets/img/gallery/life/2017-vivid-sydney-edwin.jpg
+    display: assets/img/gallery/life/2017-vivid-sydney-edwin-view.webp
+    thumbnail: assets/img/gallery/life/2017-vivid-sydney-edwin-thumb.webp
+    caption: Edwin at Vivid Sydney · 16 June 2017
+    width: 4032
+    height: 3024
+  - path: assets/img/gallery/life/2017-bondi-friends.jpg
+    display: assets/img/gallery/life/2017-bondi-friends-view.webp
+    thumbnail: assets/img/gallery/life/2017-bondi-friends-thumb.webp
+    caption: With friends at Bondi Beach · 23 June 2017
+    width: 4032
+    height: 3024
+  - path: assets/img/gallery/life/2017-beach-coffee.jpg
+    display: assets/img/gallery/life/2017-beach-coffee-view.webp
+    thumbnail: assets/img/gallery/life/2017-beach-coffee-thumb.webp
+    caption: Coffee by the beach with friends · 1 September 2017
+    width: 4032
+    height: 3024
+  - path: assets/img/gallery/life/2017-by-the-sea.jpg
+    display: assets/img/gallery/life/2017-by-the-sea-view.webp
+    thumbnail: assets/img/gallery/life/2017-by-the-sea-thumb.webp
+    caption: By the sea in Sydney · 2017
+    width: 4032
+    height: 3024
+  - path: assets/img/gallery/life/2017-harbour-photographer.jpg
+    display: assets/img/gallery/life/2017-harbour-photographer-view.webp
+    thumbnail: assets/img/gallery/life/2017-harbour-photographer-thumb.webp
+    caption: A friend photographing the harbour · Sydney, 2017
+    width: 4032
+    height: 3024
+  - path: assets/img/gallery/life/2017-cooking-with-family.jpg
+    display: assets/img/gallery/life/2017-cooking-with-family-view.webp
+    thumbnail: assets/img/gallery/life/2017-cooking-with-family-thumb.webp
+    caption: Cooking with Ben’s parents during their visit · 2017
+    width: 4032
+    height: 3024
+  year: 2017
+  sort_date: '2017'
+- id: jiuzhai-2016
+  title: Back in Sichuan
+  period: August 2016
+  description: Jiuzhai Valley
+  cover: assets/img/gallery/life/2016-jiuzhai-valley.jpg
+  cover_alt: Jiuzhai Valley, Sichuan · 30 August 2016
+  action: View 1 photo
+  photos:
+  - path: assets/img/gallery/life/2016-jiuzhai-valley.jpg
+    display: assets/img/gallery/life/2016-jiuzhai-valley-view.webp
+    thumbnail: assets/img/gallery/life/2016-jiuzhai-valley-thumb.webp
+    caption: Jiuzhai Valley, Sichuan · 30 August 2016
+    width: 3264
+    height: 2448
+  year: 2016
+  sort_date: '2016-08-30'
+- id: uk-2016
+  title: Friends and travels
+  period: '2016'
+  description: Lancaster, Liverpool, London & Edinburgh
+  cover: assets/img/gallery/life/2016-edinburgh-hillside.jpg
+  cover_alt: Looking out over Edinburgh · 29 March 2016
+  action: View 6 photos
+  photos:
+  - path: assets/img/gallery/life/2016-birthday-dinner.jpg
+    display: assets/img/gallery/life/2016-birthday-dinner-view.webp
+    thumbnail: assets/img/gallery/life/2016-birthday-dinner-thumb.webp
+    caption: A birthday dinner with friends · 30 January 2016
+    width: 1920
+    height: 1280
+  - path: assets/img/gallery/life/2016-lancaster-dusk.jpg
+    display: assets/img/gallery/life/2016-lancaster-dusk-view.webp
+    thumbnail: assets/img/gallery/life/2016-lancaster-dusk-thumb.webp
+    caption: The evening sky from my room · Lancaster, 18 February 2016
+    width: 1536
+    height: 2048
+  - path: assets/img/gallery/life/2016-liverpool.jpg
+    display: assets/img/gallery/life/2016-liverpool-view.webp
+    thumbnail: assets/img/gallery/life/2016-liverpool-thumb.webp
+    caption: A day in Liverpool · 28 February 2016
+    width: 1280
+    height: 960
+  - path: assets/img/gallery/life/2016-london-jeff.jpg
+    display: assets/img/gallery/life/2016-london-jeff-view.webp
+    thumbnail: assets/img/gallery/life/2016-london-jeff-thumb.webp
+    caption: With Jeff at Tower Bridge, London · 26 March 2016
+    width: 960
+    height: 1280
+  - path: assets/img/gallery/life/2016-edinburgh-hillside.jpg
+    display: assets/img/gallery/life/2016-edinburgh-hillside-view.webp
+    thumbnail: assets/img/gallery/life/2016-edinburgh-hillside-thumb.webp
+    caption: Looking out over Edinburgh · 29 March 2016
+    width: 1280
+    height: 960
+  - path: assets/img/gallery/life/2016-edinburgh-city.jpg
+    display: assets/img/gallery/life/2016-edinburgh-city-view.webp
+    thumbnail: assets/img/gallery/life/2016-edinburgh-city-thumb.webp
+    caption: Edinburgh from above · March 2016
+    width: 3264
+    height: 2448
+  year: 2016
+  sort_date: '2016-03-29'
+- id: uk-2015
+  title: Life in the UK
+  period: '2015'
+  description: Manchester & Lancaster
+  cover: assets/img/gallery/life/2015-williamson-park-friends.jpg
+  cover_alt: With friends at Williamson Park · 11 October 2015
+  action: View 12 photos
+  photos:
+  - path: assets/img/gallery/life/2015-manchester-university.jpg
+    display: assets/img/gallery/life/2015-manchester-university-view.webp
+    thumbnail: assets/img/gallery/life/2015-manchester-university-thumb.webp
+    caption: A view of the University of Manchester · 10 July 2015
+    width: 960
+    height: 1280
+  - path: assets/img/gallery/life/2015-manchester-chinatown.jpg
+    display: assets/img/gallery/life/2015-manchester-chinatown-view.webp
+    thumbnail: assets/img/gallery/life/2015-manchester-chinatown-thumb.webp
+    caption: Manchester Chinatown · 10 July 2015
+    width: 640
+    height: 852
+  - path: assets/img/gallery/life/2015-lancaster-campus.jpg
+    display: assets/img/gallery/life/2015-lancaster-campus-view.webp
+    thumbnail: assets/img/gallery/life/2015-lancaster-campus-thumb.webp
+    caption: The view from my student residence in Lancaster · 2015
+    width: 1280
+    height: 960
+  - path: assets/img/gallery/life/2015-lancaster-canal.jpg
+    display: assets/img/gallery/life/2015-lancaster-canal-view.webp
+    thumbnail: assets/img/gallery/life/2015-lancaster-canal-thumb.webp
+    caption: An afternoon by the canal in Lancaster · 7 August 2015
+    width: 3264
+    height: 2448
+  - path: assets/img/gallery/life/2015-lancaster-friends.jpg
+    display: assets/img/gallery/life/2015-lancaster-friends-view.webp
+    thumbnail: assets/img/gallery/life/2015-lancaster-friends-thumb.webp
+    caption: A night out with friends in Lancaster · 2015
+    width: 1280
+    height: 960
+  - path: assets/img/gallery/life/2015-train-to-london.jpg
+    display: assets/img/gallery/life/2015-train-to-london-view.webp
+    thumbnail: assets/img/gallery/life/2015-train-to-london-thumb.webp
+    caption: On the train to London · 10 September 2015
+    width: 1536
+    height: 2048
+  - path: assets/img/gallery/life/2015-after-class-sunset.jpg
+    display: assets/img/gallery/life/2015-after-class-sunset-view.webp
+    thumbnail: assets/img/gallery/life/2015-after-class-sunset-thumb.webp
+    caption: Sunset after class · Lancaster, 2015
+    width: 1536
+    height: 2048
+  - path: assets/img/gallery/life/2015-autumn-window.jpg
+    display: assets/img/gallery/life/2015-autumn-window-view.webp
+    thumbnail: assets/img/gallery/life/2015-autumn-window-thumb.webp
+    caption: Autumn outside my window · 6 October 2015
+    width: 3264
+    height: 2448
+  - path: assets/img/gallery/life/2015-ashton-memorial.jpg
+    display: assets/img/gallery/life/2015-ashton-memorial-view.webp
+    thumbnail: assets/img/gallery/life/2015-ashton-memorial-thumb.webp
+    caption: Ashton Memorial, Williamson Park · 10 October 2015
+    width: 3264
+    height: 2448
+  - path: assets/img/gallery/life/2015-williamson-park-friends.jpg
+    display: assets/img/gallery/life/2015-williamson-park-friends-view.webp
+    thumbnail: assets/img/gallery/life/2015-williamson-park-friends-thumb.webp
+    caption: With friends at Williamson Park · 11 October 2015
+    width: 1280
+    height: 960
+  - path: assets/img/gallery/life/2015-ashton-friends.jpg
+    display: assets/img/gallery/life/2015-ashton-friends-view.webp
+    thumbnail: assets/img/gallery/life/2015-ashton-friends-thumb.webp
+    caption: With friends in front of Ashton Memorial · October 2015
+    width: 591
+    height: 800
+  - path: assets/img/gallery/life/2015-autumn-red-trees.jpg
+    display: assets/img/gallery/life/2015-autumn-red-trees-view.webp
+    thumbnail: assets/img/gallery/life/2015-autumn-red-trees-thumb.webp
+    caption: The trees outside my window turning red · 18 October 2015
+    width: 1280
+    height: 960
+  year: 2015
+  sort_date: '2015-10-18'
+- id: tsinghua-2015
+  title: A year at Tsinghua
+  period: '2015'
+  description: A year of study in Beijing
+  cover: assets/img/gallery/life/2015-tsinghua-trees.jpg
+  cover_alt: A walk on campus at Tsinghua University · April 2015
+  action: View 4 photos
+  photos:
+  - path: assets/img/gallery/life/2015-tsinghua-campus.jpg
+    display: assets/img/gallery/life/2015-tsinghua-campus-view.webp
+    thumbnail: assets/img/gallery/life/2015-tsinghua-campus-thumb.webp
+    caption: During my year of study at Tsinghua University · April 2015
+    width: 1536
+    height: 2048
+  - path: assets/img/gallery/life/2015-tsinghua-trees.jpg
+    display: assets/img/gallery/life/2015-tsinghua-trees-view.webp
+    thumbnail: assets/img/gallery/life/2015-tsinghua-trees-thumb.webp
+    caption: A walk on campus at Tsinghua University · April 2015
+    width: 1536
+    height: 2048
+  - path: assets/img/gallery/life/2015-tsinghua-evening.jpg
+    display: assets/img/gallery/life/2015-tsinghua-evening-view.webp
+    thumbnail: assets/img/gallery/life/2015-tsinghua-evening-thumb.webp
+    caption: An evening on campus at Tsinghua · April 2015
+    width: 1536
+    height: 2048
+  - path: assets/img/gallery/life/2015-tsinghua-friends.jpg
+    display: assets/img/gallery/life/2015-tsinghua-friends-view.webp
+    thumbnail: assets/img/gallery/life/2015-tsinghua-friends-thumb.webp
+    caption: Dinner with a friend during my year at Tsinghua · April 2015
+    width: 1536
+    height: 2048
+  year: 2015
+  sort_date: 2015-04
+- id: guangyuan-childhood
+  title: With Mum
+  period: '1998'
+  description: Guangyuan, Sichuan
+  cover: assets/img/gallery/life/1998-guangyuan-with-mum.jpg
+  cover_alt: With my mum in Guangyuan, Sichuan · 1998
+  action: View 1 photo
+  fit: contain
+  photos:
+  - path: assets/img/gallery/life/1998-guangyuan-with-mum.jpg
+    display: assets/img/gallery/life/1998-guangyuan-with-mum-view.webp
+    thumbnail: assets/img/gallery/life/1998-guangyuan-with-mum-thumb.webp
+    caption: With my mum in Guangyuan, Sichuan · 1998
+    width: 1135
+    height: 640
+  year: 1998
+  shape: wide
+  sort_date: '1998'

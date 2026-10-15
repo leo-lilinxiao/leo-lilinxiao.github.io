@@ -1,0 +1,24 @@
+{% assign year_groups = include.events | group_by: 'year' %}
+<div class="gallery-river" data-gallery-river data-river-turn="{{ '/assets/img/gallery/river-turn-v2.webp' | relative_url }}" data-river-mobile="{{ '/assets/img/gallery/river-vertical-v2.webp' | relative_url }}">
+  <div class="gallery-river-art" aria-hidden="true"></div>
+  <ol class="gallery-years" aria-label="{{ include.label }}">
+    {% for group in year_groups %}
+      {% assign last_chunk = group.items.size | minus: 1 | divided_by: 2 %}
+      {% for chunk in (0..last_chunk) %}
+      {% assign offset = chunk | times: 2 %}
+      {% assign records = group.items | slice: offset, 2 %}
+      <li class="gallery-year-group{% if records.size > 1 %} gallery-year-group-multiple{% endif %}{% unless forloop.first %} gallery-year-group-continued{% endunless %}" data-year="{{ group.name }}">
+        {% if forloop.first %}<h2 class="gallery-year"><time datetime="{{ group.name }}">{{ group.name }}</time></h2>{% endif %}
+        <span class="gallery-river-node" aria-hidden="true"><i class="fa-solid fa-circle"></i></span>
+        <ul class="gallery-year-records" aria-label="{{ group.name }} albums">
+          {% for event in records %}
+            <li class="gallery-record" id="{{ event.id }}" data-gallery-record>
+              {% include gallery_event.liquid event=event %}
+            </li>
+          {% endfor %}
+        </ul>
+      </li>
+      {% endfor %}
+    {% endfor %}
+  </ol>
+</div>
