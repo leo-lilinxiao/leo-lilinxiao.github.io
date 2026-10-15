@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<div class="post reading-page reading-page-{{ page.feature.kind }}">
+  {% include reading_back_link.liquid %}
+
+  <header class="reading-hero">
+    <img class="reading-hero-art" src="{{ page.feature.image | relative_url }}" width="1280" height="853" alt="" aria-hidden="true" fetchpriority="high" decoding="async">
+    <div class="reading-hero-copy">
+      <p class="reading-eyebrow">{{ page.feature.eyebrow | escape }}</p>
+      <h1>
+        <span class="reading-feature-value">{{ page.feature.value | escape }}</span>
+        <span class="reading-feature-title">{{ page.feature.title | escape }}</span>
+      </h1>
+      <p class="reading-feature-caption">{{ page.feature.caption | escape }}</p>
+    </div>
+  </header>
+
+  <p class="reading-context">{{ page.description | escape }}</p>
+
+  <article class="reading-body">
+    {{ content }}
+  </article>
+</div>

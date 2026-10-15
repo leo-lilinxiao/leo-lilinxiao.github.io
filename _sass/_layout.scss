@@ -276,16 +276,17 @@ body.sticky-bottom-footer > .container.mt-5 {
   max-width: 100%;
   min-height: 44px;
   padding: 0.4rem 0.1rem;
-  color: var(--global-text-color-light);
-  font-size: 0.88rem;
-  font-weight: 550;
+  color: var(--global-theme-color);
+  font-size: 1.05rem;
+  font-weight: 600;
   line-height: 1.4;
   text-decoration: none;
 
-  i { color: var(--global-theme-color); flex-shrink: 0; }
+  i { font-size: 1.1rem; flex-shrink: 0; }
   &:hover {
     color: var(--global-theme-color);
     text-decoration: none;
+    span { text-decoration: underline; text-underline-offset: 0.2em; }
   }
   &:focus-visible { outline: 2px solid var(--global-theme-color); outline-offset: 4px; }
 }
