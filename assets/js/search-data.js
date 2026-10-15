@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-gallery",
           title: "Gallery",
-          description: "Photos from awards, conferences, and professional activities.",
+          description: "Research milestones and memories along the way.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/gallery/";
