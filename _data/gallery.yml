@@ -18,8 +18,10 @@
   cover: assets/img/gallery/mfu65-ascend-2026.png
   cover_alt: AIGCode, 65% MFU for MoE pre-training on Ascend
   fit: contain
-  action: Read coverage · 36Kr
-  url: https://mp.weixin.qq.com/s/cOsJ_55UWvyR2l107xk02A
+  action: Read English overview
+  url: /highlights/mfu-65-ascend/
+  source_url: https://mp.weixin.qq.com/s/cOsJ_55UWvyR2l107xk02A
+  source_label: Chinese original · 36Kr
 
 - id: ict-2025
   year: 2025

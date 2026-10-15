@@ -72,7 +72,7 @@ cv:
         date: "Jun 2026"
         publisher: "Frontiers Series · Guangming Laboratory"
         presentation: "Academic Seminar"
-        url: https://mp.weixin.qq.com/s/tvtTHvvBlF8Kzuc21OJSKw
+        url: /talks/communication-aware-moe-training/
         summary: "Academic seminar on communication-aware scheduling optimization for large-scale MoE model training on Ascend NPUs."
 
       - title: "DeepSeek-V4 Mechanism Deep Dive"

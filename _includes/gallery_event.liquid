@@ -1,14 +1,20 @@
 {% assign event = include.event %}
+{% assign external = false %}
 {% if event.url %}
-  {% assign destination = event.url %}
+  {% if event.url contains '://' %}
+    {% assign destination = event.url %}
+    {% assign external = true %}
+  {% else %}
+    {% assign destination = event.url | relative_url %}
+  {% endif %}
 {% else %}
   {% assign destination = event.photos.first.path | relative_url %}
 {% endif %}
 <a
-  class="gallery-card{% if event.url %} gallery-card-external{% endif %}{% if event.shape == 'wide' %} gallery-card-wide{% endif %}"
+  class="gallery-card{% if event.url %} gallery-card-link{% endif %}{% if event.shape == 'wide' %} gallery-card-wide{% endif %}"
   href="{{ destination }}"
-  {% if event.url %}target="_blank" rel="noopener noreferrer"{% else %}data-gallery-open aria-haspopup="dialog"{% endif %}
-  aria-label="{{ event.title | escape }} — {{ event.action | escape }}{% if event.url %} (opens in a new tab){% endif %}"
+  {% if external %}target="_blank" rel="noopener noreferrer"{% elsif event.url == nil %}data-gallery-open aria-haspopup="dialog"{% endif %}
+  aria-label="{{ event.title | escape }} — {{ event.action | escape }}{% if external %} (opens in a new tab){% endif %}"
 >
   <picture class="gallery-cover{% if event.fit == 'contain' %} gallery-cover-contain{% endif %}{% if event.shape == 'wide' %} gallery-cover-wide{% endif %}">
     {% if site.imagemagick.enabled %}
@@ -20,9 +26,12 @@
   <div class="gallery-card-copy">
     <h3 class="gallery-event-title">{{ event.title }}</h3>
     {% if event.description %}<p class="gallery-event-description">{{ event.description }}</p>{% endif %}
-    <span class="gallery-event-action"><i class="fa-solid {% if event.url %}fa-arrow-up-right-from-square{% else %}fa-expand{% endif %}" aria-hidden="true"></i> {{ event.action }}</span>
+    <span class="gallery-event-action"><i class="fa-solid {% if external %}fa-arrow-up-right-from-square{% elsif event.url %}fa-arrow-right{% else %}fa-expand{% endif %}" aria-hidden="true"></i> {{ event.action }}</span>
   </div>
 </a>
+{% if event.source_url %}
+  <a class="gallery-source-link" href="{{ event.source_url }}" hreflang="zh" target="_blank" rel="noopener noreferrer">{{ event.source_label }} <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+{% endif %}
 {% for photo in event.photos %}
   {% assign photo_base = photo.path | remove: '.jpg' | remove: '.png' %}
   <a hidden data-gallery-photo href="{{ photo.path | relative_url }}"
