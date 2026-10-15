@@ -37,32 +37,32 @@ feature:
       <span class="reading-path-number" aria-hidden="true">01</span>
       <div>
         <p class="reading-path-label">Communication</p>
-        <h3>Overlap communication and computation</h3>
-        <p>Schedule token dispatch, expert computation, shared experts, and backward execution together to reduce communication exposed on the <mark>critical path</mark>.</p>
+        <h3>Coordinate communication and computation</h3>
+        <p>CARD schedules the full MoE layer in one framework, covering token dispatch, expert computation, the return of expert outputs, shared experts, and the backward pass. This reduces communication exposed on the <mark>critical path</mark>.</p>
       </div>
     </li>
     <li>
       <span class="reading-path-number" aria-hidden="true">02</span>
       <div>
         <p class="reading-path-label">Expert computation</p>
-        <h3>Compute gradients directly</h3>
-        <p>Reduce saved tensors and autograd scheduling overhead for grouped matrix multiplication, activations, and routing probabilities. <mark>Direct gradient computation and accumulation</mark> cut redundant work and memory use.</p>
+        <h3>Streamline expert computation and backpropagation</h3>
+        <p>For grouped matrix multiplication, activations, and routing probability calculations inside MoE experts, CARD reduces the intermediate tensors saved by standard autograd and its backward scheduling overhead. <mark>Selected paths use direct gradient computation and accumulation</mark> to reduce redundant computation and device memory use.</p>
       </div>
     </li>
     <li>
       <span class="reading-path-number" aria-hidden="true">03</span>
       <div>
         <p class="reading-path-label">Output &amp; loss</p>
-        <h3>Compute the loss in chunks</h3>
-        <p>Compute the same loss with <mark>chunked loss computation</mark> and accumulate gradients across the output layer. NPU-side matrix accumulation reduces intermediate buffers and repeated matrix multiplications.</p>
+        <h3>Optimize the output layer and loss</h3>
+        <p>For the LM head and loss, CARD combines <mark>chunked loss computation</mark>, output-layer gradient accumulation, and matrix accumulation on the NPU. Together, they preserve the loss result and reduce intermediate buffers and repeated matrix multiplications in the backward pass of large matrix operations.</p>
       </div>
     </li>
     <li>
       <span class="reading-path-number" aria-hidden="true">04</span>
       <div>
         <p class="reading-path-label">Pipeline &amp; memory</p>
-        <h3>Choose what to store and recompute</h3>
-        <p>Choose activation-storage and recomputation policies per stage. <mark>Automatic policy generation</mark> reduces manual configuration across model depths and parallelism settings.</p>
+        <h3>Balance memory and recomputation</h3>
+        <p>CARD chooses activation storage and recomputation policies for each pipeline stage to <mark>balance memory use and recomputation</mark>. Automatic policy generation reduces manual configuration and makes the policies easier to adapt to different layer counts and parallelism configurations.</p>
       </div>
     </li>
   </ol>
