@@ -738,7 +738,8 @@
           max-width: 100%;
           margin-top: 0.78rem;
 
-          a.btn {
+          a.btn,
+          button.btn {
             flex: 0 0 auto;
             white-space: nowrap;
           }

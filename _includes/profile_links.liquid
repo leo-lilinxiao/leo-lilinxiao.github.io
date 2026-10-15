@@ -1,0 +1,16 @@
+{% assign profiles = site.data.socials %}
+{% if profiles.email %}
+  <a href="mailto:{{ profiles.email | encode_email }}" title="Email" aria-label="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+{% endif %}
+{% if profiles.github_username %}
+  <a href="https://github.com/{{ profiles.github_username | escape }}" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+{% endif %}
+{% if profiles.scholar_userid %}
+  <a href="https://scholar.google.com/citations?user={{ profiles.scholar_userid | escape }}" title="Google Scholar" aria-label="Google Scholar"><i class="ai ai-google-scholar" aria-hidden="true"></i></a>
+{% endif %}
+{% if profiles.orcid_id %}
+  <a href="https://orcid.org/{{ profiles.orcid_id | escape }}" title="ORCID" aria-label="ORCID"><i class="ai ai-orcid" aria-hidden="true"></i></a>
+{% endif %}
+{% if profiles.custom_social %}
+  <a href="{{ profiles.custom_social.url | escape }}" title="{{ profiles.custom_social.title | escape }}" aria-label="{{ profiles.custom_social.title | escape }}"><i class="{{ profiles.custom_social.logo | escape }}" aria-hidden="true"></i></a>
+{% endif %}

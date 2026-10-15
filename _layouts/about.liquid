@@ -24,9 +24,10 @@ layout: default
           {% if page.profile.image %}
             {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
             {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle about-profile-image' %}
+            {% capture profile_image_alt %}{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}{% endcapture %}
             {% capture sizes %}(min-width: {{ site.max_width }}) 168px, (min-width: 576px) 16vw, 72vw{% endcapture %}
             {%
-              include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+              include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile_image_alt
               cache_bust=true
             %}
           {% endif %}
@@ -50,6 +51,7 @@ layout: default
         <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
       </h2>
       {% include news.liquid limit=true %}
+      <p class="news-more"><a href="{{ '/news/' | relative_url }}">View all news <span aria-hidden="true">&rarr;</span></a></p>
     {% endif %}
 
     <!-- Latest posts -->

@@ -24,7 +24,7 @@
           <span class="navbar-tagline">AI Infrastructure &amp; LLM Systems</span>
         </div>
         {% if site.enable_navbar_social %}
-          <div class="navbar-brand-social" aria-label="Profile links">{% social_links %}</div>
+          <div class="navbar-brand-social" aria-label="Profile links">{% include profile_links.liquid %}</div>
         {% endif %}
       </div>
       <!-- Navbar Toggle -->
@@ -51,7 +51,7 @@
 
           <!-- About -->
           <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
-            <a class="nav-link" href="{{ '/' | relative_url }}">
+            <a class="nav-link" href="{{ '/' | relative_url }}"{% if page.permalink == '/' %} aria-current="page"{% endif %}>
               {{- about_title }}
               {% if page.permalink == '/' %}
                 <span class="sr-only">(current)</span>
@@ -102,7 +102,11 @@
                 </li>
               {% else %}
                 {% assign parent_link = p.permalink | remove: 'index.html' %}
-                <li class="nav-item {% if page.url contains parent_link %}active{% endif %}">
+                {% assign is_current_section = false %}
+                {% if page.url contains parent_link or page.nav_parent == parent_link %}
+                  {% assign is_current_section = true %}
+                {% endif %}
+                <li class="nav-item {% if is_current_section %}active{% endif %}">
                   {%- if p.permalink contains '://' -%}
                     {%- assign url = p.permalink -%}
                   {%- elsif p.permalink contains '/blog/' -%}
@@ -110,9 +114,9 @@
                   {%- else -%}
                     {%- assign url = p.url -%}
                   {%- endif %}
-                  <a class="nav-link" href="{{ url | relative_url }}">
+                  <a class="nav-link" href="{{ url | relative_url }}"{% if is_current_section %} aria-current="{% if page.url == p.url %}page{% else %}location{% endif %}"{% endif %}>
                     {{- p.title }}
-                    {% if page.url contains p.url %}
+                    {% if is_current_section %}
                       <span class="sr-only">(current)</span>
                     {% endif %}
                   </a>
@@ -145,7 +149,7 @@
           {% endif %}
         </ul>
         {% if site.enable_navbar_social %}
-          <div class="navbar-mobile-social" aria-label="Profile links">{% social_links %}</div>
+          <div class="navbar-mobile-social" aria-label="Profile links">{% include profile_links.liquid %}</div>
         {% endif %}
       </div>
     </div>

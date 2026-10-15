@@ -9,7 +9,12 @@ nav_order: 3
 
 <!-- _pages/publications.md -->
 
-<div class="publications">
+<nav class="page-section-links" aria-label="Publication sections">
+  <a href="#papers">Papers</a>
+  <a href="#public-talks">Public Talks <span aria-hidden="true">&darr;</span></a>
+</nav>
+
+<div id="papers" class="publications">
 
 {% bibliography %}
 

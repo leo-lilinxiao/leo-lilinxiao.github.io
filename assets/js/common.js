@@ -1,36 +1,27 @@
 $(document).ready(function () {
-  const publicationToggles = "a.abstract, a.bibtex";
-  $(publicationToggles).attr({ "aria-expanded": "false", tabindex: "0" });
+  const publicationToggles = "button.publication-toggle";
 
-  function setPublicationPanel(button, panelClass) {
+  function setPublicationPanel(button) {
     const $button = $(button);
     const $entry = $button.closest("li");
-    const $targetPanels = $entry.find(`div.${panelClass}.hidden`);
-    const willOpen = !$targetPanels.first().hasClass("open");
+    const panelId = button.getAttribute("aria-controls");
+    const panel = document.getElementById(panelId);
+    if (!panel || !$entry[0]?.contains(panel)) {
+      throw new Error(`Publication toggle has no matching panel: ${panelId}`);
+    }
+    const willOpen = button.getAttribute("aria-expanded") !== "true";
 
-    $entry.find("div.abstract.hidden.open, div.bibtex.hidden.open").removeClass("open");
+    $entry.find("div.hidden[aria-hidden]").removeClass("open").attr("aria-hidden", "true").prop("inert", true);
     $entry.find(publicationToggles).removeClass("is-active").attr("aria-expanded", "false");
 
     if (willOpen) {
-      $targetPanels.addClass("open");
+      $(panel).addClass("open").attr("aria-hidden", "false").prop("inert", false);
       $button.addClass("is-active").attr("aria-expanded", "true");
     }
   }
 
-  // add toggle functionality to abstract and bibtex buttons
-  $("a.abstract").click(function (event) {
-    event.preventDefault();
-    setPublicationPanel(this, "abstract");
-  });
-  $("a.bibtex").click(function (event) {
-    event.preventDefault();
-    setPublicationPanel(this, "bibtex");
-  });
-  $(publicationToggles).keydown(function (event) {
-    if (event.key === "Enter" || event.key === " ") {
-      event.preventDefault();
-      $(this).trigger("click");
-    }
+  $(publicationToggles).click(function () {
+    setPublicationPanel(this);
   });
   $("a").removeClass("waves-effect waves-light");
 

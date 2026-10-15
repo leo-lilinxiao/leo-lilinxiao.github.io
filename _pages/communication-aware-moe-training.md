@@ -4,6 +4,10 @@ permalink: /talks/communication-aware-moe-training/
 title: Communication-Aware Scheduling Optimization for Large-Scale MoE Model Training on Ascend NPUs
 description: Frontiers Series · Guangming Laboratory · 3 June 2026
 nav: false
+back_link:
+  label: Back to Public Talks
+  url: /publications/#public-talks
+nav_parent: /publications/
 ---
 
 <div class="reading-summary" markdown="1">
@@ -26,9 +30,7 @@ This seminar introduces **CARD**, a system-level approach to improving large-sca
 This overview is based on Guangming Laboratory's Chinese announcement and talk abstract. The original includes the event poster and speaker biography.
 
 <div class="reading-links">
-  <a href="https://mp.weixin.qq.com/s/tvtTHvvBlF8Kzuc21OJSKw" hreflang="zh" target="_blank" rel="noopener noreferrer">Chinese original · Guangming Laboratory <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+  <a href="https://mp.weixin.qq.com/s/tvtTHvvBlF8Kzuc21OJSKw" hreflang="zh" target="_blank" rel="noopener noreferrer" aria-label="Read original Chinese seminar announcement (opens in a new tab)">Read original <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
 </div>
-
-[Back to Public Talks]({{ '/publications/#public-talks' | relative_url }})
 
 </div>

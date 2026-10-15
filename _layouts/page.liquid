@@ -9,6 +9,9 @@ layout: default
 {% endif %}
 
 <div class="post">
+  {% if page.back_link %}
+    {% include reading_back_link.liquid %}
+  {% endif %}
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-description">{{ page.description }}</p>

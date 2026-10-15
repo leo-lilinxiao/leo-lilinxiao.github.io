@@ -4,6 +4,10 @@ permalink: /highlights/mfu-65-ascend/
 title: 65% MFU on Ascend
 description: Training-system optimization at AIGCode · 2026
 nav: false
+back_link:
+  label: Back to Milestones
+  url: /gallery/#mfu-65-2026
+nav_parent: /gallery/
 ---
 
 <div class="reading-summary" markdown="1">
@@ -49,7 +53,5 @@ The articles below discuss AIGCode's work and the wider Ascend ecosystem. The 36
     </div>
   </li>
 </ol>
-
-[Back to Milestones]({{ '/gallery/#mfu-65-2026' | relative_url }})
 
 </div>

@@ -233,6 +233,8 @@ body.sticky-bottom-footer > .container.mt-5 {
 
 .post {
   margin-bottom: 4rem;
+
+  [id] { scroll-margin-top: 5rem; }
 }
 
 .reading-summary {
@@ -244,6 +246,50 @@ body.sticky-bottom-footer > .container.mt-5 {
   .reading-kicker { color: var(--global-text-color-light); font-size: 0.85rem; margin-bottom: 1.25rem; }
 }
 
+.reading-return {
+  max-width: 47rem;
+  margin: 0 0 1rem;
+}
+
+.page-section-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.5rem;
+  margin: -0.5rem 0 1.5rem;
+  font-size: 0.9rem;
+
+  a { display: inline-flex; align-items: center; gap: 0.4rem; min-height: 44px; }
+}
+
+.news-more {
+  margin: 0.6rem 0 0;
+  font-size: 0.88rem;
+
+  a { display: inline-flex; align-items: center; gap: 0.4rem; min-height: 44px; }
+}
+
+.reading-back-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  max-width: 100%;
+  min-height: 44px;
+  padding: 0.4rem 0.1rem;
+  color: var(--global-text-color-light);
+  font-size: 0.88rem;
+  font-weight: 550;
+  line-height: 1.4;
+  text-decoration: none;
+
+  i { color: var(--global-theme-color); flex-shrink: 0; }
+  &:hover {
+    color: var(--global-theme-color);
+    text-decoration: none;
+  }
+  &:focus-visible { outline: 2px solid var(--global-theme-color); outline-offset: 4px; }
+}
+
 .reading-links {
   display: flex;
   flex-wrap: wrap;
@@ -251,8 +297,23 @@ body.sticky-bottom-footer > .container.mt-5 {
   margin: 0.6rem 0 1rem;
   font-size: 0.88rem;
 
-  a { display: inline-flex; align-items: center; gap: 0.4rem; min-height: 2.5rem; }
-  i { color: inherit; font-size: 0.75rem; }
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-height: 44px;
+    padding: 0.45rem 0.8rem;
+    border: 1px solid var(--global-control-border-color);
+    border-radius: 8px;
+    background: var(--global-control-bg-color);
+    color: var(--global-text-color);
+    font-weight: 500;
+    line-height: 1.4;
+    text-decoration: none;
+
+    &:hover { border-color: var(--global-theme-color); background: color-mix(in srgb, var(--global-theme-color) 8%, var(--global-card-bg-color)); }
+  }
+  i { color: var(--global-text-color-light); font-size: 0.75rem; }
 }
 
 .reading-coverage {
