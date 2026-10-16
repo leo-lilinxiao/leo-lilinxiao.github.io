@@ -20,12 +20,12 @@ feature:
 <div class="reading-overview">
   <div class="reading-intro">
     <p class="reading-eyebrow">The result, in brief</p>
-    <p class="reading-lead">At AIGCode, I <mark>led our training optimization</mark> for a customer MoE pre-training workload on Ascend NPUs. Our team reached <strong>65% Model FLOPs Utilization</strong>. 36Kr reported the result in its coverage of China’s AI computing ecosystem.</p>
+    <p class="reading-lead">At AIGCode, I <mark>led our training optimization</mark> for a customer MoE pre-training workload on Ascend NPUs. Our team reached <strong>65% Model FLOPs Utilization</strong>. 36Kr and QbitAI reported the result in their coverage of the Ascend ecosystem.</p>
   </div>
   <aside class="reading-note" aria-labelledby="mfu-note-title">
     <span class="reading-note-icon" aria-hidden="true"><i class="fa-solid fa-lightbulb"></i></span>
     <h2 id="mfu-note-title">MFU, in a sentence</h2>
-    <p>The share of theoretical compute used for the model’s actual computation during training.</p>
+    <p>Achieved training throughput divided by the theoretical throughput for the model’s forward and backward passes at peak hardware FLOP/s.</p>
   </aside>
 </div>
 
@@ -53,7 +53,7 @@ feature:
 <section class="reading-section" aria-labelledby="media-coverage">
 <p class="reading-eyebrow">Further reading</p>
 <h2 id="media-coverage">In the press</h2>
-<p>These three reports cover AIGCode and the Ascend ecosystem. The 36Kr interview is with co-founder and CTO <strong>Qiuwu Chen</strong>. English titles accompany the Chinese originals below.</p>
+<p>These three reports cover AIGCode and the Ascend ecosystem, including comments from co-founder and CTO <strong>Qiuwu Chen</strong> at a developer roundtable. English titles accompany the Chinese originals below.</p>
 
 <ol class="reading-coverage">
   <li>
@@ -77,6 +77,7 @@ feature:
     <h3>Behind DeepSeek V4's joint chip and model design: China's computing ecosystem gains momentum</h3>
     <div class="reading-links">
       <a href="https://mp.weixin.qq.com/s/ksXbco0s1zThgP_V3vr4lA" hreflang="zh" target="_blank" rel="noopener noreferrer">Chinese original <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+      <a href="https://www.qbitai.com/2026/05/426293.html" hreflang="zh" target="_blank" rel="noopener noreferrer">Publisher website <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
     </div>
   </li>
 </ol>
