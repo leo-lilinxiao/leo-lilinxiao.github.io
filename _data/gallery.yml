@@ -46,6 +46,22 @@
     - path: assets/img/recruiting_ecnu.jpg
       caption: Representing Huawei Shanghai Research Institute at ECNU Campus Recruitment (2025)
 
+- id: huawei-cloud-clab-guangming-2025
+  year: 2025
+  title: Huawei Cloud C Lab & Guangming Laboratory
+  description: Some of the core team members · January 2025
+  cover: assets/img/gallery/huawei-cloud-clab-guangming-team.jpg
+  cover_alt: Group photo with some of the core team members from Huawei Cloud C Lab and Guangming Laboratory · January 2025
+  fit: contain
+  action: View photo
+  photos:
+    - path: assets/img/gallery/huawei-cloud-clab-guangming-team.jpg
+      display: assets/img/gallery/huawei-cloud-clab-guangming-team-view.webp
+      caption: Group photo with some of the core team members from Huawei Cloud C Lab and Guangming Laboratory · January 2025
+      width: 3840
+      height: 2880
+      date: '2025-01'
+
 - id: rising-star-2023
   year: 2023
   title: Huawei Rising Star Award
