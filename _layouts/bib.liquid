@@ -198,7 +198,7 @@
       {% include hook/bib.liquid %}
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
-    {% capture entry_date %}{{ entrymonth }}{% if entrymonth != '' and entryyear != '' %} {% endif %}{{ entryyear }}{% endcapture %}
+    {% assign entry_date = entrymonth | append: ' ' | append: entryyear | strip %}
     {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entry_date != "" %}, {% endif %}{{ entry_date }}{% endcapture %}
     <div class="periodical">
       {{ periodical | strip }}

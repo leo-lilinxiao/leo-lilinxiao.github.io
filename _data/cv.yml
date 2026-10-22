@@ -21,6 +21,13 @@ cv:
   sections:
     Publications:
       # Match the acceptance/preprint chronology in _bibliography/papers.bib.
+      - title: "GenTile: Closing the Loop Between LLM Reasoning and Physical Telemetry for Autonomous NPU Graph Tuning"
+        date: "2026-09-28"
+        author_position: 4
+        publisher: "CAAI Artificial Intelligence Research"
+        url: https://www.sciopen.com/article/10.26599/AIR.2026.9150015
+        summary: "Zidong Han, Zeru Liu, Chen Li, <strong>Linxiao Li</strong>, Junchao Ma, Weipeng Cao&#8224;"
+
       - title: "Phase-wise MLLM Tuning for Multi-framework WebUI Code Generation"
         date: "2026-09-24"
         author_position: 2
