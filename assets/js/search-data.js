@@ -82,6 +82,9 @@ ninja.data = [{
           section: "News",},{id: "news-codex-autoresearch-has-reached-2-600-github-stars",
           title: 'Codex AutoResearch has reached 2,600+ GitHub Stars!',
           description: "",
+          section: "News",},{id: "news-gentile-our-work-on-autonomous-npu-graph-tuning-is-now-available-online-in-caai-artificial-intelligence-research",
+          title: 'GenTile, our work on autonomous NPU graph tuning, is now available online in...',
+          description: "",
           section: "News",},{
       id: 'light-theme',
       title: 'Change theme to light',
