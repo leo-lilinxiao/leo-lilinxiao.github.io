@@ -2,11 +2,6 @@
 
 // Toggle through light, dark, and system theme settings.
 let toggleThemeSetting = (event) => {
-  if (event?.clientX !== undefined && event?.clientY !== undefined) {
-    document.documentElement.style.setProperty("--theme-transition-x", `${event.clientX}px`);
-    document.documentElement.style.setProperty("--theme-transition-y", `${event.clientY}px`);
-  }
-
   let themeSetting = determineThemeSetting();
   if (themeSetting == "system") {
     setThemeSetting("light");
@@ -18,33 +13,16 @@ let toggleThemeSetting = (event) => {
 };
 
 // Change the theme setting and apply the theme.
-let setThemeSetting = (themeSetting, animate = true) => {
-  const updateTheme = () => {
-    localStorage.setItem("theme", themeSetting);
-
-    document.documentElement.setAttribute("data-theme-setting", themeSetting);
-
-    applyTheme();
-  };
-
-  const motionAllowed = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (animate && motionAllowed && document.startViewTransition) {
-    document.documentElement.classList.add("theme-changing");
-    const transition = document.startViewTransition(updateTheme);
-    transition.finished.finally(() => {
-      document.documentElement.classList.remove("theme-changing");
-    });
-    return;
-  }
-
-  updateTheme();
+let setThemeSetting = (themeSetting) => {
+  localStorage.setItem("theme", themeSetting);
+  document.documentElement.setAttribute("data-theme-setting", themeSetting);
+  applyTheme();
 };
 
 // Apply the computed dark or light theme to the website.
 let applyTheme = () => {
   let theme = determineComputedTheme();
 
-  transTheme();
   setHighlight(theme);
   setGiscusTheme(theme);
   setSearchTheme(theme);
@@ -78,16 +56,6 @@ let applyTheme = () => {
 
   document.documentElement.setAttribute("data-theme", theme);
   updateThemeToggleLabel();
-
-  // Add class to tables.
-  let tables = document.getElementsByTagName("table");
-  for (let i = 0; i < tables.length; i++) {
-    if (theme == "dark") {
-      tables[i].classList.add("table-dark");
-    } else {
-      tables[i].classList.remove("table-dark");
-    }
-  }
 
   // Set jupyter notebooks themes.
   let jupyterNotebooks = document.getElementsByClassName("jupyter-notebook-iframe-container");
@@ -278,13 +246,6 @@ let setCookieConsentTheme = (theme) => {
   }
 };
 
-let transTheme = () => {
-  document.documentElement.classList.add("transition");
-  window.setTimeout(() => {
-    document.documentElement.classList.remove("transition");
-  }, 500);
-};
-
 // Determine the expected state of the theme toggle, which can be "dark", "light", or
 // "system". Default follows the user's system preference.
 let determineThemeSetting = () => {
@@ -328,16 +289,13 @@ let updateThemeToggleLabel = () => {
   toggle.setAttribute("aria-label", label);
   toggle.setAttribute("title", label);
 
-  const labelEl = toggle.querySelector(".theme-toggle-label");
-  if (labelEl) {
-    labelEl.textContent = themeSetting == "system" ? "Auto" : currentTheme;
-  }
+  // Visible labels are selected by the head-initialized theme attribute in CSS.
 };
 
 let initTheme = () => {
   let themeSetting = determineThemeSetting();
 
-  setThemeSetting(themeSetting, false);
+  setThemeSetting(themeSetting);
 
   // Add event listener to the theme toggle button.
   document.addEventListener("DOMContentLoaded", function () {

@@ -22,7 +22,7 @@
     {% include header.liquid %}
 
     <!-- Content -->
-    <div class="container mt-5" role="main">
+    <main id="main-content" class="container site-main">
       {% if page.toc and page.toc.sidebar and page_slug != 'cv' %}
         {% assign toc_col_class = 'col-sm-3' %}
         {% assign content_col_class = 'col-sm-9' %}
@@ -48,7 +48,12 @@
       {% else %}
         {{ content }}
       {% endif %}
-    </div>
+    </main>
+
+    {% if page.gallery_timeline %}
+      <!-- This independent layout script runs before shared third-party scripts. -->
+      <script src="{{ '/assets/js/gallery-timeline.js' | relative_url | bust_file_cache }}"></script>
+    {% endif %}
 
     <!-- Footer -->
     {% include footer.liquid %}

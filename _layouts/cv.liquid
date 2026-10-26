@@ -37,7 +37,8 @@ layout: default
     {% endif %}
   </header>
 
-  <div class="cv-layout{% if page.toc and page.toc.sidebar %} has-cv-toc{% endif %}">
+  {% assign cv_toc_items = '' %}
+  {% capture cv_sections %}
   <article class="cv-layout-main">
     <div class="cv">
       {% comment %} Determine which CV format to render {% endcomment %}
@@ -64,7 +65,7 @@ layout: default
         <!-- Header/Contact Information hidden -->
         {% comment %}
         {% if cv.name or cv.label or cv.location or cv.email or cv.phone or cv.website %}
-          <div class="card mt-3 p-3">
+          <div class="card">
             <h3 class="card-title font-weight-medium">Contact Information</h3>
             <table class="table table-cv table-sm table-borderless">
               {% if cv.name %}
@@ -117,8 +118,8 @@ layout: default
 
         <!-- Summary -->
         {% if cv.summary %}
-          <div class="card mt-3 p-3 cv-card cv-summary-card cv-featured-card">
-            <h3 class="card-title font-weight-medium">Professional Summary</h3>
+          <div class="card cv-card cv-summary-card cv-featured-card">
+            {% include cv/section_heading.liquid title='Professional Summary' %}
             <p>{{ cv.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
           </div>
         {% endif %}
@@ -141,8 +142,8 @@ layout: default
           {% endif %}
 
           <a class="anchor" id="{{ display_title | slugify }}"></a>
-          <div class="card mt-3 p-3 cv-card cv-section-card cv-section-{{ display_title | slugify }}">
-            <h3 class="card-title font-weight-medium">{{ display_title }}</h3>
+          <div class="card cv-card cv-section-card cv-section-{{ display_title | slugify }}">
+            {% include cv/section_heading.liquid title=display_title legacy_anchor=true %}
             <div>
               {% if section_title == 'Education' %}
                 {% assign entries = section_entries %}
@@ -167,6 +168,9 @@ layout: default
               {% elsif section_title == 'Skills' %}
                 {% assign entries = section_entries %}
                 {% include cv/skills.liquid %}
+              {% elsif section_title == 'Academic Service' %}
+                {% assign entries = section_entries %}
+                {% include cv/service.liquid %}
               {% elsif section_title == 'Languages' %}
                 {% assign entries = section_entries %}
                 {% include cv/languages.liquid %}
@@ -176,7 +180,7 @@ layout: default
               {% elsif section_title == 'Certificates' %}
                 {% assign entries = section_entries %}
                 {% include cv/certificates.liquid %}
-              {% elsif section_title == 'Projects' or section_title == 'Open Source Projects' or section_title == 'Selected Research Projects' or section_title == 'Open Source' or section_title == 'Academic Service' %}
+              {% elsif section_title == 'Projects' or section_title == 'Open Source Projects' or section_title == 'Selected Research Projects' or section_title == 'Open Source' %}
                 {% assign entries = section_entries %}
                 {% include cv/projects.liquid %}
               {% elsif section_title == 'References' %}
@@ -205,8 +209,8 @@ layout: default
 
         <!-- Contact Information -->
         {% if site.data.resume.basics %}
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Contact Information</h3>
+          <div class="card">
+            {% include cv/section_heading.liquid title='Contact Information' %}
             {% assign basics = site.data.resume.basics %}
             <table class="table table-cv table-sm table-borderless">
               {% if basics.name %}
@@ -258,8 +262,8 @@ layout: default
 
         <!-- Summary -->
         {% if site.data.resume.basics.summary %}
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Professional Summary</h3>
+          <div class="card">
+            {% include cv/section_heading.liquid title='Professional Summary' %}
             <p>{{ site.data.resume.basics.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
           </div>
         {% endif %}
@@ -271,8 +275,8 @@ layout: default
         {% assign combined_experience = work | concat: vol %}
         {% if combined_experience.size > 0 %}
           <a class="anchor" id="experience"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Experience</h3>
+          <div class="card">
+            {% include cv/section_heading.liquid title='Experience' legacy_anchor=true %}
             <div>
               {% assign entries = combined_experience %}
               {% include cv/experience.liquid %}
@@ -283,8 +287,8 @@ layout: default
         <!-- Education -->
         {% if site.data.resume.education.size > 0 %}
           <a class="anchor" id="education"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Education</h3>
+          <div class="card">
+            {% include cv/section_heading.liquid title='Education' legacy_anchor=true %}
             <div>
               {% assign entries = site.data.resume.education %}
               {% include cv/education.liquid %}
@@ -295,8 +299,8 @@ layout: default
         <!-- Awards -->
         {% if site.data.resume.awards.size > 0 %}
           <a class="anchor" id="awards"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Awards</h3>
+          <div class="card">
+            {% include cv/section_heading.liquid title='Awards' legacy_anchor=true %}
             <div>
               {% assign entries = site.data.resume.awards %}
               {% include cv/awards.liquid %}
@@ -307,8 +311,8 @@ layout: default
         <!-- Publications -->
         {% if site.data.resume.publications.size > 0 %}
           <a class="anchor" id="publications"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Publications</h3>
+          <div class="card">
+            {% include cv/section_heading.liquid title='Publications' legacy_anchor=true %}
             <div>
               {% assign entries = site.data.resume.publications %}
               {% include cv/publications.liquid %}
@@ -319,8 +323,8 @@ layout: default
         <!-- Skills -->
         {% if site.data.resume.skills.size > 0 %}
           <a class="anchor" id="skills"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Skills</h3>
+          <div class="card">
+            {% include cv/section_heading.liquid title='Skills' legacy_anchor=true %}
             <div>
               {% assign entries = site.data.resume.skills %}
               {% include cv/skills.liquid %}
@@ -331,8 +335,8 @@ layout: default
         <!-- Languages -->
         {% if site.data.resume.languages.size > 0 %}
           <a class="anchor" id="languages"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Languages</h3>
+          <div class="card">
+            {% include cv/section_heading.liquid title='Languages' legacy_anchor=true %}
             <div>
               {% assign entries = site.data.resume.languages %}
               {% include cv/languages.liquid %}
@@ -343,8 +347,8 @@ layout: default
         <!-- Interests -->
         {% if site.data.resume.interests.size > 0 %}
           <a class="anchor" id="interests"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Interests</h3>
+          <div class="card">
+            {% include cv/section_heading.liquid title='Interests' legacy_anchor=true %}
             <div>
               {% assign entries = site.data.resume.interests %}
               {% include cv/interests.liquid %}
@@ -355,8 +359,8 @@ layout: default
         <!-- Certificates -->
         {% if site.data.resume.certificates.size > 0 %}
           <a class="anchor" id="certificates"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Certificates</h3>
+          <div class="card">
+            {% include cv/section_heading.liquid title='Certificates' legacy_anchor=true %}
             <div>
               {% assign entries = site.data.resume.certificates %}
               {% include cv/certificates.liquid %}
@@ -367,8 +371,8 @@ layout: default
         <!-- Projects -->
         {% if site.data.resume.projects.size > 0 %}
           <a class="anchor" id="projects"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Projects</h3>
+          <div class="card">
+            {% include cv/section_heading.liquid title='Projects' legacy_anchor=true %}
             <div>
               {% assign entries = site.data.resume.projects %}
               {% include cv/projects.liquid %}
@@ -379,8 +383,8 @@ layout: default
         <!-- References -->
         {% if site.data.resume.references.size > 0 %}
           <a class="anchor" id="references"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">References</h3>
+          <div class="card">
+            {% include cv/section_heading.liquid title='References' legacy_anchor=true %}
             <div>
               {% assign entries = site.data.resume.references %}
               {% include cv/references.liquid %}
@@ -393,11 +397,17 @@ layout: default
       {% endif %}
     </div>
   </article>
+  {% endcapture %}
 
+  <div class="cv-layout{% if page.toc and page.toc.sidebar %} has-cv-toc{% endif %}">
   {% if page.toc and page.toc.sidebar %}
     <aside class="cv-layout-aside" aria-label="CV section navigation">
-      <nav id="toc-sidebar" class="cv-top-toc" aria-label="CV sections"></nav>
+      <nav id="toc-sidebar" class="cv-top-toc" aria-labelledby="cv-contents-title" data-toc-static>
+        <h2 id="cv-contents-title" data-toc-skip>Contents</h2>
+        <ol class="nav">{{ cv_toc_items }}</ol>
+      </nav>
     </aside>
   {% endif %}
+  {{ cv_sections }}
   </div>
 </div>

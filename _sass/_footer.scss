@@ -1,53 +1,20 @@
-/*******************************************************************************
- * Footer styles
- ******************************************************************************/
-
-footer.fixed-bottom {
-  border-top: 1px solid var(--global-hairline-color);
-  background-color: var(--global-footer-bg-color);
-  font-size: 0.75rem;
-  backdrop-filter: saturate(180%) blur(22px);
-  -webkit-backdrop-filter: saturate(180%) blur(22px);
-
-  .container {
-    color: var(--global-footer-text-color);
-    padding-top: 9px;
-    padding-bottom: 8px;
-    text-align: center;
-  }
-
-  a {
-    color: var(--global-footer-link-color);
-
-    &:hover {
-      color: var(--global-theme-color);
-      text-decoration: none;
-    }
-  }
+ .site-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding-block: 1.2rem 1.75rem;
+  border-top: 1px solid var(--global-divider-color);
+  color: var(--global-text-color-light);
+  font: 0.85rem/1.5 var(--font-ui);
+  p { margin: 0; }
 }
-
-footer.sticky-bottom {
-  position: static !important;
-  flex-shrink: 0;
-  background-color: var(--global-footer-bg-color);
-  border-top: 1px solid var(--global-hairline-color);
-  padding-top: 1.1rem;
-  padding-bottom: 1.45rem;
-  color: var(--global-footer-text-color);
-  font-size: 0.76rem;
-  backdrop-filter: saturate(180%) blur(22px);
-  -webkit-backdrop-filter: saturate(180%) blur(22px);
-
-  .container {
-    text-align: center;
-  }
-
-  a {
-    color: var(--global-footer-link-color);
-
-    &:hover {
-      color: var(--global-theme-color);
-      text-decoration: none;
-    }
+@media (max-width: 600px) {
+  .site-footer {
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    gap: 0.3rem 1rem;
+    // Reserve space for the fixed back-to-top control.
+    padding-right: 3.5rem;
   }
 }

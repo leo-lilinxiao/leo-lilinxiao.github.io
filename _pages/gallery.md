@@ -4,7 +4,7 @@ permalink: /gallery/
 title: Gallery
 description: Research milestones and memories along the way.
 nav: true
-nav_order: 2
+nav_order: 4
 gallery_timeline: true
 ---
 
@@ -15,7 +15,7 @@ gallery_timeline: true
 
 <section id="gallery-milestones-panel" data-gallery-section="milestones" class="gallery-section" role="tabpanel" aria-labelledby="tab-milestones">
 <p class="gallery-guide">Newest first <span aria-hidden="true">·</span> Click photos to enlarge</p>
-{% include gallery_river.liquid events=site.data.gallery label="Milestones, newest first" %}
+{% include gallery_river.liquid events=site.data.gallery label="Milestones, newest first" prioritize_first_row=true %}
 </section>
 
 <section id="gallery-life-panel" data-gallery-section="life" class="gallery-section" role="tabpanel" aria-labelledby="tab-life" hidden>

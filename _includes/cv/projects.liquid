@@ -2,15 +2,17 @@
   Unified projects entry renderer for both formats
 {% endcomment %}
 
-<ul class="card-text font-weight-light list-group list-group-flush cv-projects-list">
+<ul class="card-text list-group list-group-flush cv-projects-list">
   {% for entry in entries %}
     <li class="list-group-item">
-      {% if entry.url %}
-        <h6 class="title font-weight-bold">
-          <a href="{{ entry.url }}" target="_blank">{{ entry.name }}</a>
-        </h6>
-      {% else %}
-        <h6 class="title font-weight-bold">{{ entry.name }}</h6>
+      {% if entry.name != blank %}
+        {% if entry.url != blank %}
+          <h6 class="title">
+            <a href="{{ entry.url }}" target="_blank">{{ entry.name }}</a>
+          </h6>
+        {% else %}
+          <h6 class="title">{{ entry.name }}</h6>
+        {% endif %}
       {% endif %}
 
       {% if entry.summary %}

@@ -1,6 +1,6 @@
 // The river artwork is generated raster media; native elements carry the content.
 .page-gallery {
-  --river-year-color: #3678b7;
+  --river-year-color: var(--global-theme-color);
   --river-line-opacity: 0.45;
 
   .post-header { margin-bottom: 1.15rem; }
@@ -108,10 +108,11 @@
     position: absolute;
     left: -2.15rem;
     top: 0.78rem;
-    font-size: 6px;
-    line-height: 1;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: currentColor;
     color: var(--global-theme-color);
-    i { display: block; color: inherit; }
   }
 
   .gallery-year-records {
@@ -163,7 +164,11 @@
     transition: box-shadow 160ms ease;
     img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 55%; }
   }
-  .gallery-cover-contain img { object-fit: contain; }
+  .gallery-cover-contain {
+    background: var(--global-surface-color);
+    img { object-fit: contain; object-position: center; }
+  }
+  .gallery-cover-graphic { background: #242424; }
   .gallery-card-wide { grid-template-columns: 15.5rem minmax(0, 1fr); }
   .gallery-cover-wide { width: 15.5rem; aspect-ratio: 16 / 9; }
   .gallery-card-copy { min-width: 0; align-self: center; }
@@ -193,8 +198,7 @@
 }
 
 html[data-theme="dark"] .page-gallery {
-  background-color: #222629;
-  --river-year-color: #add4f4;
+  background-color: var(--global-bg-color);
   --river-line-opacity: 0.3;
   .gallery-section::before { opacity: 0.09; }
   .gallery-river-node { color: #ecf6ff; filter: drop-shadow(0 0 4px #67a3e8); }

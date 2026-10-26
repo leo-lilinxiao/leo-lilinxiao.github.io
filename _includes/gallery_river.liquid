@@ -3,17 +3,22 @@
   <div class="gallery-river-art" aria-hidden="true"></div>
   <ol class="gallery-years" aria-label="{{ include.label }}">
     {% for group in year_groups %}
+      {% assign first_year = forloop.first %}
       {% assign last_chunk = group.items.size | minus: 1 | divided_by: 2 %}
       {% for chunk in (0..last_chunk) %}
       {% assign offset = chunk | times: 2 %}
       {% assign records = group.items | slice: offset, 2 %}
       <li class="gallery-year-group{% if records.size > 1 %} gallery-year-group-multiple{% endif %}{% unless forloop.first %} gallery-year-group-continued{% endunless %}" data-year="{{ group.name }}">
         {% if forloop.first %}<h2 class="gallery-year"><time datetime="{{ group.name }}">{{ group.name }}</time></h2>{% endif %}
-        <span class="gallery-river-node" aria-hidden="true"><i class="fa-solid fa-circle"></i></span>
+        <span class="gallery-river-node" aria-hidden="true"></span>
         <ul class="gallery-year-records" aria-label="{{ group.name }} albums">
           {% for event in records %}
+            {% assign prioritize_cover = false %}
+            {% if include.prioritize_first_row and first_year and chunk == 0 %}
+              {% assign prioritize_cover = true %}
+            {% endif %}
             <li class="gallery-record" id="{{ event.id }}" data-gallery-record>
-              {% include gallery_event.liquid event=event %}
+              {% include gallery_event.liquid event=event priority=prioritize_cover %}
             </li>
           {% endfor %}
         </ul>

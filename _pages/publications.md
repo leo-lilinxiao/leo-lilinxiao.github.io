@@ -4,7 +4,7 @@ permalink: /publications/
 title: Publications
 description: Publications in chronological order, followed by public talks.
 nav: true
-nav_order: 3
+nav_order: 2
 ---
 
 <!-- _pages/publications.md -->
@@ -37,7 +37,6 @@ nav_order: 3
           <span>Frontiers Series</span>
           <span>Guangming Laboratory</span>
         </div>
-        <p>Academic seminar on communication-aware scheduling optimization for large-scale MoE model training on Ascend NPUs.</p>
         <div class="reading-links">
           <a href="{{ '/talks/communication-aware-moe-training/' | relative_url }}">English overview</a>
           <a href="https://mp.weixin.qq.com/s/tvtTHvvBlF8Kzuc21OJSKw" hreflang="zh" target="_blank" rel="noopener noreferrer">Chinese original <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>

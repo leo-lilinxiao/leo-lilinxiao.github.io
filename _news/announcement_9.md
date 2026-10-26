@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-[**Codex AutoResearch**](https://github.com/leo-lilinxiao/codex-autoresearch) — my open-source project, a self-directed iterative research system inspired by Karpathy's autoresearch concept — reached <span class="news-highlight">1,000+ GitHub Stars</span>!
+[**Codex AutoResearch**](https://github.com/leo-lilinxiao/codex-autoresearch), my open-source system for self-directed iterative research, reached <span class="news-highlight">1,000+ GitHub Stars</span>.

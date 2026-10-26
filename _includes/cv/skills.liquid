@@ -2,18 +2,15 @@
   Unified skills entry renderer for both formats
 {% endcomment %}
 
-<div class="card-text font-weight-light">
+<div class="cv-skills">
   {% for entry in entries %}
     <div class="skill-item">
-      {% if entry.icon %}
-        <i class="{{ entry.icon }} me-1"></i>
-      {% endif %}
-      <strong>{{ entry.name }}</strong>
-      <div class="skill-keywords mt-1">
+      <h4 class="cv-entry-label">{{ entry.name }}</h4>
+      <ul class="skill-keywords">
         {% for keyword in entry.keywords %}
-          <span class="badge font-weight-bold">{{ keyword }}</span>
+          <li>{{ keyword }}</li>
         {% endfor %}
-      </div>
+      </ul>
     </div>
   {% endfor %}
 </div>

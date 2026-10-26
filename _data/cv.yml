@@ -31,6 +31,7 @@ cv:
       - title: "Phase-wise MLLM Tuning for Multi-framework WebUI Code Generation"
         date: "2026-09-24"
         author_position: 2
+        url: https://neurips.cc/virtual/2026/loc/sydney/poster/148777
         publisher: "Advances in Neural Information Processing Systems (NeurIPS 2026)"
         presentation: "Poster"
         summary: "Haoran Ma&#42;, <strong>Linxiao Li&#42;</strong>, Chenyue Wang, Haochen Sui, Jiechao Gao&#8224;"
@@ -38,6 +39,7 @@ cv:
       - title: "Toward Executable Multi-framework Front-end Code Generation with Self-Correction"
         date: "2026-09-24"
         author_position: 1
+        url: https://neurips.cc/virtual/2026/poster/153939
         code: https://github.com/leo-lilinxiao/MESCoder
         publisher: "Advances in Neural Information Processing Systems (NeurIPS 2026)"
         presentation: "Poster"
@@ -46,6 +48,7 @@ cv:
       - title: "Tree Rotary Positional Encoding for Extreme Length Extrapolation from Scratch"
         date: "2026-09-24"
         author_position: 5
+        url: https://neurips.cc/virtual/2026/loc/sydney/poster/155984
         publisher: "Advances in Neural Information Processing Systems (NeurIPS 2026)"
         presentation: "Poster"
         summary: "Qiuwu Chen, Ziteng Huang, Shuhai Zhang, Zimo Liu, <strong>Linxiao Li</strong>, Ying Sun, Yuchen Li, Yifan Zhang, Yaofo Chen, Mingkui Tan&#8224;"
@@ -114,7 +117,7 @@ cv:
         location: Shenzhen, China
         start_date: 2023-09
         end_date: 2025-11
-        summary: TL at <a href="https://www.huaweicloud.com/lab/cloud/home.html">Huawei Cloud Architecture Innovation Lab (Cloud Lab)</a>, under <a href="https://developer.huawei.com/consumer/cn/forum/topic/0202743458671690687">CTO Fellow Jiongjiong Gu</a> (Chief Architect). Led a 10+ person joint team with the <a href="https://www.gml.ac.cn/kytd/189.html">Guangming Laboratory</a> on intelligent resource scheduling. All annual performance ratings A.
+        summary: TL at <a href="https://www.huaweicloud.com/lab/cloud/home.html">Huawei Cloud Architecture Innovation Lab (Cloud Lab)</a>, under <a href="https://www.huaweicloud.com/intl/en-us/news/20240325154553142.html">Huawei Fellow Jiongjiong (Dennis) Gu</a> (Chief Architect). Led a 10+ person joint team with the <a href="https://www.gml.ac.cn/kytd/189.html">Guangming Laboratory</a> on intelligent resource scheduling. All annual performance ratings A.
         highlights:
           - '<strong>MoE Memory Offloading</strong>: Expert offloading for MoE LLM inference on Ascend NPUs. TTFT &lt;3s, TPOT &lt;100ms. Supports BF16/W8A8 (DeepSeek V3). (<a href="https://live.huawei.com/hdc2025/meeting/cn/15569.html">HDC 2025</a>, ~50 min)'
           - '<strong>NPU User-Space Virtualization</strong>: Multi-tenant NPU sharing with &lt;3% overhead, utilization 10%→30%+. (<a href="https://live.huawei.com/hdc2025/meeting/cn/15569.html">HDC 2025</a>, ~50 min)'
@@ -235,17 +238,17 @@ cv:
       - title: Runtime Semantic Authorization for Shortcut Actions in Branch-Structured Large Language Model Programs
         date: 2026
         awarder: ""
-        summary: "First inventor. Granted. CN122571589B."
+        summary: '<span class="cv-highlight">First inventor</span> · <strong>Granted</strong> · <span class="cv-identifier">CN122571589B</span>'
 
       - title: Expert Module Selection for Mixture-of-Experts Models
         date: 2026
         awarder: ""
-        summary: "First inventor. Application No. 202611106026.3."
+        summary: '<span class="cv-highlight">First inventor</span> · Application No. <span class="cv-identifier">202611106026.3</span>'
 
       - title: Method for Evaluating Large Language Model Inference Interfaces, Terminal Device, and Storage Medium
         date: 2026
         awarder: ""
-        summary: "First inventor. Application No. 202611242873.2."
+        summary: '<span class="cv-highlight">First inventor</span> · Application No. <span class="cv-identifier">202611242873.2</span>'
 
       - title: A MoE Model-Oriented Inference Optimization Method
         date: 2024
@@ -259,9 +262,9 @@ cv:
 
     Academic Service:
       - name: Teaching
-        summary: "Teaching Assistant, The University of Sydney — Operating Systems, Algorithm Design"
+        summary: "<strong>Teaching Assistant</strong> at The University of Sydney.<br>Operating Systems and Algorithm Design."
       - name: Reviewing
-        summary: "Reviewer, NeurIPS 2026 and ICLR 2027"
+        summary: "Reviewer for <strong>NeurIPS 2026</strong> and <strong>ICLR 2027</strong>."
 
     Skills:
       - name: Core Domains

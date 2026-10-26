@@ -1,0 +1,8 @@
+<ul class="cv-service-list">
+  {% for entry in entries %}
+    <li>
+      <h4 class="cv-entry-label">{{ entry.name }}</h4>
+      <div>{{ entry.summary | markdownify }}</div>
+    </li>
+  {% endfor %}
+</ul>

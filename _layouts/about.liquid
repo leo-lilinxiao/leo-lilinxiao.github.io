@@ -2,79 +2,23 @@
 layout: default
 ---
 <div class="post">
-  {% capture about_header %}
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
-      {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-  </header>
-  {% endcapture %}
-
   <article>
-    {% if page.profile %}
-      <div class="about-hero clearfix">
-        {{ about_header }}
-        <aside class="profile about-profile about-portrait-card">
-          {% if page.profile.image %}
-            {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle about-profile-image' %}
-            {% capture profile_image_alt %}{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}{% endcapture %}
-            {% capture sizes %}(min-width: {{ site.max_width }}) 168px, (min-width: 576px) 16vw, 72vw{% endcapture %}
-            {%
-              include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile_image_alt
-              cache_bust=true
-            %}
-          {% endif %}
-          {% if page.profile.more_info %}
-            <div class="more-info">{{ page.profile.more_info }}</div>
-          {% endif %}
-        </aside>
-        <div class="about-copy">
-          {{ content }}
-        </div>
-      </div>
-    {% else %}
-      {{ about_header }}
-      <div class="clearfix">{{ content }}</div>
-    {% endif %}
-
-    <!-- News -->
-    {% if page.announcements and page.announcements.enabled %}
-      <hr class="mt-4 mb-3">
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
-      </h2>
-      {% include news.liquid limit=true %}
-      <p class="news-more"><a href="{{ '/news/' | relative_url }}">View all news <span aria-hidden="true">&rarr;</span></a></p>
-    {% endif %}
-
-    <!-- Latest posts -->
-    {% if page.latest_posts and page.latest_posts.enabled %}
-      <hr class="mt-4 mb-3">
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest Posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
-    {% endif %}
-
-    <!-- Selected research highlights -->
+    <div class="about-copy">{{ content }}</div>
     {% if page.selected_research_highlights or page.selected_papers %}
-      <hr class="mt-4 mb-3">
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Research Highlights</a>
-      </h2>
-      <p class="text-muted"><em>Selected papers and talks aligned with efficient large-scale AI systems.</em></p>
-      {% include selected_research_highlights.liquid %}
+      <section class="home-section" aria-labelledby="selected-work-title">
+        <h2 id="selected-work-title">Selected work</h2>
+        {% include selected_research_highlights.liquid %}
+        <p class="section-more"><a href="{{ '/publications/' | relative_url }}">All publications <span aria-hidden="true">&rarr;</span></a></p>
+      </section>
     {% endif %}
-
-    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
-      {% include newsletter.liquid center=true %}
+    {% if page.announcements and page.announcements.enabled %}
+      <section class="home-section" aria-labelledby="news-title">
+        <div class="section-heading"><h2 id="news-title">News</h2><a href="{{ '/news/' | relative_url }}">All news <span aria-hidden="true">&rarr;</span></a></div>
+        {% include news.liquid limit=true %}
+      </section>
+    {% endif %}
+    {% if page.latest_posts and page.latest_posts.enabled %}
+      <section class="home-section"><h2><a href="{{ '/blog/' | relative_url }}">Latest posts</a></h2>{% include latest_posts.liquid %}</section>
     {% endif %}
   </article>
 </div>

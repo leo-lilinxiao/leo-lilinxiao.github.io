@@ -5,7 +5,7 @@
   - JSONResume: name, position, startDate, endDate, location, url, summary, highlights
 {% endcomment %}
 
-<ul class="card-text font-weight-light list-group list-group-flush cv-experience-list">
+<ul class="card-text list-group list-group-flush cv-experience-list">
   {% for entry in entries %}
     <li class="list-group-item cv-experience-item">
       <div class="cv-experience-row">
@@ -30,7 +30,7 @@
             <tbody>
               <tr>
                 <td>
-                  <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle cv-date-badge">{{ date }}</span>
+                  <span class="cv-date-badge">{{ date }}</span>
                 </td>
               </tr>
               {% capture location %}
@@ -55,11 +55,11 @@
           {% endcapture %}
 
           {% if entry.url %}
-            <h6 class="title font-weight-bold cv-experience-role">
+            <h6 class="title cv-experience-role">
               <a href="{{ entry.url }}">{{ position_title }}</a>
             </h6>
           {% elsif position_title != '' %}
-            <h6 class="title font-weight-bold cv-experience-role">{{ position_title }}</h6>
+            <h6 class="title cv-experience-role">{{ position_title }}</h6>
           {% endif %}
 
           {% capture company_name %}

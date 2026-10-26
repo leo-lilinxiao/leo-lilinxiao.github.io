@@ -25,75 +25,6 @@ $(document).ready(function () {
   });
   $("a").removeClass("waves-effect waves-light");
 
-  const navbar = document.getElementById("navbar");
-  if (navbar) {
-    let navbarTicking = false;
-    const updateNavbarState = () => {
-      navbar.classList.toggle("navbar-scrolled", window.scrollY > 8);
-      navbarTicking = false;
-    };
-    updateNavbarState();
-    window.addEventListener(
-      "scroll",
-      () => {
-        if (!navbarTicking) {
-          window.requestAnimationFrame(updateNavbarState);
-          navbarTicking = true;
-        }
-      },
-      { passive: true },
-    );
-  }
-
-  const motionAllowed = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (motionAllowed && "IntersectionObserver" in window) {
-    document.documentElement.classList.add("motion-ready");
-    const revealTargets = [...document.querySelectorAll(
-      "article > hr, .news .table-responsive, .selected-research-highlights, .publications ol.bibliography > li, .public-talk-list, .projects > .card, .cv > .card",
-    )];
-
-    revealTargets.forEach((element, index) => {
-      element.classList.add("reveal-on-scroll");
-      element.style.setProperty("--reveal-delay", `${Math.min(index * 38, 190)}ms`);
-    });
-
-    function markVisibleIfInViewport(element) {
-      const rect = element.getBoundingClientRect();
-      if (rect.top < window.innerHeight * 0.96 && rect.bottom > 0) {
-        element.classList.add("is-visible");
-        return true;
-      }
-      return false;
-    }
-
-    const revealObserver = new IntersectionObserver(
-      (entries, observer) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { rootMargin: "0px 0px -8% 0px", threshold: 0.12 },
-    );
-
-    revealTargets.forEach((element) => {
-      if (!markVisibleIfInViewport(element)) {
-        revealObserver.observe(element);
-      }
-    });
-
-    const spotlightTargets = document.querySelectorAll(".card, .publications ol.bibliography > li, .public-talk-card, .page-opensource .patent-entry");
-    spotlightTargets.forEach((element) => {
-      element.addEventListener("pointermove", (event) => {
-        const rect = element.getBoundingClientRect();
-        element.style.setProperty("--spotlight-x", `${event.clientX - rect.left}px`);
-        element.style.setProperty("--spotlight-y", `${event.clientY - rect.top}px`);
-      });
-    });
-  }
-
   // bootstrap-toc
   if ($("#toc-sidebar").length) {
     // remove related publications years from the TOC
@@ -102,7 +33,8 @@ $(document).ready(function () {
     });
     var navSelector = "#toc-sidebar";
     var $myNav = $(navSelector);
-    Toc.init($myNav);
+    // CV navigation is rendered with its section headings at build time.
+    if (!$myNav.is("[data-toc-static]")) Toc.init($myNav);
     $("body").scrollspy({
       target: navSelector,
       offset: 100,

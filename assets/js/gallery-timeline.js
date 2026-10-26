@@ -1,5 +1,15 @@
 // Gallery owns its sections, timeline and on-demand photo viewer.
 (() => {
+  // Keep failed asset URLs traceable in production when a cover stays blank.
+  document.querySelectorAll('.gallery-cover img').forEach(image => {
+    const reportCoverError = () => console.error('[gallery] Cover load failed.', {
+      record: image.closest('[data-gallery-record]').id,
+      source: image.currentSrc || image.src,
+    });
+    image.addEventListener('error', reportCoverError, { once: true });
+    if (image.complete && image.currentSrc && image.naturalWidth === 0) reportCoverError();
+  });
+
   const riverRoots = [...document.querySelectorAll('[data-gallery-river]')];
   if (!riverRoots.length) throw new Error('[gallery] River timelines are missing.');
   const rivers = riverRoots.map(root => {
@@ -17,6 +27,7 @@
       image.alt = '';
       image.draggable = false;
       image.decoding = 'async';
+      image.fetchPriority = 'low';
       image.addEventListener('error', () => console.error(`[gallery] River artwork failed to load: ${image.src}`));
       layer.append(image);
       return image;
@@ -75,7 +86,6 @@
   new MutationObserver(queueDraw).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
   window.addEventListener('resize', queueDraw);
   document.fonts.ready.then(queueDraw);
-  queueDraw();
 
   const tabs = [...document.querySelectorAll('[data-gallery-tab]')];
   function activateSection(id) {
@@ -85,7 +95,8 @@
       tab.tabIndex = selected ? 0 : -1;
       document.getElementById(tab.getAttribute('aria-controls')).hidden = !selected;
     });
-    queueDraw();
+    // The first frame includes the selected section's artwork and marker geometry.
+    drawRivers();
   }
   function sectionFromHash() {
     const target = document.getElementById(location.hash.slice(1));

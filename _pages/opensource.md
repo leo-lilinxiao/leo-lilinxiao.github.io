@@ -4,81 +4,81 @@ permalink: /opensource/
 title: Open Source
 description: Open source projects, contributions, and patents.
 nav: true
-nav_order: 4
+nav_order: 3
 ---
 
 <div class="projects">
 
-  <div class="card mt-3">
-    <div class="card-body">
-      <h4 class="card-title font-weight-medium">
+  <div class="project-entry">
+    <div class="project-content">
+      <h4 class="project-title">
         <a href="https://github.com/leo-lilinxiao/codex-autoresearch" target="_blank">Codex AutoResearch</a>
-        <span class="project-role-badge">Creator</span>
-        <span class="project-status-badge ml-2" title="GitHub stars as of Sep 25, 2026">2,651 Stars</span>
+        <span class="project-role-badge project-role-creator">Creator</span>
+        <span class="project-status-badge" title="GitHub stars as of Sep 25, 2026">2,651 Stars</span>
       </h4>
-      <p class="card-text font-weight-light">
+      <p class="project-description">
         A self-directed iterative research system for Codex that continuously cycles through modify, verify, retain/discard, and repeat. Enables autonomous research loops without human intervention.
       </p>
-      <a href="https://github.com/leo-lilinxiao/codex-autoresearch" target="_blank" class="btn btn-sm btn-outline-primary">GitHub</a>
+      <a href="https://github.com/leo-lilinxiao/codex-autoresearch" target="_blank" class="project-link">GitHub</a>
     </div>
   </div>
 
-  <div class="card mt-3">
-    <div class="card-body">
-      <h4 class="card-title font-weight-medium">
+  <div class="project-entry">
+    <div class="project-content">
+      <h4 class="project-title">
         <a href="https://gitcode.com/lllleo/pypto" target="_blank">PyPTO</a>
         <span class="project-role-badge">Contributor</span>
       </h4>
-      <p class="card-text font-weight-light">
+      <p class="project-description">
         High-performance programming framework for AI accelerators using tile-based programming (PTO paradigm). Compiles tensor graphs to hardware instructions via multi-level IR, enabling efficient kernel development for GPU/NPU targets.
       </p>
-      <a href="https://gitcode.com/lllleo/pypto" target="_blank" class="btn btn-sm btn-outline-primary">GitCode</a>
+      <a href="https://gitcode.com/lllleo/pypto" target="_blank" class="project-link">GitCode</a>
     </div>
   </div>
 
-  <div class="card mt-3">
-    <div class="card-body">
-      <h4 class="card-title font-weight-medium">
+  <div class="project-entry">
+    <div class="project-content">
+      <h4 class="project-title">
         <a href="https://gitcode.com/lllleo/pypto-autograd" target="_blank">PyPTO-AutoGrad</a>
-        <span class="project-role-badge">Creator</span>
+        <span class="project-role-badge project-role-creator">Creator</span>
       </h4>
-      <p class="card-text font-weight-light">
+      <p class="project-description">
         Source-code level automatic differentiation tool for PyPTO kernels. Generates readable and editable backward kernels from forward definitions, simplifying gradient computation for custom AI accelerator kernels.
       </p>
-      <a href="https://gitcode.com/lllleo/pypto-autograd" target="_blank" class="btn btn-sm btn-outline-primary">GitCode</a>
+      <a href="https://gitcode.com/lllleo/pypto-autograd" target="_blank" class="project-link">GitCode</a>
     </div>
   </div>
 
-  <div class="card mt-3">
-    <div class="card-body">
-      <h4 class="card-title font-weight-medium">
+  <div class="project-entry">
+    <div class="project-content">
+      <h4 class="project-title">
         <a href="https://github.com/walkinglabs/modern-llm-notebook" target="_blank">Modern LLM Notebook</a>
         <span class="project-role-badge">Contributor</span>
-        <span class="project-status-badge ml-2" title="GitHub stars as of Sep 25, 2026">215 Stars</span>
+        <span class="project-status-badge" title="GitHub stars as of Sep 25, 2026">215 Stars</span>
       </h4>
-      <p class="card-text font-weight-light">
+      <p class="project-description">
         A hands-on PyTorch curriculum for building modern LLM systems from scratch, covering tokenization, attention, MoE, inference, evaluation, and distillation.
       </p>
       <div class="project-links">
-        <a href="https://github.com/walkinglabs/modern-llm-notebook" target="_blank" class="btn btn-sm btn-outline-primary">GitHub</a>
-        <a href="https://walkinglabs.github.io/modern-llm-notebook/" target="_blank" class="btn btn-sm btn-outline-primary">Website</a>
+        <a href="https://github.com/walkinglabs/modern-llm-notebook" target="_blank" class="project-link">GitHub</a>
+        <a href="https://walkinglabs.github.io/modern-llm-notebook/" target="_blank" class="project-link">Website</a>
       </div>
     </div>
   </div>
 
-  <div class="card mt-3">
-    <div class="card-body">
-      <h4 class="card-title font-weight-medium">
+  <div class="project-entry">
+    <div class="project-content">
+      <h4 class="project-title">
         <a href="https://github.com/pie-project/pie" target="_blank">Pie</a>
         <span class="project-role-badge">Contributor</span>
-        <span class="project-status-badge ml-2" title="GitHub stars as of Sep 25, 2026">217 Stars</span>
+        <span class="project-status-badge" title="GitHub stars as of Sep 25, 2026">217 Stars</span>
       </h4>
-      <p class="card-text font-weight-light">
+      <p class="project-description">
         A programmable LLM serving system for custom inference logic, stateful agents, and serving-side optimization.
       </p>
       <div class="project-links">
-        <a href="https://github.com/pie-project/pie" target="_blank" class="btn btn-sm btn-outline-primary">GitHub</a>
-        <a href="https://pie-project.org/" target="_blank" class="btn btn-sm btn-outline-primary">Website</a>
+        <a href="https://github.com/pie-project/pie" target="_blank" class="project-link">GitHub</a>
+        <a href="https://pie-project.org/" target="_blank" class="project-link">Website</a>
       </div>
     </div>
   </div>

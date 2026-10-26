@@ -1,7 +1,7 @@
 <div class="news">
   {% if site.news != blank %}
     {% assign news_size = site.news | size %}
-    <div class="table-responsive{% if include.limit and page.announcements.scrollable and news_size > 3 %} news-scrollable{% endif %}">
+    <div class="table-responsive{% if include.limit and page.announcements.scrollable and news_size > 3 %} news-scrollable{% endif %}"{% if include.limit and page.announcements.scrollable and news_size > 3 %} tabindex="0" role="region" aria-label="Recent news, scroll for more"{% endif %}>
       <table class="table table-sm table-borderless">
         {% assign news = site.news | reverse %}
         {% if include.limit and page.announcements.limit %}
@@ -11,7 +11,7 @@
         {% endif %}
         {% for item in news limit: news_limit %}
           <tr>
-            <th scope="row" style="width: 20%">{{ item.date | date: '%b %Y' }}</th>
+            <th scope="row">{{ item.date | date: '%b %Y' }}</th>
             <td>
               {% if item.inline %}
                 {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}

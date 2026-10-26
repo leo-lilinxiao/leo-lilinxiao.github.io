@@ -1,0 +1,11 @@
+{% assign cv_section_id = include.title | slugify %}
+{% if include.legacy_anchor %}{% assign cv_section_id = cv_section_id | append: '-1' %}{% endif %}
+{% assign cv_nav_title = include.title %}
+{% case include.title %}
+  {% when 'Professional Summary' %}{% assign cv_nav_title = 'Summary' %}
+  {% when 'Industry Research Experience' %}{% assign cv_nav_title = 'Experience' %}
+  {% when 'Selected Research Projects' %}{% assign cv_nav_title = 'Research Projects' %}
+  {% when 'Public Talks' %}{% assign cv_nav_title = 'Talks' %}
+{% endcase %}
+{% capture cv_toc_items %}{{ cv_toc_items }}<li><a class="nav-link{% if cv_toc_items == '' %} active{% endif %}" href="#{{ cv_section_id }}">{{ cv_nav_title }}</a></li>{% endcapture %}
+<h3 id="{{ cv_section_id }}" class="card-title">{{ include.title }}</h3>

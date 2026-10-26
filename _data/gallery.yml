@@ -6,6 +6,8 @@
   description: First author
   cover: assets/img/gallery/ecothink-www2026-oral.png
   cover_alt: EcoThink, WWW 2026, Oral
+  fit: contain
+  cover_type: graphic
   action: View oral invitation
   photos:
     - path: assets/img/gallery/ecothink-oral-invitation.png
@@ -18,6 +20,7 @@
   cover: assets/img/gallery/mfu65-ascend-2026.png
   cover_alt: AIGCode, 65% MFU for MoE pre-training on Ascend
   fit: contain
+  cover_type: graphic
   action: Read English overview
   url: /highlights/mfu-65-ascend/
   source_url: https://mp.weixin.qq.com/s/cOsJ_55UWvyR2l107xk02A

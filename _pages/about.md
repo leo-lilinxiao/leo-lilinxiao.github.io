@@ -24,20 +24,6 @@ latest_posts:
   enabled: false
 ---
 
-I am a researcher focusing on large-scale LLM systems and AI infrastructure. Currently I work as an **AI Infrastructure / Training Systems Researcher** at [AIGCode (蔻町科技)](https://www.autocoder.cc/).
+I work on efficient training and inference for large language models. As an **AI Infrastructure / Training Systems Researcher** at [AIGCode](https://www.autocoder.cc/), I study communication, scheduling, and memory efficiency.
 
-My work focuses on large-scale LLM training systems. I study system-level optimizations to improve efficiency and hardware utilization, including Model FLOPs Utilization (MFU) improvement, communication–computation overlap, operator/kernel fusion, and runtime-level scheduling and memory optimization. I work closely with distributed training stacks to improve scalability, throughput, and cost-efficiency of foundation model training.
-
-Previously, I was a **Senior Researcher and TL** at [Huawei Cloud Architecture Innovation Lab (Cloud Lab)](https://www.huaweicloud.com/lab/cloud/home.html), under [CTO Fellow Jiongjiong Gu](https://developer.huawei.com/consumer/cn/forum/topic/0202743458671690687) (Chief Architect), working on MoE inference, memory offloading, and cloud-scale AI infrastructure. I also collaborated with the [Guangming Laboratory](https://www.gml.ac.cn/kytd/189.html) (Intelligent Recommendation & Resource Scheduling Group).
-
-My long-term research goal is to design more efficient system architectures for large-scale AI models, improving scalability and resource efficiency of future AI infrastructure.
-
-My research and engineering interests include:
-- Efficient training and inference systems for large language models
-- Model FLOPs Utilization (MFU) optimization and system efficiency
-- Communication–computation overlap and operator / kernel fusion
-- Distributed training systems and memory-efficient execution
-- Scalable inference systems for large models (LLMs, MoE)
-{: .research-interests }
-
-Check out my [publications](/publications/), [CV](/cv/), and [gallery](/gallery/) for more details.
+Previously, I was a **Senior Researcher and TL** at [Huawei Cloud Architecture Innovation Lab](https://www.huaweicloud.com/lab/cloud/home.html), working under [Jiongjiong (Dennis) Gu](https://www.huaweicloud.com/intl/en-us/news/20240325154553142.html), Huawei Fellow and Chief Architect. My work covered MoE inference and memory offloading, alongside research collaborations with [Guangming Laboratory](https://www.gml.ac.cn/kytd/189.html).
