@@ -9,14 +9,7 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-gallery",
-          title: "Gallery",
-          description: "Research milestones and memories along the way.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/gallery/";
-          },
-        },{id: "nav-publications",
+  },{id: "nav-publications",
           title: "Publications",
           description: "Publications in chronological order, followed by public talks.",
           section: "Navigation",
@@ -29,6 +22,13 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/opensource/";
+          },
+        },{id: "nav-gallery",
+          title: "Gallery",
+          description: "Research milestones and memories along the way.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/gallery/";
           },
         },{id: "nav-cv",
           title: "CV",
@@ -46,7 +46,7 @@ ninja.data = [{
           section: "News",},{id: "news-awarded-golden-cloud-award-金代码-top-2-and-hcs-cloud-summit-star-云巅之星-top-5-by-huawei-cloud",
           title: 'Awarded Golden Cloud Award (金代码, Top 2%) and HCS Cloud Summit Star (云巅之星,...',
           description: "",
-          section: "News",},{id: "news-ascend-npu-user-space-virtualization-and-moe-memory-offloading-solutions-announced-at-huawei-hdc-2025-50-min-mark-industry-leading-with-amp-lt-3-performance-overhead",
+          section: "News",},{id: "news-ascend-npu-user-space-virtualization-and-moe-memory-offloading-solutions-announced-at-huawei-hdc-2025-around-50-min-with-amp-lt-3-performance-overhead",
           title: 'Ascend NPU User-Space Virtualization and MoE Memory Offloading solutions announced at Huawei HDC...',
           description: "",
           section: "News",},{id: "news-ranked-14th-out-of-5200-in-the-huawei-ict-software-competition-top-3-in-huawei-cloud-1st-in-chengdu-research-institute",
@@ -61,8 +61,8 @@ ninja.data = [{
           section: "News",},{id: "news-paper-ecothink-accepted-to-the-web-conference-2026-www-26-as-first-author-average-40-4-energy-savings-for-llm-agents",
           title: 'Paper EcoThink accepted to The Web Conference 2026 (WWW’26) as first author! Average...',
           description: "",
-          section: "News",},{id: "news-codex-autoresearch-my-open-source-project-a-self-directed-iterative-research-system-inspired-by-karpathy-s-autoresearch-concept-reached-1-000-github-stars",
-          title: 'Codex AutoResearch — my open-source project, a self-directed iterative research system inspired by...',
+          section: "News",},{id: "news-codex-autoresearch-my-open-source-system-for-self-directed-iterative-research-reached-1-000-github-stars",
+          title: 'Codex AutoResearch, my open-source system for self-directed iterative research, reached 1,000+ GitHub Stars....',
           description: "",
           section: "News",},{id: "news-released-a-technical-talk-on-deepseek-v4-mechanism-details-at-aigcode",
           title: 'Released a technical talk on DeepSeek-V4 mechanism details at AIGCode.',
