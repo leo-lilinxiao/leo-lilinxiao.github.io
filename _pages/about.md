@@ -24,6 +24,6 @@ latest_posts:
   enabled: false
 ---
 
-I work on efficient training and inference for large language models. As an **AI Infrastructure / Training Systems Researcher** at [AIGCode](https://www.autocoder.cc/), I study communication, scheduling, and memory efficiency.
+I like making big models a little less demanding. At [AIGCode](https://www.autocoder.cc/), I’m an **AI infrastructure and training systems researcher**, studying how to make LLM training and inference more efficient through better communication, scheduling, and memory use.
 
-Previously, I was a **Senior Researcher and TL** at [Huawei Cloud Architecture Innovation Lab](https://www.huaweicloud.com/lab/cloud/home.html), working under [Jiongjiong (Dennis) Gu](https://www.huaweicloud.com/intl/en-us/news/20240325154553142.html), Huawei Fellow and Chief Architect. My work covered MoE inference and memory offloading, alongside research collaborations with [Guangming Laboratory](https://www.gml.ac.cn/kytd/189.html).
+Before joining AIGCode, I was a **senior researcher and team lead** at [Huawei Cloud Architecture Innovation Lab](https://www.huaweicloud.com/lab/cloud/home.html), working under [Jiongjiong (Dennis) Gu](https://www.huaweicloud.com/intl/en-us/news/20240325154553142.html), Huawei Fellow and Chief Architect. There, I worked on MoE inference and memory offloading, and collaborated with researchers at [Guangming Laboratory](https://www.gml.ac.cn/kytd/189.html).
