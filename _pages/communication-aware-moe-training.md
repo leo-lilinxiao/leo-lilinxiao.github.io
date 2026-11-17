@@ -5,7 +5,7 @@ title: Communication-Aware Scheduling Optimization for Large-Scale MoE Model Tra
 description: Frontiers Series · Guangming Laboratory · 3 June 2026
 nav: false
 back_link:
-  label: Back to Public Talks
+  label: Back to Talks & Media
   url: /publications/#public-talks
 nav_parent: /publications/
 feature:

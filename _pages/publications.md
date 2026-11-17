@@ -2,26 +2,22 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: Publications in chronological order, followed by public talks.
+description: Talks, media coverage, and research papers.
 nav: true
 nav_order: 2
+scholar:
+  bibliography_group_tag: h3
 ---
 
 <!-- _pages/publications.md -->
 
 <nav class="page-section-links" aria-label="Publication sections">
-  <a href="#papers">Papers</a>
-  <a href="#public-talks">Public Talks <span aria-hidden="true">&darr;</span></a>
+  <a href="#public-talks">Talks &amp; Media</a>
+  <a href="#papers">Papers <span aria-hidden="true">&darr;</span></a>
 </nav>
 
-<div id="papers" class="publications">
-
-{% bibliography %}
-
-</div>
-
 <section id="public-talks" class="public-talks" aria-labelledby="public-talks-title">
-  <h2 id="public-talks-title">Public Talks</h2>
+  <h2 id="public-talks-title">Talks &amp; Media</h2>
 
   <div class="public-talk-list">
     <article class="public-talk-card public-talk-featured">
@@ -40,6 +36,26 @@ nav_order: 2
         <div class="reading-links">
           <a href="{{ '/talks/communication-aware-moe-training/' | relative_url }}">English overview</a>
           <a href="https://mp.weixin.qq.com/s/tvtTHvvBlF8Kzuc21OJSKw" hreflang="zh" target="_blank" rel="noopener noreferrer">Chinese original <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <article id="mfu-65-media" class="public-talk-card">
+      <div class="public-talk-meta">
+        <span class="public-talk-date">May 2026</span>
+        <span class="public-talk-type">Media Coverage</span>
+      </div>
+      <div class="public-talk-content">
+        <h3>
+          <a href="{{ '/highlights/mfu-65-ascend/' | relative_url }}">65% MFU on Ascend</a>
+        </h3>
+        <div class="public-talk-context">
+          <span>AIGCode</span>
+          <span>MoE pre-training on Ascend NPUs</span>
+        </div>
+        <div class="reading-links">
+          <a href="{{ '/highlights/mfu-65-ascend/' | relative_url }}">English overview</a>
+          <a href="{{ '/highlights/mfu-65-ascend/#media-coverage' | relative_url }}">3 media reports</a>
         </div>
       </div>
     </article>
@@ -78,4 +94,11 @@ nav_order: 2
       </div>
     </article>
   </div>
+</section>
+
+<section id="papers" class="publications" aria-labelledby="papers-title">
+  <h2 id="papers-title">Research papers</h2>
+
+{% bibliography %}
+
 </section>

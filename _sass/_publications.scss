@@ -1,5 +1,5 @@
 .publications {
-  h2.bibliography { font-size: 1.65rem; margin: 1.5rem 0 0.5rem; }
+  h2.bibliography, h3.bibliography { font-size: 1.65rem; margin: 1.5rem 0 0.5rem; }
   ol.bibliography { padding: 0; margin: 0; list-style: none; }
   ol.bibliography > li { padding: 1.4rem 0; border-top: 1px solid var(--global-divider-color); }
   ol.bibliography > li > .row { display: grid; grid-template-columns: 8rem minmax(0, 1fr); gap: 1.6rem; margin: 0; }
@@ -27,7 +27,7 @@
   .hidden pre { padding: 0; font-size: 0.8rem; }
   .badges { display: flex; gap: 0.6rem; margin-top: 0.5rem; }
 }
-.public-talks { margin-top: 3rem; }
+.public-talks { margin-bottom: 3rem; }
 .public-talk-card { display: grid; grid-template-columns: 8rem minmax(0, 1fr); gap: 1.6rem; padding: 1.4rem 0; border-top: 1px solid var(--global-divider-color); }
 .public-talk-meta { font-size: 1rem; color: var(--global-text-color-light); }
 .public-talk-meta span { display: block; }

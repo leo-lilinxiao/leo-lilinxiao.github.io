@@ -5,9 +5,9 @@ title: 65% MFU on Ascend
 description: Training-system optimization at AIGCode · 2026
 nav: false
 back_link:
-  label: Back to Milestones
-  url: /gallery/#mfu-65-2026
-nav_parent: /gallery/
+  label: Back to Talks & Media
+  url: /publications/#mfu-65-media
+nav_parent: /publications/
 feature:
   kind: result
   eyebrow: A training milestone
