@@ -25,6 +25,7 @@ cv:
         date: "2026-09-28"
         author_position: 4
         publisher: "CAAI Artificial Intelligence Research"
+        abbr: "CAAI AIR"
         url: https://www.sciopen.com/article/10.26599/AIR.2026.9150015
         summary: "Zidong Han, Zeru Liu, Chen Li, <strong>Linxiao Li</strong>, Junchao Ma, Weipeng Cao&#8224;"
 
@@ -33,6 +34,7 @@ cv:
         author_position: 2
         url: https://neurips.cc/virtual/2026/loc/sydney/poster/148777
         publisher: "Advances in Neural Information Processing Systems (NeurIPS 2026)"
+        abbr: "NeurIPS"
         presentation: "Poster"
         summary: "Haoran Ma&#42;, <strong>Linxiao Li&#42;</strong>, Chenyue Wang, Haochen Sui, Jiechao Gao&#8224;"
 
@@ -42,6 +44,7 @@ cv:
         url: https://neurips.cc/virtual/2026/poster/153939
         code: https://github.com/leo-lilinxiao/MESCoder
         publisher: "Advances in Neural Information Processing Systems (NeurIPS 2026)"
+        abbr: "NeurIPS"
         presentation: "Poster"
         summary: "<strong>Linxiao Li&#42;</strong>, Haoran Ma&#42;, Chenyue Wang, Jiaye Lin, Haochen Sui, Jiechao Gao&#8224;"
 
@@ -50,6 +53,7 @@ cv:
         author_position: 5
         url: https://neurips.cc/virtual/2026/loc/sydney/poster/155984
         publisher: "Advances in Neural Information Processing Systems (NeurIPS 2026)"
+        abbr: "NeurIPS"
         presentation: "Poster"
         summary: "Qiuwu Chen, Ziteng Huang, Shuhai Zhang, Zimo Liu, <strong>Linxiao Li</strong>, Ying Sun, Yuchen Li, Yifan Zhang, Yaofo Chen, Mingkui Tan&#8224;"
 
@@ -57,6 +61,7 @@ cv:
         date: "2026-06-12"
         author_position: 4
         publisher: "arXiv:2606.14187"
+        abbr: "arXiv"
         presentation: "Preprint"
         url: https://arxiv.org/abs/2606.14187v2
         summary: "Kaiwen Chen&#42;, Shuhai Zhang&#42;, Zimo Liu, <strong>Linxiao Li</strong>, Ying Sun, Yuchen Li, Yifan Zhang, Bo Han, Mingkui Tan&#8224;, Qiuwu Chen&#8224;"
@@ -65,6 +70,7 @@ cv:
         date: "2026-04-30"
         author_position: 2
         publisher: "International Conference on Machine Learning (ICML 2026)"
+        abbr: "ICML"
         presentation: "Poster"
         url: https://openreview.net/pdf?id=IuGOrMmYCK
         summary: "Zixiong Yang&#42;, <strong>Linxiao Li&#42;</strong>, Jiaye Lin, Binrui Wu, Xiaoyu Kang, Jiechao Gao&#8224;"
@@ -73,6 +79,7 @@ cv:
         date: "2026-01-13"
         author_position: 1
         publisher: "The Web Conference (WWW 2026)"
+        abbr: "WWW"
         presentation: "Oral"
         url: https://dl.acm.org/doi/10.1145/3774904.3792995
         summary: "<strong>Linxiao Li&#42;</strong>, Zhixiang Lu&#42;&#8224;"

@@ -93,6 +93,26 @@ scholar:
         <p>Invited talk for graduate students on research methodology, internship planning, and career development.</p>
       </div>
     </article>
+
+    <article id="hdc-2025-showcase" class="public-talk-card">
+      <div class="public-talk-meta">
+        <span class="public-talk-date">Jun 2025</span>
+        <span class="public-talk-type">Conference Showcase</span>
+      </div>
+      <div class="public-talk-content">
+        <h3>
+          <a href="https://live.huawei.com/hdc2025/meeting/cn/15569.html" hreflang="zh" target="_blank" rel="noopener noreferrer">Ascend NPU User-Space Virtualization and MoE Memory Offloading</a>
+        </h3>
+        <div class="public-talk-context">
+          <span>Huawei Developer Conference 2025</span>
+          <span>Huawei Cloud</span>
+        </div>
+        <p>Featured in Huawei Cloud's product launch session. See around 50 minutes into the recording.</p>
+        <div class="reading-links">
+          <a href="https://live.huawei.com/hdc2025/meeting/cn/15569.html" hreflang="zh" target="_blank" rel="noopener noreferrer">Watch recording (Chinese) <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </article>
   </div>
 </section>
 

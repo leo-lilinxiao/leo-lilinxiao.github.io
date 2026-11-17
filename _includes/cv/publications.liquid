@@ -16,9 +16,14 @@
               <tbody>
                 <tr>
                   <td>
-                    <span class="cv-date-badge">
-                      {{- pub_date | split: '-' | slice: 0, 1 | join: '' -}}
-                    </span>
+                    {% if entry.abbr %}
+                      <span class="cv-publication-venue">{{ entry.abbr }}</span>
+                    {% endif %}
+                    {% unless include.hide_year %}
+                      <span class="cv-date-badge">
+                        {{- pub_date | split: '-' | slice: 0, 1 | join: '' -}}
+                      </span>
+                    {% endunless %}
                   </td>
                 </tr>
               </tbody>

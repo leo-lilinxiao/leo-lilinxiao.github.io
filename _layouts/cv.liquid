@@ -161,7 +161,12 @@ layout: default
                   {% assign same_date_entries = date_group.items | sort: 'author_position' %}
                   {% assign entries = entries | concat: same_date_entries %}
                 {% endfor %}
-                {% include cv/publications.liquid %}
+                {% assign publication_years = entries | group_by_exp: 'publication', "publication.date | date: '%Y'" | sort: 'name' | reverse %}
+                {% for year_group in publication_years %}
+                  <h4 class="cv-publication-year">{{ year_group.name }}</h4>
+                  {% assign entries = year_group.items %}
+                  {% include cv/publications.liquid hide_year=true %}
+                {% endfor %}
               {% elsif section_title == 'Public Talks' %}
                 {% assign entries = section_entries %}
                 {% include cv/publications.liquid %}
