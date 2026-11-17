@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-publications",
           title: "Publications",
-          description: "Publications in chronological order, followed by public talks.",
+          description: "Talks, media coverage, and research papers.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
